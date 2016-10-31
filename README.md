@@ -1,6 +1,6 @@
 # BandCramp
-Heroku link goes here
-trello link goes here
+[heroku](https://bandcramp.herokuapp.com/)
+[trell](https://trello.com/b/M2foQhkY)
 
 #Minimum Viable Product
 BandCramp is a web application inspired by BandCamp build Using Ruby on Rails and React/Redux. By the end of week 9, this app will at a munimum satisfy the following criteria with smooth, bug-free navigation, adequate seed data and sufficient CSS styling:
