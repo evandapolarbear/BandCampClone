@@ -21,3 +21,18 @@ bonus purchase songs & follows
 [Componant Hierarchy](./docs/Componant_Hierarchy.txt)
 [DB Schema](./docs/shema.txt)
 [Sample State](./docs/sampleState.js)
+
+#Implementation Timeline
+##Phase 1: Backend setup and Front end Auth(2 days)
+Objective: functioning sign in/sign up/guest login.
+##Phase 2: Bands and Songs Models, API, and components/views(3 days)
+Objective: Be able to navigate and see bands and songs and upload songs as a band.
+##Phase3: Media player and download (3 days)
+Objective: Make sure all songs can be played and downloaded without full page reload.
+##Phase 4: Finish Styling(1 day)
+Objective: Ensure a smooth UI
+
+##Bonus
+*allows users to purchase songs
+*allows users to follow Bands
+*allow user to customize band page
