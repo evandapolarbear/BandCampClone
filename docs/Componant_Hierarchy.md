@@ -4,11 +4,11 @@ AuthFormContainer
 SplashContainer
 *BigHeader
 **Authform
---Search
--News
--DiscoverContainer
---GenreBar
---Songs
+**Search
+*News
+*DiscoverContainer
+**GenreBar
+  - Songs
 --MediaPlayer
 
 UploadContainer
