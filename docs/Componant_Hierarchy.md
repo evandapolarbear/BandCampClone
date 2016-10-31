@@ -1,28 +1,29 @@
-AuthFormContainer
-*AuthForm
+#AuthFormContainer#
+*AuthForm*
 
-SplashContainer
+#SplashContainer#
 *BigHeader
-**Authform
-**Search
+ *Authform
+ *Search
 *News
-*DiscoverContainer
-**GenreBar
+*DiscoverContainer*
+
+#GenreBar#
   - Songs
---MediaPlayer
+  - MediaPlayer
 
-UploadContainer
--SmallHeaderContainer
--SploadForm
+#UploadContainer#
+  - SmallHeaderContainer
+  - SploadForm
 
-BandPageContainer
--SmallHeaderContainer
--TopBanner
--MediaPlayer
--Blurb
--SongContainer
---Songs
---DownloadButton
+#BandPageContainer#
+*SmallHeaderContainer
+*TopBanner
+*MediaPlayer
+*Blurb
+*SongContainer
+ *Songs
+ *DownloadButton*
 
 / --- Splash Container
 /:song-id --- Discover container
