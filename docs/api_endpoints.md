@@ -1,23 +1,22 @@
 GET / - Loads home/splash
 
 Users
--POST /api/users
--PATCH /api/users
+*POST /api/users
+*PATCH /api/users
 
 Session
--POST /api/session
--DELETE /api/session
--GET /api/session
+*POST /api/session
+*DELETE /api/session
+*GET /api/session
 
 Upload
--POST /api/album
+*POST /api/album
 
 Search
--POST /api/search
--GET /api/search
+*GET /api/search
 
 Band
--GET /api/band
+*GET /api/band
 
 Song
--Get /api/song
+*Get /api/song

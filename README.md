@@ -17,9 +17,9 @@ BandCramp is a web application inspired by BandCamp build Using Ruby on Rails an
 bonus purchase songs & follows
 
 [Wireframes](./docs/wire_frames)
-[API Endpoints](./docs/api_endpoints.txt)
-[Componant Hierarchy](./docs/Componant_Hierarchy.txt)
-[DB Schema](./docs/shema.txt)
+[API Endpoints](./docs/api_endpoints.md)
+[Componant Hierarchy](./docs/Componant_Hierarchy.md)
+[DB Schema](./docs/shema.md)
 [Sample State](./docs/sampleState.js)
 
 #Implementation Timeline
