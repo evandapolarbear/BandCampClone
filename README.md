@@ -16,23 +16,8 @@ BandCramp is a web application inspired by BandCamp build Using Ruby on Rails an
 
 bonus purchase songs & follows
 
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+[Wireframes](./docs/wire_frames)
+[API Endpoints](./docs/api_endpoints.txt)
+[Componant Hierarchy](./docs/Componant_Hierarchy.txt)
+[DB Schema](./docs/shema.txt)
+[Sample State](./docs/sampleState.js)
