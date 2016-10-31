@@ -2,8 +2,8 @@
 *AuthForm*
 
 #SplashContainer#
-*BigHeader
- *Authform
+  - ##BigHeader##
+     - Authform
  *Search
 *News
 *DiscoverContainer*
@@ -23,7 +23,7 @@
 *Blurb
 *SongContainer
  *Songs
- *DownloadButton*
+ *DownloadButton
 
 / --- Splash Container
 /:song-id --- Discover container
