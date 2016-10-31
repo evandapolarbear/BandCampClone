@@ -1,19 +1,50 @@
 const sample = {
-currentBand: {
-	user: 1,
-	name: "hello",
+currentArtist: {
+	id: 1,
+	name: "artist name",
+	profilePicUrl: "some url",
+	bannderPicUrl: "some url"
 	},
 
-form: {
+authForm: {
 	signUp: {errors: []},
 	logIn: {errors: []},
 	uploadSong: {errors: []}
 	},
-bands: {
-	currentBand: 1
+
+uploadForm: {
+	artUrl: {errors: []},
+	albumDescription: {errors: []},
+	tracks :{
+		1: {
+			name: "someName",
+			url: "url"
+		},
+		2: {
+			name: "anotherName",
+			url: "url"
+		}
+	}
+},
+
+Artist: {
+	id: 1,
+	name: "artist name",
+	profilePicUrl: "someURL",
+	bannderPicUrl: "someURL"
 	},
 
 song: {
-	currentSong: 1
-	}
+	id: 1,
+	artistId: 1,
+	albumId: 1,
+	songUrl: "someURL",
+	songImage: "someURL"
+},
+
+album: {
+	id: 1,
+	bandId: 1,
+	albumUrl: "someURL"
+}
 };

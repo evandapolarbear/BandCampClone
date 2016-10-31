@@ -16,7 +16,7 @@
   - SmallHeaderContainer
   - SploadForm
 
-#BandPageContainer#
+#ArtistPageContainer#
   - SmallHeaderContainer
   - TopBanner
   - MediaPlayer
@@ -31,13 +31,13 @@
     - fullpage
 
 #Routes#
-Path             |  Componant
----------------- | -----------
-:song-id         |  Discover container
-/sign-up         |  AuthFormContainer
-/sign-in         |  AuthFormContainer
-/upload          |  UploadContainer
-/:bandId         |  BandPageController
-/:bandId/:songId |  SongContainer
-/?sometext       |  SearchContainer
-/?search/results |  SearchContainer/full page
+Path               |  Componant
+------------------ | -----------
+:song-id           |  Discover container
+/sign-up           |  AuthFormContainer
+/sign-in           |  AuthFormContainer
+/upload            |  UploadContainer
+/:artistId         |  ArtistPageController
+/:ArtistId/:songId |  SongContainer
+/?sometext         |  SearchContainer
+/?search/results   |  SearchContainer/full page
