@@ -19,7 +19,7 @@ bonus purchase songs & follows
 [Wireframes](./docs/wire_frames)
 [API Endpoints](./docs/api_endpoints.md)
 [Componant Hierarchy](./docs/Componant_Hierarchy.md)
-[DB Schema](./docs/shema.md)
+[DB Schema](./docs/schema.md)
 [Sample State](./docs/sampleState.js)
 
 #Implementation Timeline
