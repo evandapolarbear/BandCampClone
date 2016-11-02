@@ -9,6 +9,9 @@
   </head>
 
   <body>
+    <% if logged_in? %>
+      <%= current_artist.username %>
+    <% end %>
     <%= yield %>
   </body>
 </html>

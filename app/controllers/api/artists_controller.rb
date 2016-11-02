@@ -1,4 +1,5 @@
 class Api::ArtistsController < ApplicationController
+
   def create
     @artist = Artist.new(artist_params)
     if @artist.save
@@ -6,7 +7,7 @@ class Api::ArtistsController < ApplicationController
       render "root"
       #fix render route? probably fixed though
     else
-      render json: @user.errors.full_messages, status: 422
+      render json: @artist.errors.full_messages, status: 422
     end
   end
 

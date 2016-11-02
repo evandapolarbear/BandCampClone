@@ -19,6 +19,7 @@ export default ({getState, dispatch}) => next => action => {
       break;
     case SIGNUP:
       signup(action.user, successCallback, errorCallback);
+      console.log(action.user);
       return next(action);
     default:
       return next(action);

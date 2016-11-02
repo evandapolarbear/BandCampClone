@@ -13,7 +13,7 @@ export const login = (artist, success, error) => {
 export const signup = (artist, success, error) => {
 	$.ajax({
 		method: 'POST',
-		url: '/api/user',
+		url: '/api/artist',
 		data: artist,
 		success,
 		error
