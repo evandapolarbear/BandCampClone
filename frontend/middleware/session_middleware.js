@@ -18,8 +18,7 @@ export default ({getState, dispatch}) => next => action => {
       logout(() => next(action));
       break;
     case SIGNUP:
-      signup(action.user, successCallback, errorCallback);
-      console.log(action.user);
+      signup(action.artist, successCallback, errorCallback);
       return next(action);
     default:
       return next(action);

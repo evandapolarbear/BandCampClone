@@ -1,11 +1,12 @@
 class Artist < ApplicationRecord
   attr_reader :password
 
-  validates :username, :password_diagest, :session_token, presence: true;
+  validates :username, :password_digest, :session_token, presence: true;
   validates :username, uniqueness: true
   validates :password, length: {minimum: 6}, allow_nil: :true
 
-  after_initialize :ensure_session_token, :fill_in_defaults
+  after_initialize :ensure_session_token
+  before_save :fill_in_defaults
   before_validation :ensure_session_token_uniq
 
   #
@@ -22,7 +23,7 @@ class Artist < ApplicationRecord
   #
 
   def password=(password)
-    self.password_diagest = BCrypt::Password.create(password)
+    self.password_digest = BCrypt::Password.create(password)
     @password = password
   end
 
@@ -34,11 +35,11 @@ class Artist < ApplicationRecord
   end
 
   def is_password?(password)
-    BCrypt::Password.new(self.password_diagest).is_password?(password)
+    BCrypt::Password.new(self.password_digest).is_password?(password)
   end
 
   def reset_session_token!
-    self.session_token = new_session_token
+    self.session_token = SecureRandom.urlsafe_base64
     ensure_session_token_uniq
     self.save
     self.session_token
@@ -57,8 +58,8 @@ class Artist < ApplicationRecord
   end
 
   def fill_in_defaults
-    @image_url = "default"
-    @banner_url = "default"
+    self.image_url = "default"
+    self.banner_url = "default"
   end
 
 end

@@ -5,7 +5,7 @@ class ApplicationController < ActionController::Base
 
   def current_artist
     return nil unless session[:session_token]
-    @current_artist ||= user.find_by(session_token: session[:session_token])
+    @current_artist ||= Artist.find_by(session_token: session[:session_token])
   end
 
   def logged_in?

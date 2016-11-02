@@ -24,15 +24,17 @@ class SessionForm extends React.Component {
 	}
 
 	update(field) {
+		// console.log(this.state);
 		return e => this.setState({
 			[field]: e.currentTarget.value
 		});
+
 	}
 
 	handleSubmit(e) {
 		e.preventDefault();
-		const user = this.state;
-		this.props.processForm({user});
+		const artist = this.state;
+		this.props.processForm({artist});
 	}
 
 	navLink() {

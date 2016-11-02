@@ -2,22 +2,23 @@ class Api::SessionsController < ApplicationController
   def create
     @artist = Artist.find_by_credentials(
       params[:artist][:username],
-      params[:artist][:username])
+      params[:artist][:password])
 
     if @artist
       login(@artist)
-      render 'api/artist/show'
+      render 'api/artists/show'
     else
-      render(['Invalid username/password combination'], status:401)
+      render(json: ['Invalid username/password combination'], status:401)
     end
+  end
 
-    def destroy
-      @artist = current_artist
-      if @artist
-        logout
-        render "root"
-      else
-        render(json: ["Noone to LogOut."], status: 404)
-
+  def destroy
+    @artist = current_artist
+    if @artist
+      logout
+      redirect_to 'static_pages/root'
+    else
+      render(json: ["No one to LogOut."], status: 404)
+    end
   end
 end
