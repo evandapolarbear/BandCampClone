@@ -1,0 +1,7 @@
+<script id="bootstrap-current-user" type="text/javascript">
+  <%if logged_in? %>
+    window.currentArtist = <%= render("api/users/user.json.jbuilder", artist: current_artist).html_safe %>
+  <% end %>
+</script>
+
+<main id='id'></main>

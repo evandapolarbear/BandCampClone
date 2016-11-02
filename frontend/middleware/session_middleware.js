@@ -4,7 +4,7 @@ import { receiveCurrentArtist,
          LOGOUT,
          SIGNUP } from '../actions/session_actions';
 
-import{ login, signup, logout } from '../util/session_api_utl';
+import{ login, signup, logout } from '../util/session_api_util';
 
 export default ({getState, dispatch}) => next => action => {
   const successCallback = artist => dispatch(receiveCurrentArtist(artist));

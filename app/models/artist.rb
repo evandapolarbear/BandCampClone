@@ -19,6 +19,11 @@ class Artist < ApplicationRecord
   #
   #
 
+  def password=(password)
+    self.password_diagest = BCrypt::password.create(password)
+    @password = [password]
+  end
+
 
   def self.find_by_credentials(username, password)
     @artist = Artist.find_by(username: username)
@@ -48,4 +53,5 @@ class Artist < ApplicationRecord
       self.session_token = SecureRandom.urlsafe_base64
     end
   end
+
 end
