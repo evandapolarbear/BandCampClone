@@ -37,6 +37,9 @@ class LargeHeader extends React.Component {
     return(
       <div id="large-header">
         <Link to="/" className="header-link"><h1>BandCamper</h1></Link>
+        <p>
+          {this.props.artist}
+        </p>
         <nav id="header-buttons">
           <button className="header-button" onClick={this.props.logout}>Log Out</button>
           <button className="header-button"
