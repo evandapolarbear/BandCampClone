@@ -3,8 +3,8 @@ import LargeHeader from './large_header';
 
 import {login, logout, signup, guestLogin} from "../../actions/session_actions";
 
-const mapStateToProps = state => ({
-  artist: state.currentArtist
+const mapStateToProps = ({session}) => ({
+  currentArtist: session.currentArtist
 });
 
 const mapDispatchToProps = dispatch => ({

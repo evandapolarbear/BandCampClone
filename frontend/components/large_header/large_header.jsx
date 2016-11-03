@@ -32,14 +32,22 @@ class LargeHeader extends React.Component {
     }
   }
 
+  nameTest(){
+    if(this.props.currentArtist){
+      return (
+        <p>
+          {this.props.currentArtist.username}
+        </p>
+      );
+    }
+  }
+
   render(){
 
     return(
       <div id="large-header">
         <Link to="/" className="header-link"><h1>BandCamper</h1></Link>
-        <p>
-          {this.props.artist}
-        </p>
+        {this.nameTest()}
         <nav id="header-buttons">
           <button className="header-button" onClick={this.props.logout}>Log Out</button>
           <button className="header-button"

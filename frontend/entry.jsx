@@ -16,7 +16,7 @@ window.guest = guestLogin;
 
 document.addEventListener('DOMContentLoaded', () =>{
   let store;
-  if (window.currentArtist.username){
+  if (window.currentArtist){
     const preloadedState = {session: {currentArtist: window.currentArtist}};
     store = configureStore(preloadedState);
   } else {
