@@ -2,7 +2,7 @@ import {RECEIVE_CURRENT_ARTIST, LOGOUT, RECEIVE_ERRORS} from '../actions/session
 import merge from 'lodash/merge';
 
 const _nullArtist = Object.freeze({
-  currentArtist: null,
+  currentArtist: {username: ''},
   errors: []
 });
 
@@ -11,14 +11,14 @@ const SessionReducer = (state = _nullArtist, action) => {
   switch(action.type) {
     case RECEIVE_CURRENT_ARTIST:
       const currentArtist = action.currentArtist;
-      return merge({}, _nullArtist, currentArtist);
+      return merge({}, _nullArtist, {currentArtist: currentArtist});
     case LOGOUT:
       return merge({}, _nullArtist);
     case RECEIVE_ERRORS:
       const errors = action.errors;
-      return merge({}, _nullArtist, {
-        errors
-      });
+      return merge({}, _nullArtist,
+        {errors: errors}
+      );
     default:
       return state;
   }

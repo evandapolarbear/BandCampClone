@@ -10,6 +10,7 @@ import{ login, signup, logout, guestLogin } from '../util/session_api_util';
 export default ({getState, dispatch}) => next => action => {
 
   const successCallback = artist => {
+  
     dispatch(receiveCurrentArtist(artist));
   };
   const errorCallback = error => dispatch(receiveErrors(error.responseJSON));

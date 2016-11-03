@@ -1,1 +1,1 @@
-json.currentArtist @artist
+json.partial! "api/artists/artist", artist: @artist

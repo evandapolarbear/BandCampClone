@@ -24,6 +24,10 @@ class LargeHeader extends React.Component {
     this.setState({modalOpen:false});
   }
 
+  componentWillReceiveProps(){
+    this.onModalClose();
+  }
+
   form(){
     if(this.state.formType === 'login'){
       return (<SessionFormContainer formType='login' />);
@@ -32,24 +36,23 @@ class LargeHeader extends React.Component {
     }
   }
 
-  nameTest(){
-    if(this.props.currentArtist){
-      return (
+  loggedInHeader(){
+    return (
+      <div id="large-header">
         <p>
           {this.props.currentArtist.username}
         </p>
-      );
-    }
+        <button className="header-button" onClick={this.props.logout}>Log Out</button>
+      </div>
+    );
   }
 
-  render(){
-
-    return(
+  loggedOutHeadder(){
+    return (
       <div id="large-header">
         <Link to="/" className="header-link"><h1>BandCamper</h1></Link>
-        {this.nameTest()}
         <nav id="header-buttons">
-          <button className="header-button" onClick={this.props.logout}>Log Out</button>
+
           <button className="header-button"
             onClick={this.__handleClick.bind(this, 'login')}>Log In</button>
           <button className="header-button" onClick={this.__handleClick.bind(this,'signin')}>Sign Up</button>
@@ -66,6 +69,15 @@ class LargeHeader extends React.Component {
         </Modal>
       </div>
     );
+  }
+
+
+
+  render(){
+    if(this.props.currentArtist.username){
+      return(this.loggedInHeader());
+    }
+    return(this.loggedOutHeadder());
   }
 }
 

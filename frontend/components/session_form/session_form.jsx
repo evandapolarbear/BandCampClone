@@ -13,16 +13,6 @@ class SessionForm extends React.Component {
 		this.handleSubmit = this.handleSubmit.bind(this);
 	}
 
-	componentDidUpdate() {
-		this.redirectIfLoggedIn();
-	}
-
-	redirectIfLoggedIn() {
-		if (this.props.loggedIn) {
-			this.props.router.push("/");
-		}
-	}
-
 	update(field) {
 		return e => this.setState({
 			[field]: e.currentTarget.value
@@ -36,13 +26,7 @@ class SessionForm extends React.Component {
 		this.props.processForm({artist});
 	}
 
-	navLink() {
-		if (this.props.formType === "login") {
-			return <Link to="/signup">sign up instead</Link>;
-		} else {
-			return <Link to="/login">log in instead</Link>;
-		}
-	}
+
 
 	renderErrors() {
 		return(
@@ -77,12 +61,11 @@ class SessionForm extends React.Component {
 		return (
 			<div className="login-form-container">
 				<form onSubmit={this.handleSubmit} className="login-form-box">
-					Welcome to BandCamper!
-					<br/>
-					Please {this.props.formType} or {this.navLink()}
+					<h2>
+						{this.props.formType}
+					</h2>
 					{this.renderErrors()}
 					<div className="login-form">
-						<br/>
 						{this.addEmailInput()}
 						<label> Artist Name:
 							<input type="text"
@@ -90,14 +73,12 @@ class SessionForm extends React.Component {
 								onChange={this.update("username")}
 								className="login-input" />
 						</label>
-						<br/>
 						<label> Password:
 							<input type="password"
 								value={this.state.password}
 								onChange={this.update("password")}
 								className="login-input" />
 						</label>
-						<br/>
 						<input type="submit" value="Submit" />
 					</div>
 				</form>
