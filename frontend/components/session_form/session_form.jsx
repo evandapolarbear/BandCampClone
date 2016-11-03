@@ -17,11 +17,11 @@ class SessionForm extends React.Component {
 		this.redirectIfLoggedIn();
 	}
 
-	// redirectIfLoggedIn() {
-	// 	if (this.props.loggedIn) {
-	// 		this.props.router.push("/");
-	// 	}
-	// }
+	redirectIfLoggedIn() {
+		if (this.props.loggedIn) {
+			this.props.router.push("/");
+		}
+	}
 
 	update(field) {
 		return e => this.setState({

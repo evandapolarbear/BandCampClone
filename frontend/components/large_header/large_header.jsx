@@ -2,7 +2,6 @@ import React from 'react';
 import Modal from 'react-modal';
 import ModalStyle from './modal_style';
 import SessionFormContainer from '../session_form/session_form_container';
-import {guestLogin} from '../../actions/session_actions';
 import {Link} from 'react-router';
 
 class LargeHeader extends React.Component {
@@ -38,11 +37,13 @@ class LargeHeader extends React.Component {
     return(
       <div id="large-header">
         <Link to="/" className="header-link"><h1>BandCamper</h1></Link>
-        <button onClick={this.props.logout}>Log Out</button>
-        <button
-          onClick={this.__handleClick.bind(this, 'login')}>Log In</button>
-        <button onClick={this.__handleClick.bind(this,'signin')}>Sign Up</button>
-        <button onClick={guestLogin}>Guest Login</button>
+        <nav id="header-buttons">
+          <button className="header-button" onClick={this.props.logout}>Log Out</button>
+          <button className="header-button"
+            onClick={this.__handleClick.bind(this, 'login')}>Log In</button>
+          <button className="header-button" onClick={this.__handleClick.bind(this,'signin')}>Sign Up</button>
+          <button onClick={this.props.guestLogin} className="header-button">Guest Login</button>
+        </nav>
 
         <Modal
           isOpen={this.state.modalOpen}

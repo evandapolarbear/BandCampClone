@@ -15,9 +15,8 @@ export const login = artist => ({
   artist
 });
 
-export const guestLogin = artist => ({
+export const guestLogin = () => ({
   type: GUEST_LOGIN,
-  artist
 });
 
 export const logout = () => ({

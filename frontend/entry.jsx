@@ -4,11 +4,12 @@ import Root from './components/root';
 import configureStore from './store/store';
 import Modal from 'react-modal';
 
-import {signup, login, logout} from './util/session_api_util';
+import {signup, login, logout, guestLogin} from './util/session_api_util';
 
 window.signup = signup;
 window.login = login;
 window.logout = logout;
+window.guest = guestLogin;
 
 
 

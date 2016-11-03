@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 import LargeHeader from './large_header';
 
-import {login, logout, signup} from "../../actions/session_actions";
+import {login, logout, signup, guestLogin} from "../../actions/session_actions";
 
 const mapStateToProps = state => ({
 
@@ -10,7 +10,8 @@ const mapStateToProps = state => ({
 const mapDispatchToProps = dispatch => ({
   login: artist => dispatch(login(artist)),
   logout: () => dispatch(logout()),
-  signup: artist => dispatch(signup(artist))
+  signup: artist => dispatch(signup(artist)),
+  guestLogin: () => dispatch(guestLogin())
 });
 
 export default connect(
