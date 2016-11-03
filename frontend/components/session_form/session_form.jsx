@@ -45,12 +45,11 @@ class SessionForm extends React.Component {
 		if (this.props.formType==="signup") {
 			return(
 				<div>
-					<label>email:
 						<input type="text"
+							className="login-input"
 							value={this.state.email}
 							onChange={this.update("email")}
-							className="login-input"/>
-					</label>
+							value='email'/>
 					<br/>
 				</div>
 			);
@@ -60,32 +59,32 @@ class SessionForm extends React.Component {
 	render() {
 		return (
 			<div className="login-form-container">
-				<form onSubmit={this.handleSubmit} className="login-form-box">
+				<form id='session-form' onSubmit={this.handleSubmit} className="login-form-box">
 					<h2>
 						{this.props.formType}
 					</h2>
+					<br/>
 					{this.renderErrors()}
 					<div className="login-form">
 						{this.addEmailInput()}
-						<label> Artist Name:
 							<input type="text"
 								value={this.state.username}
 								onChange={this.update("username")}
-								className="login-input" />
-						</label>
-						<label> Password:
-							<input type="password"
+								className="login-input"
+								value='artist name'/>
+						<br/>
+							<input type="text"
 								value={this.state.password}
 								onChange={this.update("password")}
-								className="login-input" />
-						</label>
-						<input type="submit" value="Submit" />
+								className="login-input"
+								value="password" />
+						<br/>
+						<input className='submit-button' type="submit" value="Submit" />
 					</div>
 				</form>
 			</div>
 		);
 	}
-
 }
 
 export default withRouter(SessionForm);

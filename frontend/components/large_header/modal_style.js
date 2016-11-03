@@ -9,18 +9,18 @@ const ModalStyle = {
   },
   content : {
     position                   : 'absolute',
-    top                        : '40px',
-    left                       : '40%',
-    right                      : '40%',
-    bottom                     : '40px',
+    top                        : '30%',
+    left                       : '30%',
+    right                      : '30%',
+    bottom                     : '30%',
     border                     : '1px solid #ccc',
     background                 : '#fff',
     overflow                   : 'auto',
     WebkitOverflowScrolling    : 'touch',
     borderRadius               : '4px',
     outline                    : 'none',
-    padding                    : '20px'
-
+    padding                    : '20px',
+    backgroundColor            : '#F0C38A'
   }
 };
 

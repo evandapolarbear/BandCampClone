@@ -1,9 +1,22 @@
-#large-header {
-  background: $lightblue;
+.large-header {
+  background: $offwhite;
   width: 100%;
-  padding:0 15px 0 15px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height:150px;
+  height:110px;
+}
+
+.head-nav{
+  margin: 0 60px 20px 0;
+  align-self: flex-end;
+  width: 24%;
+  display:flex;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+.header-logo {
+  margin: 0 0 0 40px;
 }

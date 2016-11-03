@@ -38,25 +38,26 @@ class LargeHeader extends React.Component {
 
   loggedInHeader(){
     return (
-      <div id="large-header">
+      <div className="large-header">
         <p>
           {this.props.currentArtist.username}
         </p>
-        <button className="header-button" onClick={this.props.logout}>Log Out</button>
+        <nav className="head-nav">
+          <Link className="header-button" onClick={this.props.logout}>Log Out</Link>
+        </nav>
       </div>
     );
   }
 
   loggedOutHeadder(){
     return (
-      <div id="large-header">
-        <Link to="/" className="header-link"><h1>BandCamper</h1></Link>
-        <nav id="header-buttons">
-
-          <button className="header-button"
-            onClick={this.__handleClick.bind(this, 'login')}>Log In</button>
-          <button className="header-button" onClick={this.__handleClick.bind(this,'signin')}>Sign Up</button>
-          <button onClick={this.props.guestLogin} className="header-button">Guest Login</button>
+      <div className="large-header">
+        <Link to="/" className="header-logo"><h1>BandCamper</h1></Link>
+        <nav className="head-nav">
+          <Link className="header-button"
+            onClick={this.__handleClick.bind(this, 'login')}>Log In</Link>
+          <Link className="header-button" onClick={this.__handleClick.bind(this,'signin')}>Sign Up</Link>
+          <Link onClick={this.props.guestLogin} className="header-button">Guest Login</Link>
         </nav>
 
         <Modal
@@ -65,7 +66,6 @@ class LargeHeader extends React.Component {
           style={ModalStyle}
           >
           {this.form()}
-          <button onClick={this.onModalClose}>back</button>
         </Modal>
       </div>
     );
