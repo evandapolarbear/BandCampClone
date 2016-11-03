@@ -11,9 +11,7 @@ const SessionReducer = (state = _nullArtist, action) => {
   switch(action.type) {
     case RECEIVE_CURRENT_ARTIST:
       const currentArtist = action.currentArtist;
-      return merge({}, _nullArtist, {
-        currentArtist
-      });
+      return merge({}, _nullArtist, currentArtist);
     case LOGOUT:
       return merge({}, _nullArtist);
     case RECEIVE_ERRORS:

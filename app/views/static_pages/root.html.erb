@@ -1,6 +1,6 @@
-<script id="bootstrap-current-user" type="text/javascript">
+<script id="bootstrap-current-artist" type="text/javascript">
   window.currentArtist = <%= render("api/artists/artist.json.jbuilder",
-      user: current_artist).html_safe %>
+      artist: current_artist).html_safe %>
 </script>
 
 <div id='root'></div>

@@ -16,7 +16,7 @@ class Api::SessionsController < ApplicationController
     @artist = current_artist
     if @artist
       logout
-      redirect_to 'static_pages/root'
+      render 'api/artists/show'
     else
       render(json: ["No one to LogOut."], status: 404)
     end

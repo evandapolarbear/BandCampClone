@@ -17,14 +17,13 @@ class SessionForm extends React.Component {
 		this.redirectIfLoggedIn();
 	}
 
-	redirectIfLoggedIn() {
-		if (this.props.loggedIn) {
-			this.props.router.push("/");
-		}
-	}
+	// redirectIfLoggedIn() {
+	// 	if (this.props.loggedIn) {
+	// 		this.props.router.push("/");
+	// 	}
+	// }
 
 	update(field) {
-		// console.log(this.state);
 		return e => this.setState({
 			[field]: e.currentTarget.value
 		});
@@ -58,6 +57,7 @@ class SessionForm extends React.Component {
 	}
 
 	addEmailInput(){
+
 		if (this.props.formType==="signup") {
 			return(
 				<div>
@@ -77,7 +77,7 @@ class SessionForm extends React.Component {
 		return (
 			<div className="login-form-container">
 				<form onSubmit={this.handleSubmit} className="login-form-box">
-					Welcome to BenchBnB!
+					Welcome to BandCamper!
 					<br/>
 					Please {this.props.formType} or {this.navLink()}
 					{this.renderErrors()}

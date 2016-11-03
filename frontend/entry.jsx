@@ -11,14 +11,18 @@ window.login = login;
 window.logout = logout;
 
 
+
+
 document.addEventListener('DOMContentLoaded', () =>{
   let store;
-  if (window.currentArtist){
+  if (window.currentArtist.username){
     const preloadedState = {session: {currentArtist: window.currentArtist}};
     store = configureStore(preloadedState);
   } else {
     store = configureStore();
   }
+
+  window.store = store;
 
   Modal.setAppElement(document.body);
   const root = document.getElementById('root');

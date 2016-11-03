@@ -10,6 +10,16 @@ export const login = (artist, success, error) => {
 	});
 };
 
+export const guestLogin = (success, error) => {
+	$.ajax({
+		method:'POST',
+		url: 'api/session',
+		data: {artist: {username:"guest", password:"password"}},
+		success,
+		error
+	});
+};
+
 export const signup = (artist, success, error) => {
 	$.ajax({
 		method: 'POST',
@@ -22,7 +32,7 @@ export const signup = (artist, success, error) => {
 
 export const logout = success => {
 	$.ajax({
-		method: 'delete',
+		method: 'DELETE',
 		url: '/api/session',
 		success,
 		error: () => {
