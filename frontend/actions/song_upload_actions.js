@@ -1,13 +1,17 @@
-export const RECEIVE_SONG_URL = 'RECEIVE_SONG_URL';
-export const UPLOAD_URL = 'UPLOAD_URL';
+export const RECEIVE_SONGS = 'RECEIVE_SONGS';
+export const UPLOAD_SONG = 'UPLOAD_SONG';
+export const FETCH_ALL_SONGS = FETCH_ALL_SONGS ;
 
-export const receiveSongUrl = songInfo => ({
-  type: RECEIVE_SONG_URL,
-  songInfo
+export const receiveSongs = songs => ({
+  type: RECEIVE_SONGS,
+  songs
 });
 
-export const uploadUrl = (url, currentArtist) => ({
-  type: UPLOAD_URL,
-  url,
-  currentArist
+export const uploadUrl = song => ({
+  type: UPLOAD_SONG,
+  song
+});
+
+export const fetchAllSongs = () => ({
+  type: FETCH_ALL_SONGS
 });

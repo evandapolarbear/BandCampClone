@@ -1,18 +1,22 @@
-import { UPLOAD_SONG,
-         RECEIVE_SONG_URL,
-         receiveSongUrl } from '../actions/song_upload_actions';
+import { FETCH_ALL_SONGS,
+         UPLOAD_SONG,
+         RECEIVE_SONGS,
+         receiveSongs } from '../actions/song_upload_actions';
+
+import { uploadSong, fetchAllSongs } from '../util/song_upload_util';
 
 
 
 export default ({getState, dispatch}) => next => action => {
+  const success = () => dispatch(receiveSongs());
 
   switch(action.type){
     case UPLOAD_SONG:
-
+      uploadSong(action.song, success);
       next(action);
       break;
-    case RECEIVE_SONG_URL:
-
+    case FETCH_ALL_SONGS:
+      fetchAllSongs(success);
       next(action);
       break;
     default:

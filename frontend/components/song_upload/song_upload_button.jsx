@@ -5,7 +5,12 @@ class SongUploadButton extends React.Component {
     super(props);
   }
 
-  upload(e){
+  getTitle(){
+    console.log('FIX ME');
+    // get title from user and artistId from currentArtist
+  }
+
+  uploadToCloudinary(e){
     e.preventDefault();
     cloudinary.openUploadWidget(CLOUDINARY_OPTIONS, (errors, results) => {
       if (!errors) {
@@ -17,7 +22,7 @@ class SongUploadButton extends React.Component {
   render () {
     return (
       <div className="upload-form">
-        <button onClick={this.upload}>Upload Song</button>
+        <button onClick={this.uploadToCloudinary}>Upload Song</button>
       </div>
     );
   }

@@ -9,11 +9,7 @@ class Artist < ApplicationRecord
   before_save :fill_in_defaults
   before_validation :ensure_session_token_uniq
 
-  #
-  #
-  #add Associations here!!!
-  #
-  #
+  has_many :songs
 
 
   def password=(password)
