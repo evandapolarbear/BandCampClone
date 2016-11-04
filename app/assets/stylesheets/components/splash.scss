@@ -1,0 +1,52 @@
+#splash{
+  width: 100%;
+  height: 550px;
+  text-align: center;
+  margin: 0;
+}
+
+#main-splash, #secondary-splash{
+  color: $pink;
+  float:left;
+  display: block;
+  height: 550px;
+}
+
+.small-splash{
+  padding: 5% 5% 5% 5%;
+}
+
+#main-splash {
+  background: image-url("splash/sylvan_esso.jpg");
+  float:left;
+  display:block;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+#tom-waits{
+  background: image-url("splash/tom_waits.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 33%
+}
+
+#vince-staples{
+  background: image-url("splash/vince_staples.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height:34%;
+}
+
+#pup{
+  background: image-url("splash/pup.jpg");
+  background-size: fill;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 33%
+}
+
+h3 {
+  font-size: 60px;
+
+}
