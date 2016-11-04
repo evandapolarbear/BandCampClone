@@ -59,7 +59,7 @@ class Artist < ApplicationRecord
 
   def fill_in_defaults
     self.image_url = "default"
-    self.banner_url = "default"
+    self.banner_url = '../assets/images/banner_images/banner_img.jpg'
   end
 
 end

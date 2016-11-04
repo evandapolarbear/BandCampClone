@@ -2,7 +2,8 @@ import React from 'react';
 import Modal from 'react-modal';
 import ModalStyle from './modal_style';
 import SessionFormContainer from '../session_form/session_form_container';
-import {Link} from 'react-router';
+import {Link, withRouter} from 'react-router';
+
 
 class LargeHeader extends React.Component {
   constructor(props) {
@@ -25,7 +26,9 @@ class LargeHeader extends React.Component {
   }
 
   componentWillReceiveProps(){
-    this.onModalClose();
+    if(this.props.errors === null){
+      this.onModalClose();
+    }
   }
 
   form(){
@@ -39,11 +42,11 @@ class LargeHeader extends React.Component {
   loggedInHeader(){
     return (
       <div className="large-header">
-        <p>
-          {this.props.currentArtist.username}
-        </p>
+        <Link to="/" className="header-logo"><h1>BandCamper</h1></Link>
         <nav className="head-nav">
-          <Link className="header-button" onClick={this.props.logout}>Log Out</Link>
+          <Link className="header-button"
+            onClick={this.props.logout}
+            to='/'>Log Out</Link>
         </nav>
       </div>
     );
@@ -81,4 +84,4 @@ class LargeHeader extends React.Component {
   }
 }
 
-export default LargeHeader;
+export default withRouter(LargeHeader);

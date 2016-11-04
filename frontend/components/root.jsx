@@ -4,14 +4,14 @@ import { Provider } from 'react-redux';
 import {Router, Route, IndexRoute, hashHistory} from 'react-router';
 
 import App from './app';
-import LargeHeaderContainer from './large_header/large_header_container';
+import ArtistProfileContainer from './artist_profile/artist_profile_container';
 import SessionFormContainer from './session_form/session_form_container';
 
 const Root = ({store}) => {
   const _ensureLoggedIn = (nextState, replace) => {
-    const currentArtist = store.getState().session.currentArtist;
+    const currentArtist = store.getState().session.currentArtist.username;
     if (!currentArtist){
-      replace('/login');
+      replace('/');
     }
   };
   const _redirectIfLoggedIn = (nextState, replace) => {
@@ -25,7 +25,8 @@ const Root = ({store}) => {
     <Provider store={store}>
       <Router history={hashHistory}>
         <Route path="/" component={App}>
-          <IndexRoute component={LargeHeaderContainer} />
+          <Route path='/profile' component={ArtistProfileContainer}
+            onEnter={_ensureLoggedIn} />
         </Route>
       </Router>
     </Provider>
