@@ -16,12 +16,6 @@ class Artist < ApplicationRecord
   #
 
 
-  #
-  #
-  # Remember to Spell digest like diagest dumbo
-  #
-  #
-
   def password=(password)
     self.password_digest = BCrypt::Password.create(password)
     @password = password

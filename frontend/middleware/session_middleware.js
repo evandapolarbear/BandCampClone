@@ -12,7 +12,6 @@ import{ login, signup, logout, guestLogin } from '../util/session_api_util';
 export default ({getState, dispatch}) => next => action => {
 
   const successCallback = artist => {
-    debugger;
     dispatch(receiveCurrentArtist(artist));
     hashHistory.push("profile");
   };
