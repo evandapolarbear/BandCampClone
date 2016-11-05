@@ -1,7 +1,7 @@
 import React from 'react';
 
 import ArtistProfileContainer from './artist_profile_container';
-import SongListing from '../song/song';
+import {SongListing} from '../song/song';
 import SongUploadButtonContainer from '../song_upload/song_upload_container';
 
 import {withRouter} from 'react-router';
@@ -10,15 +10,37 @@ import {withRouter} from 'react-router';
 class ArtistProfile extends React.Component {
   constructor(props) {
     super(props);
+
+    this.state = {
+      upload: false,
+      uploadTitle: ''
+    };
+
+    this.titleInput = this.titleInput.bind(this);
+    this.showTitleInput = this.showTitleInput.bind(this);
   }
 
   //define function to tell which user to fetch after you
 
-  componentWIllMount(){
+  componentWillMount(){
     const artistToFetch = this.props.currentArtistId; // use || for own params to fetch artist from params if they exist
-    this.props.fetchAllSongs(artistToFetch);
+   this.props.fetchAllSongs(artistToFetch);
   }
 
+  titleInput(){
+    if (this.state.upload === true ){
+      return (
+        <form>
+          <input value="Song Title"></input>
+          <button>Attach File</button>
+        </form>
+      );
+    }
+  }
+
+  showTitleInput(){
+    this.setState({upload: true});
+  }
 
   render(){
     return (
@@ -32,12 +54,17 @@ class ArtistProfile extends React.Component {
 
 
         <div className="col-30" id="song-column">
-          <SongUploadButtonContainer />
-          <ul>
-            this.props.songs.forEach(song =>(
-              <SongListing song={song} />;
-            ))
-          </ul>
+
+          <button onClick={this.showTitleInput}>Upload Song</button>
+
+        {this.titleInput()}
+
+            <ul>
+              {this.props.songs.map(song => (
+                <SongListing key={song.id} song={song}/>
+                ))
+              }
+            </ul>
         </div>
 
 

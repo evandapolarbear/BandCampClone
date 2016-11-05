@@ -1,3 +1,10 @@
+.profile-name{
+  font-size: 120px;
+  margin: 100px 20% 50px 0;
+  color: $pink;
+  font-family:serif;
+}
+
 #artist-banner{
   background: image-url("banner_images/banner_organ.jpeg");
   background-size: 100%;
@@ -6,12 +13,6 @@
   justify-content: flex-end;
 }
 
-.profile-name{
-  font-size: 120px;
-  margin: 100px 20% 50px 0;
-  color: $pink;
-  font-family:serif;
-}
 
 #profile-picture {
   background: image-url("profile_pics/default_tape_face.png");

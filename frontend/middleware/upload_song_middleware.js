@@ -8,7 +8,7 @@ import { uploadSong, fetchAllSongs } from '../util/song_upload_api_util';
 
 
 export default ({getState, dispatch}) => next => action => {
-  const success = () => dispatch(receiveSongs());
+  const success = data => dispatch(receiveSongs(data));
 
   switch(action.type){
     case UPLOAD_SONG:
