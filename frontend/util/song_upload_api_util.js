@@ -12,7 +12,7 @@ export const fetchAllSongs = (id, success, error)=> {
   $.ajax({
     method: "GET",
     url: 'api/songs',
-    data: id,
+    data: {song: {artist_id: id}},
     success,
     error
   });

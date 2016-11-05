@@ -6,7 +6,7 @@ const _nullSongs = Object.freeze({
   errors:[]
 });
 
-const SongReducer = (state = _nullSongs, action) => {
+export const SongsReducer = (state = _nullSongs, action) => {
   Object.freeze(state);
   switch(action.type){
     case RECEIVE_SONGS:

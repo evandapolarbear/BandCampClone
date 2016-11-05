@@ -12,6 +12,7 @@ export const uploadUrl = song => ({
   song
 });
 
-export const fetchAllSongs = () => ({
-  type: FETCH_ALL_SONGS
+export const fetchAllSongs = id => ({
+  type: FETCH_ALL_SONGS,
+  id
 });

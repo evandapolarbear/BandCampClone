@@ -1,6 +1,7 @@
 import React from 'react';
 
 import ArtistProfileContainer from './artist_profile_container';
+import SongListing from '../song/song';
 import SongUploadButtonContainer from '../song_upload/song_upload_container';
 
 import {withRouter} from 'react-router';
@@ -11,6 +12,12 @@ class ArtistProfile extends React.Component {
     super(props);
   }
 
+  //define function to tell which user to fetch after you
+
+  componentWIllMount(){
+    const artistToFetch = this.props.currentArtistId; // use || for own params to fetch artist from params if they exist
+    this.props.fetchAllSongs(artistToFetch);
+  }
 
 
   render(){
@@ -26,14 +33,14 @@ class ArtistProfile extends React.Component {
 
         <div className="col-30" id="song-column">
           <SongUploadButtonContainer />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </p>
+          <ul>
+            this.props.songs.forEach(song =>(
+              <SongListing song={song} />;
+            ))
+          </ul>
         </div>
+
+
         <div className="col-30" id='profile-player-column'>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </div>
