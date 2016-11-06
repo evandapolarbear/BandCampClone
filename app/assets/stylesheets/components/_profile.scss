@@ -3,12 +3,39 @@
   margin: 100px 20% 50px 0;
   color: $pink;
   font-family:serif;
+  font-weight: bolder;
+  text-shadow: -4px 4px black;
 }
+
+.update-buttons{
+  opacity: .5;
+  background-color: $pink;
+}
+
+#banner-button{
+  margin: 225px 3% 0 0;
+  align: left;
+}
+
+#song-button{
+
+}
+
+#profile-button{
+
+}
+
+.update-buttons:hover{
+  opacity: 1;
+  background-color: $green;
+}
+
 
 #artist-banner{
   background: image-url("banner_images/banner_organ.jpeg");
   background-size: 100%;
   width: 100%;
+  max-height: 300px;
   display:flex;
   justify-content: flex-end;
 }

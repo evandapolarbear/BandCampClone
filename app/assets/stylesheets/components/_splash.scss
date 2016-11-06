@@ -13,7 +13,7 @@
 }
 
 .small-splash{
-  padding: 5% 5% 5% 5%;
+  // padding: 5% 5% 5% 5%;
 }
 
 #main-splash {
@@ -31,8 +31,23 @@
   height: 33%
 }
 
+#esso-text{
+  margin: 80px 0 0 400px;
+  text-shadow: -2px 2px $offwhite;
+  text-weight: bolder;
+}
+
+#esso-head{
+  font-size: 70px;
+}
+
+#esso-p{
+  font-size: 18px;
+}
+
+
 #vince-staples{
-  background: image-url("splash/vince_staples.jpg");
+  background: image-url("splash/vince_staples2.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
   height:34%;
@@ -46,7 +61,6 @@
   height: 33%
 }
 
-h3 {
-  font-size: 60px;
-
+.small-splash{
+  text-align: left;
 }

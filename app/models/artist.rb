@@ -49,7 +49,7 @@ class Artist < ApplicationRecord
 
   def fill_in_defaults
     self.image_url = "default"
-    self.banner_url = '../assets/images/banner_images/banner_img.jpg'
+    self.banner_url = 'http://wallpapersdsc.net/wp-content/uploads/2016/09/Coffee-Beans-Wallpaper.jpg'
   end
 
 end

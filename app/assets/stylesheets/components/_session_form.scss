@@ -11,6 +11,19 @@
   border-radius: 4px;
 }
 
+.errors{
+  color: $pink;
+  font-weight: Bolder;
+  margin: 10px 0 0 0;
+}
+
+.session-form-title{
+  font-size: 30px;
+  font-weight: bold;
+  text-shadow: -2px 2px $green;
+  margin: 18px 30px 0 0;
+}
+
 .login-input{
   margin:5px 0 5px 0;
   width: 290px;
@@ -20,7 +33,7 @@
 #session-form{
   display: flex;
   height: 100%;
-  width: 100%;
+  width: 88%;
   justify-content: center;
   align-items: stretch;
 }

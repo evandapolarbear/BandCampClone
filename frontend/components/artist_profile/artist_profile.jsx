@@ -3,6 +3,8 @@ import React from 'react';
 import ArtistProfileContainer from './artist_profile_container';
 import {SongListing} from '../song/song';
 import SongUploadButtonContainer from '../song_upload/song_upload_container';
+import UpdateBannerUrl from '../update_pic_buttons/update_banner_container';
+import UpdateProfileUrl from '../update_pic_buttons/update_profile_container';
 
 import {withRouter} from 'react-router';
 
@@ -13,7 +15,7 @@ class ArtistProfile extends React.Component {
 
     this.state = {
       upload: false,
-      uploadTitle: ''
+      uploadTitle: 'Track Title'
     };
 
     this.titleInput = this.titleInput.bind(this);
@@ -27,35 +29,63 @@ class ArtistProfile extends React.Component {
    this.props.fetchAllSongs(artistToFetch);
   }
 
+
+  update(field) {
+		return e => this.setState({
+			[field]: e.currentTarget.value
+		});
+	}
+
   titleInput(){
     if (this.state.upload === true ){
       return (
         <form>
-          <input value="Song Title"></input>
-          <button>Attach File</button>
+          <input type='text'
+            value={this.state.uploadTitle}
+            onChange={this.update('uploadTitle')} />
+          <SongUploadButtonContainer title={this.state.title}/>
         </form>
       );
     }
   }
 
   showTitleInput(){
-    this.setState({upload: true});
+    if(this.state.upload === false) {
+      this.setState({upload: true});
+    } else{
+      this.setState({upload: false});
+    }
   }
 
   render(){
+
+    const bannerStyle = {
+      backgroundImage: 'url(' + this.props.bannerUrl + ')'
+    };
     return (
       <div id='artist-profile'>
-        <div id='artist-banner'>
+        <div id='artist-banner' style={bannerStyle}>
             <h2 className="profile-name">
               {this.props.username}
             </h2>
+
+            <div className="update-buttons" id="banner-button">
+              <UpdateBannerUrl />
+            </div>
+
         </div>
-        <div id='profile-picture'></div>
+        <div id='profile-picture'>
+          <div className="update-buttons" id='profile-button'>
+            <UpdateProfileUrl />
+          </div>
+        </div>
 
 
         <div className="col-30" id="song-column">
 
+        <div className="update-buttons" id='song-button'>
           <button onClick={this.showTitleInput}>Upload Song</button>
+        </div>
 
         {this.titleInput()}
 
