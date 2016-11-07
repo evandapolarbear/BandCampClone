@@ -12,6 +12,7 @@ export default ({getState, dispatch}) => next => action => {
 
   switch(action.type){
     case UPLOAD_SONG:
+      debugger;
       uploadSong(action.song, success);
       next(action);
       break;

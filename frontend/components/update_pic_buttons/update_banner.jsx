@@ -39,7 +39,8 @@ class UploadBanner extends React.Component{
             <input type='text'
               value={this.state.value}
               onChange={this.update('value')}></input>
-              <button type="submit">Submit</button>
+            <br/>
+            <button type="submit">Submit</button>
           </form>
         );
     }

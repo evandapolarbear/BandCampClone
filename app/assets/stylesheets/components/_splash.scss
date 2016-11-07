@@ -22,6 +22,8 @@
   display:block;
   background-size: 100%;
   background-repeat: no-repeat;
+  box-sizing: border-box;
+  border: 3px $pink solid;
 }
 
 #tom-waits{

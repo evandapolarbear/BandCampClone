@@ -4,15 +4,22 @@ import { UPDATE_BANNER_PICTURE, UPDATE_PROFILE_PICTURE } from '../actions/update
 
 
 export default ({getState, dispatch}) => next => action => {
-  const success = data => dispatch(receiveCurrentArtist(data));
+  const success = data => {
+    console.log(data);
+    dispatch(receiveCurrentArtist(data));
+  };
+
+  const error = data => {
+    console.log(data);
+  };
 
   switch (action.type){
     case UPDATE_BANNER_PICTURE:
-      updateBannerImage(action.url, success);
+      updateBannerImage(action.url, success, error);
       next(action);
       break;
     case UPDATE_PROFILE_PICTURE:
-      updateProfileImage(action.url, success);
+      updateProfileImage(action.url, success, error);
       next(action);
       break;
     default:

@@ -16,7 +16,6 @@ export const Splash = () => (
           <h4>
             Tom Waits
           </h4>
-          <p>Still killing it at age 100</p>
         </div>
       </div>
       <div id='vince-staples' className="small-splash">
@@ -24,7 +23,6 @@ export const Splash = () => (
           <h4>
             Vince Staples
           </h4>
-          <p>Is it too early to discuss rapper of the century?</p>
         </div>
       </div>
       <div id='pup' className="small-splash">
@@ -32,7 +30,6 @@ export const Splash = () => (
           <h4>
             PUP
           </h4>
-          <p>Best thing from Canada since maple syrup?</p>
         </div>
       </div>
     </div>

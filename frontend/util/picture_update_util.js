@@ -1,4 +1,5 @@
 export const updateBannerImage = (url, success, error) => {
+  console.log(url);
   $.ajax({
     method:'PATCH',
     url: 'api/artist',
@@ -9,6 +10,7 @@ export const updateBannerImage = (url, success, error) => {
 };
 
 export const updateProfileImage = (url, success, error) => {
+  console.log(url);
   $.ajax({
     method:'PATCH',
     url: 'api/artist',

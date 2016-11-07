@@ -1,12 +1,12 @@
 class Artist < ApplicationRecord
   attr_reader :password
+  # attr_accessor :image_url, :banner_url
 
   validates :username, :password_digest, :session_token, presence: true;
   validates :username, uniqueness: true
   validates :password, length: {minimum: 6}, allow_nil: :true
 
   after_initialize :ensure_session_token
-  before_save :fill_in_defaults
   before_validation :ensure_session_token_uniq
 
   has_many :songs
@@ -47,9 +47,9 @@ class Artist < ApplicationRecord
     end
   end
 
-  def fill_in_defaults
-    self.image_url = "default"
-    self.banner_url = 'http://wallpapersdsc.net/wp-content/uploads/2016/09/Coffee-Beans-Wallpaper.jpg'
-  end
+  # def fill_in_defaults
+  #   self.image_url = 'http://www.sessionlogs.com/media/icons/defaultIcon.png'
+  #   self.banner_url = 'http://wallpapersdsc.net/wp-content/uploads/2016/09/Coffee-Beans-Wallpaper.jpg'
+  # end
 
 end

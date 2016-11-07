@@ -5,6 +5,7 @@ import {Router, Route, IndexRoute, hashHistory} from 'react-router';
 
 import App from './app';
 import ArtistProfileContainer from './artist_profile/artist_profile_container';
+import ArtistViewContainer from './artist_view/artist_view_container';
 import SessionFormContainer from './session_form/session_form_container';
 import {Splash} from './splash/splash';
 
@@ -29,6 +30,7 @@ const Root = ({store}) => {
           <IndexRoute component={Splash} />
           <Route path='/profile' component={ArtistProfileContainer}
             onEnter={_ensureLoggedIn} />
+          <Route path=':artistId' component={ArtistViewContainer} />
         </Route>
       </Router>
     </Provider>

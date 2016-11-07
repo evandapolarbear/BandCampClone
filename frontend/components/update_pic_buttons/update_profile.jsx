@@ -29,6 +29,7 @@ class UploadProfile extends React.Component {
   }
 
   handleSubmit(){
+    debugger;
     this.props.updateProfile(this.state.value);
   }
 
@@ -39,7 +40,8 @@ class UploadProfile extends React.Component {
             <input type='text'
               value={this.state.value}
               onChange={this.update('value')}></input>
-              <button type="submit">Submit</button>
+            <br/>
+            <button type="submit">Submit</button>
           </form>
         );
     }
@@ -48,7 +50,7 @@ class UploadProfile extends React.Component {
   render() {
     return (
       <div>
-        <button onClick={this.toggleForm}>Update Banner</button>
+        <button onClick={this.toggleForm}>Update Profile Picture</button>
 
         {this.updateForm()}
       </div>

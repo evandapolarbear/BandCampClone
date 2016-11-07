@@ -14,6 +14,7 @@ window.fetchAllSongs = fetchAllSongs;
 
 
 
+
 document.addEventListener('DOMContentLoaded', () =>{
   let store;
   if (window.currentArtist){

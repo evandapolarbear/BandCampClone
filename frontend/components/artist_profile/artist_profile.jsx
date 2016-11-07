@@ -26,7 +26,7 @@ class ArtistProfile extends React.Component {
 
   componentWillMount(){
     const artistToFetch = this.props.currentArtistId; // use || for own params to fetch artist from params if they exist
-   this.props.fetchAllSongs(artistToFetch);
+    this.props.fetchAllSongs(artistToFetch);
   }
 
 
@@ -62,6 +62,11 @@ class ArtistProfile extends React.Component {
     const bannerStyle = {
       backgroundImage: 'url(' + this.props.bannerUrl + ')'
     };
+
+    const profileStyle = {
+      backgroundImage: 'url(' + this.props.imageUrl + ')'
+    };
+
     return (
       <div id='artist-profile'>
         <div id='artist-banner' style={bannerStyle}>
@@ -74,7 +79,7 @@ class ArtistProfile extends React.Component {
             </div>
 
         </div>
-        <div id='profile-picture'>
+        <div id='profile-picture' style={profileStyle}>
           <div className="update-buttons" id='profile-button'>
             <UpdateProfileUrl />
           </div>
@@ -102,7 +107,6 @@ class ArtistProfile extends React.Component {
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </div>
       </div>
-
     );
   }
 }
