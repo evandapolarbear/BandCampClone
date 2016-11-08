@@ -21,6 +21,21 @@ Waits has a distinctive voice, described by critic Daniel Durchholz as sounding 
 
 {username: 'Beyonce', blurb: 'Beyoncé Giselle Knowles-Carter (born September 4, 1981) is an American singer, songwriter and actress. Born and raised in Houston, Texas, she performed in various singing and dancing competitions as a child and rose to fame in the late 1990s as lead singer of R&B girl-group Destiny\'s Child. Managed by her father, Mathew Knowles, the group became one of the world\'s best-selling girl groups of all time. Their hiatus saw the release of Beyoncé\'s debut album, Dangerously in Love (2003), which established her as a solo artist worldwide, earned five Grammy Awards and featured the Billboard Hot 100 number-one singles "Crazy in Love" and "Baby Boy".', email: 'evan_dev2@fakey.com', password: 'DevPass244', banner_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1478560829/Beyonce_banner_2_cxjbxf.jpg', image_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1478560551/beyonce_profile_2_i8uesk.jpg'},
 
-{username: 'PUP', blurb: 'Pup (stylized as PUP) is a Canadian punk rock band formed in Toronto, Ontario in 2013, originally under the name Topanga. Pup\'s self-titled debut album was released on October 8, 2013 on Royal Mountain Records. In December 2013, Pup signed with SideOneDummy Records and re-released their debut album in the United States on April 8, 2014. The group was in the studio in late 2015 recording their second album The Dream Is Over which was released on May 27, 2016 through SideOneDummy.', email: 'evan_dev3@fakey.com', password: 'DevPass244', banner_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1478562247/pup_banner_a2fw4w.jpg', image_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1478561998/pup_profile_3_egcjhq.jpg'},])
+{username: 'PUP', blurb: 'Pup (stylized as PUP) is a Canadian punk rock band formed in Toronto, Ontario in 2013, originally under the name Topanga. Pup\'s self-titled debut album was released on October 8, 2013 on Royal Mountain Records. In December 2013, Pup signed with SideOneDummy Records and re-released their debut album in the United States on April 8, 2014. The group was in the studio in late 2015 recording their second album The Dream Is Over which was released on May 27, 2016 through SideOneDummy.', email: 'evan_dev3@fakey.com', password: 'DevPass244', banner_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1478562247/pup_banner_a2fw4w.jpg', image_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1478561998/pup_profile_3_egcjhq.jpg'}])
 
-Songs = Song.create([])
+Songs = Song.create([
+{artist_id: 1,title: 'esso test 1', url: 'http://res.cloudinary.com/dnkmsdtmu/video/upload/v1478565866/01_Welcome_To_New_York_va0u9v.mp3'},
+{artist_id: 1,title: 'esso test 2', url: 'http://res.cloudinary.com/dnkmsdtmu/video/upload/v1478565866/01_Welcome_To_New_York_va0u9v.mp3'},
+{artist_id: 1,title: 'esso test 3', url: 'http://res.cloudinary.com/dnkmsdtmu/video/upload/v1478565866/01_Welcome_To_New_York_va0u9v.mp3'},
+
+
+{artist_id: 2,title: 'waits 1', url: 'http://res.cloudinary.com/dnkmsdtmu/video/upload/v1478565866/01_Welcome_To_New_York_va0u9v.mp3'},
+{artist_id: 2,title: 'waits 2', url: 'http://res.cloudinary.com/dnkmsdtmu/video/upload/v1478565866/01_Welcome_To_New_York_va0u9v.mp3'},
+{artist_id: 2,title: 'waits 3', url: 'http://res.cloudinary.com/dnkmsdtmu/video/upload/v1478565866/01_Welcome_To_New_York_va0u9v.mp3'},
+{artist_id: 3,title: 'beyonce 1', url: 'http://res.cloudinary.com/dnkmsdtmu/video/upload/v1478565866/01_Welcome_To_New_York_va0u9v.mp3'},
+{artist_id: 3,title: 'beyonce 2', url: 'http://res.cloudinary.com/dnkmsdtmu/video/upload/v1478565866/01_Welcome_To_New_York_va0u9v.mp3'},
+{artist_id: 3,title: 'beyonce 3', url: 'http://res.cloudinary.com/dnkmsdtmu/video/upload/v1478565866/01_Welcome_To_New_York_va0u9v.mp3'},
+
+{artist_id: 4,title: 'pup 1', url: 'http://res.cloudinary.com/dnkmsdtmu/video/upload/v1478565866/01_Welcome_To_New_York_va0u9v.mp3'},
+{artist_id: 4,title: 'pup 2', url: 'http://res.cloudinary.com/dnkmsdtmu/video/upload/v1478565866/01_Welcome_To_New_York_va0u9v.mp3'},
+{artist_id: 4,title: 'pup 3', url: 'http://res.cloudinary.com/dnkmsdtmu/video/upload/v1478565866/01_Welcome_To_New_York_va0u9v.mp3'}])

@@ -7,13 +7,12 @@ import {uploadSongToRails} from '../../actions/song_upload_actions';
 
 
 
-const mapStateToProps = (store, ownProps) => ({
-  currentArist: store.session.currentArist,
-  title: ownProps.title
+const mapStateToProps = ({session}) => ({
+  currentArtistId: session.currentArtist.id,
 });
 
 const mapDispatchToProps = dispatch => ({
-  uploadSongToRails: url => (dispatch(uploadSongToRails(url))),
+  uploadSongToRails: (title, url, id) => (dispatch(uploadSongToRails(title, url, id))),
 });
 
 export default connect(

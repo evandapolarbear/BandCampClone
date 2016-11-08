@@ -8,17 +8,18 @@ class SongUploadButton extends React.Component {
   }
 
   getTitle(){
-    console.log('FIX ME');
-    // get title from user and artistId from currentArtist
+
   }
 
   uploadToCloudinary(e){
     e.preventDefault();
     const that = this;
     cloudinary.openUploadWidget(window.CLOUDINARY_OPTIONS, (errors, results) => {
-      debugger;
-      if (!errors) {
-        this.props.uploadSongToRails(that.props.title, results[0].secure_url, that.props.artistId);
+      if(!errors) {
+        let title = results[0].original_filename;
+        let url = results[0].secure_url;
+        debugger;
+        that.props.uploadSongToRails(title, url, that.props.currentAristId);
       }
     });
   }
@@ -26,7 +27,7 @@ class SongUploadButton extends React.Component {
   render () {
     return (
       <div className="upload-form">
-        <button onClick={this.uploadToCloudinary}>Attach Song File</button>
+        <button onClick={this.uploadToCloudinary}>Upload A Song</button>
       </div>
     );
   }

@@ -1,8 +1,8 @@
-export const uploadSong = (data, success, error)=> {
+export const uploadSong = (atitle, aurl, artistId, success, error)=> {
   $.ajax({
     method: "POST",
     url: 'api/songs',
-    data,
+    data: {song: {title: atitle, url: aurl, artist_id: artistId}},
     success,
     error
   });

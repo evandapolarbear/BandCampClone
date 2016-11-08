@@ -13,13 +13,6 @@ class ArtistProfile extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = {
-      upload: false,
-      uploadTitle: 'Track Title'
-    };
-
-    this.titleInput = this.titleInput.bind(this);
-    this.showTitleInput = this.showTitleInput.bind(this);
   }
 
   componentWillMount(){
@@ -33,27 +26,6 @@ class ArtistProfile extends React.Component {
 			[field]: e.currentTarget.value
 		});
 	}
-
-  titleInput(){
-    if (this.state.upload === true ){
-      return (
-        <form>
-          <input type='text'
-            value={this.state.uploadTitle}
-            onChange={this.update('uploadTitle')} />
-          <SongUploadButtonContainer title={this.state.title}/>
-        </form>
-      );
-    }
-  }
-
-  showTitleInput(){
-    if(this.state.upload === false) {
-      this.setState({upload: true});
-    } else{
-      this.setState({upload: false});
-    }
-  }
 
   render(){
 
@@ -86,11 +58,8 @@ class ArtistProfile extends React.Component {
 
         <div className="col-30" id="song-column">
 
-        <div className="update-buttons" id='song-button'>
-          <button onClick={this.showTitleInput}>Upload Song</button>
-        </div>
+        <SongUploadButtonContainer />
 
-        {this.titleInput()}
 
             <ul>
               {this.props.songs.map(song => (
