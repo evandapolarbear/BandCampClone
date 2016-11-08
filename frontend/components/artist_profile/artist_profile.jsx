@@ -22,10 +22,8 @@ class ArtistProfile extends React.Component {
     this.showTitleInput = this.showTitleInput.bind(this);
   }
 
-  //define function to tell which user to fetch after you
-
   componentWillMount(){
-    const artistToFetch = this.props.currentArtistId; // use || for own params to fetch artist from params if they exist
+    const artistToFetch = this.props.currentArtistId;
     this.props.fetchAllSongs(artistToFetch);
   }
 

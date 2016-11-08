@@ -5,10 +5,9 @@ import configureStore from './store/store';
 import Modal from 'react-modal';
 
 
-import {uploadSong, fetchAllSongs} from './util/song_upload_api_util';
+import {fetchArtist} from './actions/search_actions';
 
-window.uploadSong = uploadSong;
-window.fetchAllSongs = fetchAllSongs;
+window.fetchArtist = fetchArtist;
 
 
 

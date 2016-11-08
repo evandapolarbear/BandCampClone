@@ -1,8 +1,7 @@
 export const fetchArtist = (artistId, success, error) => {
   $.ajax({
     method: "GET",
-    url: 'api/artist',
-    data: {arist: {id: artistId}},
+    url: `api/artists/${artistId}`,
     success,
     error
   });

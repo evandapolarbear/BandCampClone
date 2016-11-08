@@ -13,13 +13,12 @@ class Api::ArtistsController < ApplicationController
   end
 
   def show
-    debugger;
-    @artist = Artist.find_by(id: artist_params.id)
+    @artist = Artist.find_by( id: params[:id])
 
     if @artist
       render "api/artists/show"
     else
-      render json: @artist.errors.full_messages, status: 422
+      render json: ['no artist found'], status: 404
     end
   end
 
