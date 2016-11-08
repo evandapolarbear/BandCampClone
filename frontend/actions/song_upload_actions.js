@@ -7,15 +7,12 @@ export const receiveSongs = songs => ({
   songs
 });
 
-export const uploadSongToRails = (title, url, artistId) => {
-  debugger;
-  return ({
-    type: UPLOAD_SONG,
-    title,
-    url,
-    artistId
-  })
-};
+export const uploadSongToRails = ({title, url, id}) => ({
+  type: UPLOAD_SONG,
+  title,
+  url,
+  id,
+});
 
 export const fetchAllSongs = id => ({
   type: FETCH_ALL_SONGS,

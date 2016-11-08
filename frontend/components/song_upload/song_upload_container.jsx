@@ -12,7 +12,7 @@ const mapStateToProps = ({session}) => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  uploadSongToRails: (title, url, id) => (dispatch(uploadSongToRails(title, url, id))),
+  uploadSongToRails: (payload) => (dispatch(uploadSongToRails(payload)))
 });
 
 export default connect(

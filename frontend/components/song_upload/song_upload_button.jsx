@@ -16,10 +16,13 @@ class SongUploadButton extends React.Component {
     const that = this;
     cloudinary.openUploadWidget(window.CLOUDINARY_OPTIONS, (errors, results) => {
       if(!errors) {
-        let title = results[0].original_filename;
-        let url = results[0].secure_url;
-        debugger;
-        that.props.uploadSongToRails(title, url, that.props.currentAristId);
+        const payload = {
+          title: results[0].original_filename,
+          url: results[0].secure_url,
+          id: that.props.currentArtistId
+        };
+
+        that.props.uploadSongToRails(payload);
       }
     });
   }
