@@ -34,8 +34,8 @@ class Splash extends React.Component{
           </div>
         </div>
         <div className='col-30' id='secondary-splash'>
-          <div id='tom-waits' className="small-splash" onclick={this.clickFirstSplash}>
-            <div className='second-splash-text' onclick={this.clickFirstSplash}>
+          <div id='tom-waits' className="small-splash" onClick={this.clickFirstSplash}>
+            <div className='second-splash-text'>
               <h4>
                 Tom Waits
               </h4>

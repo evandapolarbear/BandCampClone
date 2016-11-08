@@ -6,3 +6,13 @@ export const fetchArtist = (artistId, success, error) => {
     error
   });
 };
+
+export const searchArtists = (string, success, error) => {
+  $.ajax({
+    method: 'GET',
+    url: 'api/artists',
+    data: {artist: {username: string}},
+    success,
+    error
+  });
+};

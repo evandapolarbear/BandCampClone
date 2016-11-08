@@ -5,6 +5,8 @@ import {SongListing} from '../song/song';
 import SongUploadButtonContainer from '../song_upload/song_upload_container';
 import UpdateBannerUrl from '../update_pic_buttons/update_banner_container';
 import UpdateProfileUrl from '../update_pic_buttons/update_profile_container';
+import ReactAudioPlayer from 'react-audio-player';
+
 
 import {withRouter} from 'react-router';
 
@@ -13,6 +15,16 @@ class ArtistProfile extends React.Component {
   constructor(props) {
     super(props);
 
+    this.state = {
+      songBeingPlayed: "hello"
+    };
+
+    this.selectSongToPlay = this.selectSongToPlay.bind(this);
+  }
+
+  selectSongToPlay(url) {
+    console.log(this.state);
+    this.setState({songBeingPlayed: url});
   }
 
   componentWillMount(){
@@ -60,10 +72,9 @@ class ArtistProfile extends React.Component {
 
         <SongUploadButtonContainer />
 
-
             <ul>
               {this.props.songs.map(song => (
-                <SongListing key={song.id} song={song}/>
+                <SongListing key={song.id} song={song} selectSong={this.selectSongToPlay}/>
                 ))
               }
             </ul>
@@ -71,7 +82,15 @@ class ArtistProfile extends React.Component {
 
 
         <div className="col-30" id='profile-player-column'>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+          <div id="audio-player">
+            <ReactAudioPlayer ref={c => { this.state.songBeingPlayed = c}}/>
+          </div>
+
+          <div id='blurb'>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+
         </div>
       </div>
     );

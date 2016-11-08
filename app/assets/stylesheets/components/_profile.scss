@@ -1,6 +1,6 @@
 .profile-name{
   font-size: 120px;
-  margin: 100px 20% 50px 0;
+  margin: 80px 10% 80px 0;
   color: $pink;
   font-family:serif;
   font-weight: bolder;
@@ -51,9 +51,24 @@
   color:black;
   float:left;
   display:flex;
-  margin: 20% 0 10% 10%;
-  padding: 1% 1% 1% 1%;
-  border: 2px black solid;
+  margin: 16% 0 10% 10%;
   flex-direction: column;
   text-align: center;
+}
+
+#song-column{
+  border: 2px black solid;
+  padding: 1% 1% 1% 1%;
+}
+
+#audio-player{
+  border: 2px black solid;
+  padding: 5% 5% 5% 5%;
+  margin: 0 0 8% 0;
+}
+
+#blurb{
+  border: 2px black solid;
+  padding: 5% 5% 5% 5%;
+  margin: 0 0 4% 0;
 }

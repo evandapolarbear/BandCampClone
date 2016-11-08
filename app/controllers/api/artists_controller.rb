@@ -1,6 +1,18 @@
 require 'byebug'
 
 class Api::ArtistsController < ApplicationController
+  def index
+    @search = params[:artist][:username]
+
+    @artists = Artist.where("username LIKE :search", search: params[:artist][:username])
+
+    if @artists
+      render "api/artists/index"
+    else
+      render json: ['no artist found'], status: 404
+    end
+  end
+
 
   def create
     @artist = Artist.new(artist_params)
