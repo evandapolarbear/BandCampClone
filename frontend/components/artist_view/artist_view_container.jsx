@@ -7,7 +7,7 @@ import { fetchArtist } from '../../actions/search_actions';
 const mapStateToProps = ({session, songs, artist}, ownProps) => ({
   artist: artist.artist,
   artistToFetch: ownProps.params.artistId,
-  songs: songs.songs
+  songs: songs
 });
 
 const mapDispatchToProps = dispatch => ({

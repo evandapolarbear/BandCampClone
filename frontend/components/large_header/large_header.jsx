@@ -1,8 +1,10 @@
 import React from 'react';
 import Modal from 'react-modal';
 import ModalStyle from './modal_style';
+import SearchBarContainer from '../search/search_bar_container';
 import SessionFormContainer from '../session_form/session_form_container';
 import {Link, withRouter} from 'react-router';
+
 
 
 class LargeHeader extends React.Component {
@@ -43,6 +45,11 @@ class LargeHeader extends React.Component {
     return (
       <div className="large-header">
         <Link to="/" className="header-logo"><h1>BandCamper</h1></Link>
+
+          <div>
+            <SearchBarContainer />
+          </div>
+
         <nav className="head-nav">
           <Link className="header-button"
             onClick={this.props.logout}
@@ -56,6 +63,11 @@ class LargeHeader extends React.Component {
     return (
       <div className="large-header">
         <Link to="/" className="header-logo"><h1>BandCamper</h1></Link>
+
+        <div>
+          <SearchBarContainer />
+        </div>
+
         <nav className="head-nav">
           <Link className="header-button"
             onClick={this.__handleClick.bind(this, 'login')}>Log In</Link>

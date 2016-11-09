@@ -4,7 +4,7 @@ class Api::ArtistsController < ApplicationController
   def index
     @search = params[:artist][:username]
 
-    @artists = Artist.where("username LIKE :search", search: params[:artist][:username])
+    @artists = Artist.where("username LIKE :search", search: "%#{params[:artist][:username]}%")
 
     if @artists
       render "api/artists/index"

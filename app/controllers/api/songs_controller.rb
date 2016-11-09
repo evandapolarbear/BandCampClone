@@ -17,9 +17,10 @@ class Api::SongsController < ApplicationController
 
   def create
     @song = Song.new(song_params)
-    
+
     if @song.save
-      render 'api/songs/show'
+      @songs = current_artist.songs
+      render 'api/songs/index'
     else
       render json: @song.errors.full_messages, status: 422
     end

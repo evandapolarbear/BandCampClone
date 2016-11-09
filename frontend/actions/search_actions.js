@@ -1,7 +1,7 @@
 export const FETCH_ARTIST = 'FETCH_ARTIST';
 export const RECEIVE_ARTIST = 'RECEIVE_ARTIST';
-export const RECEIVE_ARTISTS = RECEIVE_ARTISTS;
-export const SEARCH_ARTIST = SEARCH_ARTIST;
+export const RECEIVE_ARTISTS = 'RECEIVE_ARTISTS';
+export const SEARCH_ARTISTS = 'SEARCH_ARTISTS';
 
 export const fetchArtist = id => ({
   type: FETCH_ARTIST,
@@ -19,6 +19,6 @@ export const receiveArtists = artists => ({
 });
 
 export const searchArtists = string => ({
-  type: SEARCH_ARTIST,
+  type: SEARCH_ARTISTS,
   string
 });

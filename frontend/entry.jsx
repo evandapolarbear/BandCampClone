@@ -5,16 +5,10 @@ import configureStore from './store/store';
 import Modal from 'react-modal';
 
 
-import {fetchArtist} from './actions/search_actions';
+import {fetchArtist, searchArtists} from './actions/search_actions';
 
 window.fetchArtist = fetchArtist;
-
-
-import {searchArtists} from './util/search_util';
 window.searchArtists = searchArtists;
-
-
-
 
 
 document.addEventListener('DOMContentLoaded', () =>{
