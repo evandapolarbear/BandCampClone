@@ -2,7 +2,6 @@ import React from 'react';
 
 import ArtistViewContainer from './artist_view_container';
 
-
 import { SongListing } from '../song/song';
 import {withRouter} from 'react-router';
 
@@ -10,11 +9,6 @@ class ArtistView extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = {
-      songBeingPlayed: "hello"
-    };
-
-    this.selectSongToPlay = this.selectSongToPlay.bind(this);
   }
 
   componentWillMount(){
@@ -23,13 +17,7 @@ class ArtistView extends React.Component {
     this.props.fetchArtist(artistToFetch);
   }
 
-  selectSongToPlay(url) {
-    this.setState({songBeingPlayed: "what?"});
-    console.log(this.state.songBeingPlayed);
-  }
-
   render(){
-
     const bannerStyle = {
       backgroundImage: 'url(' + this.props.artist.banner_url + ')'
     };
@@ -62,22 +50,13 @@ class ArtistView extends React.Component {
 
             <ul>
               {this.props.songs.map(song => (
-                <SongListing key={song.id} song={song} selectSong={this.selectSongToPlay}/>
+                <SongListing key={song.id} song={song} loadSong={this.props.loadSong}/>
                 ))
               }
             </ul>
         </div>
 
         <div className="col-30" id='profile-player-column'>
-
-
-          <div id="audio-player">
-            Fill the player back in here
-          </div>
-
-
-
-
           <div id='blurb'>
             <p>
               {this.props.artist.blurb}

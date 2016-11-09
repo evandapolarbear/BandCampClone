@@ -20,7 +20,7 @@ class SearchBar extends React.Component {
 
   render(){
     return (
-      <div>
+      <div id='search-bar'>
         <form>
           <label>
             Search

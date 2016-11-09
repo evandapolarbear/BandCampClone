@@ -6,6 +6,10 @@ class Api::ArtistsController < ApplicationController
 
     @artists = Artist.where("username LIKE :search", search: "%#{params[:artist][:username]}%")
 
+    if params[:artist][:username] == ''
+      @artists = nil
+    end
+
     if @artists
       render "api/artists/index"
     else

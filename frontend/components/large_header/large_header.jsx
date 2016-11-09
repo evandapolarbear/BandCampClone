@@ -46,11 +46,12 @@ class LargeHeader extends React.Component {
       <div className="large-header">
         <Link to="/" className="header-logo"><h1>BandCamper</h1></Link>
 
-          <div>
+
+      <nav className="head-nav">
+          <div id='search-bar'>
             <SearchBarContainer />
           </div>
 
-        <nav className="head-nav">
           <Link className="header-button"
             onClick={this.props.logout}
             to='/'>Log Out</Link>
@@ -64,16 +65,18 @@ class LargeHeader extends React.Component {
       <div className="large-header">
         <Link to="/" className="header-logo"><h1>BandCamper</h1></Link>
 
-        <div>
-          <SearchBarContainer />
-        </div>
+        <div id="nav-right">
+          <div id='search-bar'>
+            <SearchBarContainer />
+          </div>
 
-        <nav className="head-nav">
-          <Link className="header-button"
-            onClick={this.__handleClick.bind(this, 'login')}>Log In</Link>
-          <Link className="header-button" onClick={this.__handleClick.bind(this,'signin')}>Sign Up</Link>
-          <Link onClick={this.props.guestLogin} className="header-button">Guest Login</Link>
-        </nav>
+          <nav className="head-nav">
+            <Link className="header-button"
+              onClick={this.__handleClick.bind(this, 'login')}>Log In</Link>
+            <Link className="header-button" onClick={this.__handleClick.bind(this,'signin')}>Sign Up</Link>
+            <Link onClick={this.props.guestLogin} className="header-button">Guest Login</Link>
+          </nav>
+        </div>
 
         <Modal
           isOpen={this.state.modalOpen}

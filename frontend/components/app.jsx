@@ -1,6 +1,6 @@
 import React from 'react';
 import LargeHeaderContainer from './large_header/large_header_container';
-
+import MediaPlayerContainer from './media_player/media_player_container';
 // import GreetingContainer from './greeting/greeting_container';
 
 const App = ({ children }) => (
@@ -10,7 +10,7 @@ const App = ({ children }) => (
     </header>
     {children}
     <footer>
-
+      <MediaPlayerContainer/>
     </footer>
   </div>
 );

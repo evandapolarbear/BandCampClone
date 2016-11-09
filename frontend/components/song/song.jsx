@@ -1,8 +1,8 @@
 import React from 'react';
 
-export const SongListing = ({song, selectSong}) => (
+export const SongListing = ({song, loadSong}) => (
   <li>
     {song.title}
-    <button onClick={() => selectSong(song.url)}>play</button>
+    <button onClick={() => loadSong(song.url)}>play</button>
   </li>
 );

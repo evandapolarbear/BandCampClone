@@ -5,8 +5,6 @@ import {SongListing} from '../song/song';
 import SongUploadButtonContainer from '../song_upload/song_upload_container';
 import UpdateBannerUrl from '../update_pic_buttons/update_banner_container';
 import UpdateProfileUrl from '../update_pic_buttons/update_profile_container';
-import ReactAudioPlayer from 'react-audio-player';
-
 
 import {withRouter} from 'react-router';
 
@@ -84,7 +82,9 @@ class ArtistProfile extends React.Component {
         <div className="col-30" id='profile-player-column'>
 
           <div id="audio-player">
+
             <ReactAudioPlayer ref={c => { this.state.songBeingPlayed = c}}/>
+
           </div>
 
           <div id='blurb'>
