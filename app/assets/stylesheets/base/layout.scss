@@ -11,5 +11,12 @@ a {
 }
 
 a:hover{
-  color: $green;
+  border-bottom: 3px solid $pink;
+  cursor: pointer;
+}
+
+.icon:hover{
+  color: $pink;
+  font-size: 22px;
+  cursor: pointer;
 }

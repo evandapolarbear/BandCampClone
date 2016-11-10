@@ -5,10 +5,12 @@
   opacity: .5;
   bottom: 0;
   height: 8%;
+  padding-top: 15px;
 }
 
 #player:hover{
   opacity: 1;
+  color: offwhite;
 }
 
 .player-controls ul{
@@ -17,6 +19,31 @@
   align-items: center;
 }
 
-.player-controls li {
+.seek-bar{
+  width: 50em;
+  margin-left: 10px;
+}
 
+.player-info{
+  text-align: center;
+  font-weight: bolder;
+}
+
+.player-info:hover{
+  .player-artistname{
+    border-bottom: 3px solid $pink;
+    font-size: 26px;
+  }
+}
+
+.volume-bar{
+  margin-left: 10px;
+}
+
+.player-artistname {
+  font-size: 20px
+}
+
+.player-contols i:hover{
+  font-color: $pink;
 }

@@ -48,7 +48,7 @@ class ArtistView extends React.Component {
         <div className="update-buttons" id='song-button'>
         </div>
 
-            <ul>
+            <ul className='song-list'>
               {this.props.songs.map(song => (
                 <SongListing key={song.id} song={song} artist={this.props.artist} loadSong={this.props.loadSong}/>
                 ))

@@ -13,7 +13,8 @@ class MediaPlayer extends React.Component {
       played: 0,
       loaded: 0,
       seeking: false,
-      duration: 0
+      duration: 0,
+      unmute: 0
     };
 
     this.playPause = this.playPause.bind(this);
@@ -26,6 +27,7 @@ class MediaPlayer extends React.Component {
     this.onProgress = this.onProgress.bind(this);
     this.playingIcon = this.playingIcon.bind(this);
     this.volumeIcon = this.volumeIcon.bind(this);
+    this.handleMute = this.handleMute.bind(this);
   }
 
   componentWillReceiveProps(newProps){
@@ -68,21 +70,31 @@ class MediaPlayer extends React.Component {
     }
   }
 
+  handleMute(){
+    if (this.state.volume > 0) {
+      this.setState({unmute: this.state.volume, volume: 0});
+    } else if(this.state.volume === 0 && this.state.unmute === 0) {
+      this.setState({volume: 0.8});
+    } else {
+      this.setState({volume: this.state.unmute});
+    }
+  }
+
   playingIcon() {
     if (this.state.playing){
-      return(<i onClick={this.playPause} className='fa fa-pause'></i>);
+      return(<i onClick={this.playPause} className='fa fa-pause icon'></i>);
     } else {
-      return(<i onClick={this.playPause} className='fa fa-play'></i>);
+      return(<i onClick={this.playPause} className='fa fa-play icon'></i>);
     }
   }
 
   volumeIcon(){
     if(this.state.volume === 0) {
-      return(<i className='fa fa-volume-off'></i>);
+      return(<i onClick={e => this.handleMute()} className='fa fa-volume-off icon'></i>);
     } else if(this.state.volume < .8) {
-      return(<i className='fa fa-volume-down'></i>);
+      return(<i onClick={e => this.handleMute()} className='fa fa-volume-down icon'></i>);
     } else {
-      return(<i className='fa fa-volume-up'></i>);
+      return(<i onClick={e => this.handleMute()} className='fa fa-volume-up icon'></i>);
     }
   }
 
@@ -116,14 +128,13 @@ class MediaPlayer extends React.Component {
 
         <div className='player-controls'>
           <ul>
-            <li>
-              <img onClick={this.handleClick(artistAddress)} src={this.props.currentArtist.image_url}/>
-              <p>{this.props.currentArtist.username}</p>
-              <p>{this.props.currentSong.title}</p>
+            <li onClick={this.handleClick(artistAddress)} className='player-info'>
+              <p className='player-artistname'>{this.props.currentArtist.username}</p>
+              <p className='player-song-title'>{this.props.currentSong.title}</p>
             </li>
             <li>
               {this.playingIcon()}
-              <input
+              <input className='seek-bar'
                 type='range' min={0} max={1} step='any'
                 value={this.state.played}
                 onMouseDown={this.onSeekMouseDown}
@@ -134,7 +145,7 @@ class MediaPlayer extends React.Component {
 
             <li>
               {this.volumeIcon()}
-              <input type='range' min={0} max={1} step='any' value={this.state.volume} onChange={this.setVolume} />
+              <input className="volume-bar" type='range' min={0} max={1} step='any' value={this.state.volume} onChange={this.setVolume} />
             </li>
           </ul>
         </div>

@@ -1,0 +1,18 @@
+.song-list{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.song-listing {
+  display: flex;
+  justify-content: space-between;
+}
+
+.song-listing p:hover{
+  border-bottom: 3px $pink solid;
+  font-size: 22px;
+}
+
+.icons i{
+  margin: 3px;
+}
