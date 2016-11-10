@@ -8,18 +8,21 @@ class SmallSearchResults extends React.Component {
   }
 
   handleClick(id) {
-    hashHistory.push(id);
+    return e => hashHistory.push(`${id}`);
   }
 
   render(){
     if (this.props.searchString === '') {
       return null;
     }
+
     return(
       <div>
         <ul id='small-search'>
           {this.props.results.map(result => (
-            <li key={result.id} onClick={this.handleClick(result.id)}>{result.username}</li>
+            <li key={result.id} onClick={this.handleClick(result.id)}>
+              <img src={result.image_url}/>
+              {result.username}</li>
           ))}
         </ul>
       </div>

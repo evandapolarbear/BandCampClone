@@ -1,14 +1,16 @@
 import { LOAD_SONG } from '../actions/media_player';
-import merge from 'lodash/merge';
 
-const _nullSong = '';
+const _nullSong = Object.freeze({
+  song: '',
+  artist: '',
+});
 
 const PlayerReducer = (state = _nullSong, action) => {
   Object.freeze(state);
 
   switch (action.type) {
     case LOAD_SONG:
-      return action.song;
+      return {song:action.song, artist:action.artist};
     default:
       return state;
   }

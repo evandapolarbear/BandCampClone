@@ -65,7 +65,8 @@ class LargeHeader extends React.Component {
       <div className="large-header">
         <Link to="/" className="header-logo"><h1>BandCamper</h1></Link>
 
-        <div id="nav-right">
+        <div id="nav-right" className="col-30">
+
           <div id='search-bar'>
             <SearchBarContainer />
           </div>
@@ -73,6 +74,7 @@ class LargeHeader extends React.Component {
           <nav className="head-nav">
             <Link className="header-button"
               onClick={this.__handleClick.bind(this, 'login')}>Log In</Link>
+
             <Link className="header-button" onClick={this.__handleClick.bind(this,'signin')}>Sign Up</Link>
             <Link onClick={this.props.guestLogin} className="header-button">Guest Login</Link>
           </nav>

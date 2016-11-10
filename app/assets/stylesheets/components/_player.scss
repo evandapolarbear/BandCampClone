@@ -1,0 +1,22 @@
+#player {
+  position:fixed;
+  width: 100%;
+  background: white;
+  opacity: .5;
+  bottom: 0;
+  height: 8%;
+}
+
+#player:hover{
+  opacity: 1;
+}
+
+.player-controls ul{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.player-controls li {
+
+}

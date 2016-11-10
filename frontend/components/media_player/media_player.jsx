@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactPlayer from 'react-player';
+import {hashHistory} from 'react-router';
 
 class MediaPlayer extends React.Component {
   constructor(props) {
     super(props);
 
-    this. state = {
-      url: this.props.currentSong,
+    this.state = {
+      url: this.props.currentSong.url,
       playing: true,
       volume: 0.8,
       played: 0,
@@ -23,11 +24,13 @@ class MediaPlayer extends React.Component {
     this.onSeekChange = this.onSeekChange.bind(this);
     this.onSeekMouseUp = this.onSeekMouseUp.bind(this);
     this.onProgress = this.onProgress.bind(this);
+    this.playingIcon = this.playingIcon.bind(this);
+    this.volumeIcon = this.volumeIcon.bind(this);
   }
 
   componentWillReceiveProps(newProps){
     this.setState({
-      url: newProps.currentSong,
+      url: newProps.currentSong.url,
       playing: true,
       played: 0,
       loaded: 0
@@ -65,7 +68,31 @@ class MediaPlayer extends React.Component {
     }
   }
 
+  playingIcon() {
+    if (this.state.playing){
+      return(<i onClick={this.playPause} className='fa fa-pause'></i>);
+    } else {
+      return(<i onClick={this.playPause} className='fa fa-play'></i>);
+    }
+  }
+
+  volumeIcon(){
+    if(this.state.volume === 0) {
+      return(<i className='fa fa-volume-off'></i>);
+    } else if(this.state.volume < .8) {
+      return(<i className='fa fa-volume-down'></i>);
+    } else {
+      return(<i className='fa fa-volume-up'></i>);
+    }
+  }
+
+  handleClick(url){
+    return e => hashHistory.push(url);
+  }
+
   render(){
+    const artistAddress = '/' + this.props.currentArtist.id;
+
     return (
       <div id='player'>
         <div id='playerInternals'>
@@ -87,12 +114,15 @@ class MediaPlayer extends React.Component {
             />
         </div>
 
-        <div id='player controls'>
+        <div className='player-controls'>
           <ul>
             <li>
-              <button onClick={this.playPause}>{this.state.playng? '||' : "|>"}</button>
+              <img onClick={this.handleClick(artistAddress)} src={this.props.currentArtist.image_url}/>
+              <p>{this.props.currentArtist.username}</p>
+              <p>{this.props.currentSong.title}</p>
             </li>
             <li>
+              {this.playingIcon()}
               <input
                 type='range' min={0} max={1} step='any'
                 value={this.state.played}
@@ -101,8 +131,9 @@ class MediaPlayer extends React.Component {
                 onMouseUp={this.onSeekMouseUp}
               />
             </li>
+
             <li>
-              <p>Volume</p>
+              {this.volumeIcon()}
               <input type='range' min={0} max={1} step='any' value={this.state.volume} onChange={this.setVolume} />
             </li>
           </ul>

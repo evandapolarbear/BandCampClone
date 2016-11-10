@@ -1,5 +1,20 @@
 #small-search {
+  position:absolute;
+  width: 100%;
   background: white;
-  display: float;
-  margin-left: 12%;
+  box-sizing: border-box;
+}
+
+#small-search li {
+  padding: 5px 2px;
+  cursor: pointer;
+}
+
+#small-search li:hover {
+  background: whitesmoke;
+}
+
+#small-search img {
+  width: 2.5em;
+  height: 2.5em;
 }
