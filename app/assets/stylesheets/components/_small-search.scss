@@ -6,12 +6,25 @@
 }
 
 #small-search li {
-  padding: 5px 2px;
+  padding: 5px 6px;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+#small-search span {
+  margin-left: 20px;
+  font-size: 16px;
 }
 
 #small-search li:hover {
   background: whitesmoke;
+  border-bottom: 2px solid $pink
+}
+
+.search-string {
+  font-size: 16px;
+  font-weight: normal;
 }
 
 #small-search img {

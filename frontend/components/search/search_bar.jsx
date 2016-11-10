@@ -8,8 +8,9 @@ class SearchBar extends React.Component {
     this.state = {
       searchString: ''
     };
-  }
 
+    this.clearSearch = this.clearSearch.bind(this);
+  }
 
   update(field){
     return e => {
@@ -18,16 +19,22 @@ class SearchBar extends React.Component {
     };
   }
 
+  clearSearch(){
+    // this.props.clearSearch();
+    this.setState({searchString: ''});
+  }
+
   render(){
     return (
       <div id='search-bar'>
         <form>
             <i className="fa fa-search"></i>
             <input type="text"
+              className='search-string'
               value={this.state.searchString}
               onChange={this.update('searchString')}></input>
         </form>
-        <SmallSearchResults results={this.props.searchResults} string={this.state.searchString}/>
+        <SmallSearchResults results={this.props.searchResults} string={this.state.searchString} clearSearch={this.clearSearch}/>
       </div>
     );
   }

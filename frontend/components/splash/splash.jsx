@@ -25,7 +25,7 @@ class Splash extends React.Component{
   render(){
     return (
       <div id='splash'>
-        <div className='col-70' id='main-splash' onClick={this.clickMainSplash}>
+        <div className='col-70 splash-box' id='main-splash' onClick={this.clickMainSplash}>
           <div id='esso-text'>
             <h3 id='esso-head'>
               Sylvan Esso
@@ -34,21 +34,21 @@ class Splash extends React.Component{
           </div>
         </div>
         <div className='col-30' id='secondary-splash'>
-          <div id='tom-waits' className="small-splash" onClick={this.clickFirstSplash}>
+          <div id='tom-waits' className="small-splash splash-box" onClick={this.clickFirstSplash}>
             <div className='second-splash-text'>
               <h4>
                 Tom Waits
               </h4>
             </div>
           </div>
-          <div id='vince-staples' className="small-splash" onClick={this.clickSecondSplash}>
+          <div id='vince-staples' className="small-splash splash-box" onClick={this.clickSecondSplash}>
             <div className='second-splash-text'>
               <h4>
                 Beyonce
               </h4>
             </div>
           </div>
-          <div id='pup' className="small-splash" onClick={this.clickThirdSplash}>
+          <div id='pup' className="small-splash splash-box" onClick={this.clickThirdSplash}>
             <div className='second-splash-text'>
               <h4>
                 PUP

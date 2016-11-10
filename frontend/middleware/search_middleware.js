@@ -1,4 +1,4 @@
-import {FETCH_ARTIST, SEARCH_ARTISTS, receiveArtist, receiveArtists} from '../actions/search_actions';
+import { FETCH_ARTIST, SEARCH_ARTISTS, receiveArtist, receiveArtists} from '../actions/search_actions';
 import {fetchArtist, searchArtists} from '../util/search_util';
 
 

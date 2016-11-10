@@ -5,10 +5,9 @@ import configureStore from './store/store';
 import Modal from 'react-modal';
 
 
-import {fetchArtist, searchArtists} from './actions/search_actions';
+import {fetchArtist, searchArtists, clearSearch} from './actions/search_actions';
 
-window.fetchArtist = fetchArtist;
-window.searchArtists = searchArtists;
+window.clearSearch = clearSearch;
 
 
 document.addEventListener('DOMContentLoaded', () =>{

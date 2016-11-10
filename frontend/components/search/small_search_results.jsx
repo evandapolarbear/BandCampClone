@@ -5,10 +5,20 @@ import {hashHistory} from 'react-router';
 class SmallSearchResults extends React.Component {
   constructor(props) {
     super(props);
+
+    this.handleClick = this.handleClick.bind(this);
   }
 
+  // clearSearch(){
+  //   this.props.clearSearch();
+  // }
+
+
   handleClick(id) {
-    return e => hashHistory.push(`${id}`);
+    return e => {
+      hashHistory.push(`${id}`);
+      this.props.clearSearch();
+    };
   }
 
   render(){
@@ -22,7 +32,8 @@ class SmallSearchResults extends React.Component {
           {this.props.results.map(result => (
             <li key={result.id} onClick={this.handleClick(result.id)}>
               <img src={result.image_url}/>
-              {result.username}</li>
+              <span>{result.username}</span>
+              </li>
           ))}
         </ul>
       </div>

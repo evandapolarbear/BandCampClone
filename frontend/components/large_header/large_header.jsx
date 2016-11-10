@@ -46,8 +46,7 @@ class LargeHeader extends React.Component {
       <div className="large-header">
         <Link to="/" className="header-logo"><h1>BandCamper</h1></Link>
 
-
-      <nav className="head-nav">
+        <nav className="head-nav">
           <div id='search-bar'>
             <SearchBarContainer />
           </div>
@@ -56,7 +55,7 @@ class LargeHeader extends React.Component {
             onClick={this.props.logout}
             to='/'>Log Out</Link>
         </nav>
-      </div>
+    </div>
     );
   }
 

@@ -1,7 +1,9 @@
 import React from 'react';
 import { Provider } from 'react-redux';
-
 import {Router, Route, IndexRoute, hashHistory} from 'react-router';
+
+import { fetchAllSongs } from '../actions/song_upload_actions';
+import { fetchArtist, clearSearch } from '../actions/search_actions';
 
 import App from './app';
 import ArtistProfileContainer from './artist_profile/artist_profile_container';
@@ -23,6 +25,12 @@ const Root = ({store}) => {
     }
   };
 
+  const _fetchArtistAndSongs = (nextState) => {
+    store.dispatch(fetchArtist(parseInt(nextState.params.artistId)));
+    store.dispatch(fetchAllSongs(nextState.params.artistId));
+    // store.dispatch(clearSearch());
+  };
+
   return (
     <Provider store={store}>
       <Router history={hashHistory}>
@@ -30,7 +38,9 @@ const Root = ({store}) => {
           <IndexRoute component={Splash} />
           <Route path='/profile' component={ArtistProfileContainer}
             onEnter={_ensureLoggedIn} />
-          <Route path=':artistId' component={ArtistViewContainer} />
+          <Route path=':artistId'
+            component={ArtistViewContainer}
+            onEnter={ _fetchArtistAndSongs }/>
         </Route>
       </Router>
     </Provider>

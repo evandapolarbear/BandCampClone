@@ -1,17 +1,15 @@
 import SearchBar from './search_bar';
 
 import { connect } from 'react-redux';
-import { searchArtists } from '../../actions/search_actions';
+import { searchArtists, clearSearch } from '../../actions/search_actions';
 
-const mapStateToProps = ({artist}) => {
-return(
-  {
+const mapStateToProps = ({artist}) => ({
     searchResults: artist.searchResults
-  });
-}
+});
 
 const mapDispatchToProps = dispatch => ({
-  search: string => dispatch(searchArtists(string))
+  search: string => dispatch(searchArtists(string)),
+  clearSearch: () => dispatch(clearSearch())
 });
 
 export default connect(

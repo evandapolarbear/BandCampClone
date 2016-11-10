@@ -17,6 +17,7 @@ class ArtistView extends React.Component {
     this.props.fetchArtist(artistToFetch);
   }
 
+
   render(){
     const bannerStyle = {
       backgroundImage: 'url(' + this.props.artist.banner_url + ')'

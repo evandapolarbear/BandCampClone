@@ -5,8 +5,12 @@
   margin: 0;
 }
 
+.splash-box:hover{
+  text-shadow: -4px 4px $pink;
+}
+
 #main-splash, #secondary-splash{
-  color: $pink;
+  color: black;
   float:left;
   display: block;
   height: 560px;
@@ -23,7 +27,7 @@
   background-size: 100% 100%;
   background-repeat: no-repeat;
   box-sizing: border-box;
-  border: 3px $pink solid;
+  border: 3px black solid;
 }
 
 #tom-waits{
@@ -32,14 +36,13 @@
   background-repeat: no-repeat;
   height: 33%;
   box-sizing: border-box;
-  border-right: 3px $pink solid;
-  border-top: 3px $pink solid;
-  border-bottom: 3px $pink solid;
+  border-right: 3px black solid;
+  border-top: 3px black solid;
+  border-bottom: 3px black solid;
 }
 
 #esso-text{
   margin: 80px 0 0 400px;
-  text-shadow: -2px 2px $offwhite;
   text-weight: bolder;
 }
 
@@ -58,7 +61,7 @@
   background-repeat: no-repeat;
   height:34%;
   box-sizing: border-box;
-  border-right: 3px $pink solid;
+  border-right: 3px black solid;
 }
 
 #pup{
@@ -68,9 +71,9 @@
   background-repeat: no-repeat;
   height: 33%;
   box-sizing: border-box;
-  border-right: 3px $pink solid;
-  border-top: 3px $pink solid;
-  border-bottom: 3px $pink solid;
+  border-right: 3px black solid;
+  border-top: 3px black solid;
+  border-bottom: 3px black solid;
 }
 
 .small-splash{
