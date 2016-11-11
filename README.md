@@ -1,5 +1,5 @@
-# BandCramp
-[heroku](https://bandcramp.herokuapp.com/)
+# BandCamper
+[heroku](bandcamper.net)
 [trello](https://trello.com/b/M2foQhkY)
 
 #Minimum Viable Product
