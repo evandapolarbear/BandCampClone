@@ -11,11 +11,11 @@ class Splash extends React.Component{
   }
 
   clickFirstSplash(){
-    hashHistory.push('2');
+    hashHistory.push('11');
   }
 
   clickSecondSplash(){
-    hashHistory.push('3');
+    hashHistory.push('12');
   }
 
   clickThirdSplash(){
@@ -26,29 +26,29 @@ class Splash extends React.Component{
     return (
       <div id='splash'>
         <div className='col-70 splash-box' id='main-splash' onClick={this.clickMainSplash}>
-          <div id='esso-text'>
-            <h3 id='esso-head'>
+          <div id='main-text'>
+            <h3>
               Sylvan Esso
             </h3>
             <p id='esso-p'>Sylvan Esso release a new song</p>
           </div>
         </div>
         <div className='col-30' id='secondary-splash'>
-          <div id='tom-waits' className="small-splash splash-box" onClick={this.clickFirstSplash}>
+          <div id='small-splash-1' className="small-splash splash-box" onClick={this.clickFirstSplash}>
             <div className='second-splash-text'>
               <h4>
-                Tom Waits
+                The National
               </h4>
             </div>
           </div>
-          <div id='vince-staples' className="small-splash splash-box" onClick={this.clickSecondSplash}>
+          <div id='small-splash-2' className="small-splash splash-box" onClick={this.clickSecondSplash}>
             <div className='second-splash-text'>
               <h4>
-                Beyonce
+                Shakey Graves
               </h4>
             </div>
           </div>
-          <div id='pup' className="small-splash splash-box" onClick={this.clickThirdSplash}>
+          <div id='small-splash-3' className="small-splash splash-box" onClick={this.clickThirdSplash}>
             <div className='second-splash-text'>
               <h4>
                 PUP

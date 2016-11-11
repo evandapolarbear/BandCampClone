@@ -36,10 +36,28 @@ Raised in Wyomissing, Pennsylvania, Swift moved to Nashville, Tennessee, at age 
 Born and raised in Illinois, Davis began performing in 1940s New York with saxophonist Charlie Parker before recording the Birth of the Cool sessions for Capitol Records, which were instrumental to the development of cool jazz. In the early 1950s, he recorded some of the earliest hard bop music while on Prestige Records but did so haphazardly due to a heroin addiction. After a widely acclaimed comeback performance at the Newport Jazz Festival in 1955, he signed a long-term contract with Columbia Records and recorded the 1957 album Round About Midnight. It was his first work with saxophonist John Coltrane and bassist Paul Chambers, key members of the sextet he led into the early 1960s. During this period, he alternated between orchestral jazz collaborations with arranger Gil Evans, such as the Spanish music-influenced Sketches of Spain (1960), and band recordings, such as Milestones (1958) and Kind of Blue (1959). The latter featured harmonies developed by pianist Bill Evans and was an innovative work in the emerging modal jazz style, eventually becoming arguably the most popular jazz album ever.'},
 
 {username: 'St. Paul & The Broken Bones', blurb: 'St. Paul and The Broken Bones is a six-piece soul band based out of Birmingham, Alabama, United States, which formed in 2012. The band is composed of Paul Janeway (vocals), Browan Lollar (guitar), Jesse Phillips (bass), Andrew Lee (drums), Al Gamble (keys), and Allen Branstetter (trumpet). The band tours with both trombone and baritone saxophone as well. They have released two album and two EPs while touring internationally.', email: 'evan_dev9@fakey.com', password: 'DevPass244', banner_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1478815890/st_paul_banner_t3wjrf.jpg', image_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1478815877/st_paul_profile_sx7wga.jpg'},
+
+{username: 'Wilco', blurb: 'Wilco is an American alternative rock band based in Chicago, Illinois. The band was formed in 1994 by the remaining members of alternative country group Uncle Tupelo following singer Jay Farrar\'s departure. Wilco\'s lineup changed frequently during its first decade, with only singer Jeff Tweedy and bassist John Stirratt remaining from the original incarnation. Since early 2004, the lineup has been unchanged, consisting of Tweedy, Stirratt, guitarist Nels Cline, multi-instrumentalist Pat Sansone, keyboard player Mikael Jorgensen, and drummer Glenn Kotche. Wilco has released ten studio albums, a live double album, and four collaborations: three with Billy Bragg and one with The Minus 5.
+
+Wilco\'s music has been inspired by a wide variety of artists and styles, including Bill Fay, The Beatles and Television, and has in turn influenced music by a number of modern alternative rock acts. The band continued in the alternative country style of Uncle Tupelo on its debut album A.M. (1995), but has since introduced more experimental aspects to their music, including elements of alternative rock and classic pop. Wilco\'s musical style has evolved from a 1990s country rock sound to a current "eclectic indie rock collective that touches on many eras and genres."', email: 'evan_dev10@fakey.com', password: 'DevPass244', banner_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1478818690/wilco_banner_pt8e7z.jpg', image_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1478818668/wilco_profile_xt3yru.jpg'},
+
+{username: 'The National', blurb: 'The National is an American indie rock band from Cincinnati, Ohio, formed in 1999. Currently based in Brooklyn, the band consists of Matt Berninger (vocals), Aaron Dessner (guitar, keyboards), Bryce Dessner (guitar), Scott Devendorf (bass) and Bryan Devendorf (drums).
+
+Founded by Berninger, Aaron Dessner, and Scott and Bryan Devendorf, The National released their self-titled debut album, The National (2001), on Brassland Records, an independent record label founded by Dessner and his twin brother, Bryce Dessner. Bryce, who had assisted in recording the album, soon joined the band, participating as a full member in the recording of its follow-up, Sad Songs for Dirty Lovers (2003).
+
+Leaving behind their day jobs, the National signed with Beggars Banquet Records and released their third studio album, Alligator (2005), to widespread critical acclaim. The band\'s fourth and fifth studio albums, Boxer (2007) and High Violet (2010), increased their exposure significantly. In 2013, the band released its sixth studio album, Trouble Will Find Me. It was nominated in the 2014 Grammys for Best Alternative Album.
+
+Four of the band\'s albums were included on NME\'s 2013 list of the 500 greatest albums of all time.', email: 'evan_dev12@fakey.com', password: 'DevPass244', banner_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1478820239/national_banner_zokwsg.jpg', image_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1478820180/national_profile_2_et5dqm.jpg'},
+
+{username: 'Shakey Graves', blurb: 'Shakey Graves (born Alejandro Rose-Garcia on June 4, 1987) is an Americana musician from Austin, Texas, United States.[1]
+
+His music is a cross between blues, folk and rock and roll – he performs at many large festivals and concert venues around the United States. Alejandro Rose-Garcia received his iconic stage name at Old Settler\'s Music Festival in 2007 after he and his friends jokingly gave each other Indian guide names over a campfire. After an inspired night of playing music, he decided to keep the name.[2]
+
+Shakey Graves became known for his one-man band set up and most of his debut album Roll the Bones is Rose-Garcia playing unaccompanied by other musicians. When he began working on his sophomore album, And the War Came, Rose-Garcia added musicians to his recording process and live set. Three songs from And the War Came are duets with ex-Paper Bird member Esme Patterson. The album was produced, engineered and mixed by Chris Boosahda. Boosahda also contributes drums, vocals, percussion and music for the song Big Time Nashville Star to the ATWC album. Patrick O\'Connor, from the LA music scene, plays guitar and bass at various live shows as the project and tours have moved forward as a revolving duo and trio.', email: 'evan_dev13@fakey.com', password: 'DevPass244', banner_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1478821254/shakey_banner_eyavue.jpg', image_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1478821253/shakey_profile_m7qc1a.jpg'}
 ])
 
 
-# {username: '', blurb: '', email: 'evan_dev10@fakey.com', password: 'DevPass244', banner_url: '', image_url: ''},
+# {username: '', blurb: '', email: 'evan_dev14@fakey.com', password: 'DevPass244', banner_url: '', image_url: ''},
 
 
 
@@ -106,18 +124,46 @@ Songs = Song.create([
 {artist_id: 8,title: 'Summertime', url: 'http://res.cloudinary.com/dnkmsdtmu/video/upload/v1478815007/Summertime_qzwoip.mp3'},
 {artist_id: 8,title: 'E.S.P', url: 'http://res.cloudinary.com/dnkmsdtmu/video/upload/v1478815258/2-10_E.S.P._glokal.m4a'},
 {artist_id: 8,title: 'Boplicity', url: 'http://res.cloudinary.com/dnkmsdtmu/video/upload/v1478815063/7._Boplicity-Miles_Davis_tjepkw.mp3'},
+
+{artist_id: 9, title: 'Like A Mighty River', url: 'http://res.cloudinary.com/dnkmsdtmu/video/upload/v1478816364/04_Like_a_Mighty_River_qiijkt.mp3'},
+{artist_id: 9, title: 'Half The City', url: 'http://res.cloudinary.com/dnkmsdtmu/video/upload/v1478816401/08_Half_the_City_wqdpon.mp3'},
+{artist_id: 9, title: 'Dont Mean A Thing', url: 'http://res.cloudinary.com/dnkmsdtmu/video/upload/v1478816408/02_Don_t_Mean_a_Thing_n7qeka.mp3'},
+{artist_id: 9, title: 'I\'m Torn Up', url: 'http://res.cloudinary.com/dnkmsdtmu/video/upload/v1478816778/01_I_m_Torn_Up_i6fpof.mp3'},
+{artist_id: 9, title: 'That Glow', url: 'http://res.cloudinary.com/dnkmsdtmu/video/upload/v1478816861/05_That_Glow_cvggkh.mp3'},
+{artist_id: 9, title: 'Broken Bones & Pocket Change', url: 'http://res.cloudinary.com/dnkmsdtmu/video/upload/v1478816884/06_Broken_Bones_Pocket_Change_kowkhi.mp3'},
+
+{artist_id: 10, title: 'Ekg', url: 'http://res.cloudinary.com/dnkmsdtmu/video/upload/v1478818935/01_Ekg_rzkaqm.m4a'},
+{artist_id: 10, title: 'Either Way', url: 'http://res.cloudinary.com/dnkmsdtmu/video/upload/v1478818999/01_Either_Way_thbcqq.mp3'},
+{artist_id: 10, title: 'Side With The Seeds', url: 'http://res.cloudinary.com/dnkmsdtmu/video/upload/v1478819019/05_Side_With_The_Seeds_c1wbs4.mp3'},
+{artist_id: 10, title: 'Heavy Metal Drummer', url: 'http://res.cloudinary.com/dnkmsdtmu/video/upload/v1478819430/07_Heavy_Metal_Drummer_cmhdqn.mp3'},
+{artist_id: 10, title: 'I Am Trying To Break Your Heart', url: 'http://res.cloudinary.com/dnkmsdtmu/video/upload/v1478819666/01_I_Am_Trying_To_Break_Your_Heart_1_pi16vp.mp3'},
+{artist_id: 10, title: 'Whole Love', url: 'http://res.cloudinary.com/dnkmsdtmu/video/upload/v1478819628/11_Whole_Love_angzdh.m4a'},
+{artist_id: 10, title: 'A Shot In The Arm', url: 'http://res.cloudinary.com/dnkmsdtmu/video/upload/v1478819653/03_A_Shot_In_the_Arm_f91znp.m4a'},
+{artist_id: 10, title: 'Can\'t Stand It', url: 'http://res.cloudinary.com/dnkmsdtmu/video/upload/v1478819619/01_Can_t_Stand_It_fzwtql.m4a'},
+{artist_id: 10, title: 'Impossible Germany', url: 'http://res.cloudinary.com/dnkmsdtmu/video/upload/v1478819676/03_Impossible_Germany_avmprm.mp3'},
+
+{artist_id: 11, title: 'Graceless', url: 'http://res.cloudinary.com/dnkmsdtmu/video/upload/v1478820809/08_Graceless_th0j42.m4a'},
+{artist_id: 11, title: 'Sea of Love', url: 'http://res.cloudinary.com/dnkmsdtmu/video/upload/v1478820776/05_Sea_of_Love_ffiivu.m4a'},
+{artist_id: 11, title: 'Wake Up Your Saints', url: 'http://res.cloudinary.com/dnkmsdtmu/video/upload/v1478820596/Wake_Up_Your_Saints_vvxmjo.mp3'},
+{artist_id: 11, title: 'Bloodbuzz Ohio', url: 'http://res.cloudinary.com/dnkmsdtmu/video/upload/v1478820747/06_Bloodbuzz_Ohio_afmr70.m4a'},
+{artist_id: 11, title: 'Terrible Love', url: 'http://res.cloudinary.com/dnkmsdtmu/video/upload/v1478820746/01_Terrible_Love_ved88r.m4a'},
+{artist_id: 11, title: 'Wasp Nest', url: 'http://res.cloudinary.com/dnkmsdtmu/video/upload/v1478820493/Wasp_Nest_nfsxdx.mp3'},
+{artist_id: 11, title: 'Racing Like A Pro', url: 'http://res.cloudinary.com/dnkmsdtmu/video/upload/v1478820649/10_Racing_Like_a_Pro_x9salk.m4a'},
+{artist_id: 11, title: 'Fake Empire', url: 'http://res.cloudinary.com/dnkmsdtmu/video/upload/v1478820609/01_Fake_Empire_vmn2l8.m4a'},
+{artist_id: 11, title: 'The Thrilling Of Claire', url: 'http://res.cloudinary.com/dnkmsdtmu/video/upload/v1478820401/The_Thrilling_Of_Claire_a58bw2.mp3'},
+
+{artist_id: 12, title: 'Built To Roam', url: 'http://res.cloudinary.com/dnkmsdtmu/video/upload/v1478821564/02_Built_To_Roam_ulicty.m4a'},
+{artist_id: 12, title: 'The Perfect Parts', url: 'http://res.cloudinary.com/dnkmsdtmu/video/upload/v1478821733/04_The_Perfect_Parts_nsyjyl.m4a'},
+{artist_id: 12, title: 'I\'m On Fire', url: 'http://res.cloudinary.com/dnkmsdtmu/video/upload/v1478821565/04_I_m_On_FIre_magc8d.m4a'},
+{artist_id: 12, title: 'Family & Genus', url: 'http://res.cloudinary.com/dnkmsdtmu/video/upload/v1478821783/06_Family_and_Genus_jlpmtn.m4a'},
+{artist_id: 12, title: 'Dearly Departed', url: 'http://res.cloudinary.com/dnkmsdtmu/video/upload/v1478821783/03_Dearly_Departed_feat._Esme%CC%81_Patterson_zg3qqv.m4a'},
+{artist_id: 12, title: 'Business Lunch', url: 'http://res.cloudinary.com/dnkmsdtmu/video/upload/v1478821760/06_Business_Lunch_as83qw.m4a'},
+{artist_id: 12, title: 'Georgia Moon', url: 'http://res.cloudinary.com/dnkmsdtmu/video/upload/v1478821591/05_Georgia_Moon_paqkcf.m4a'}
 ])
 
 
 
 
-{artist_id: 9,title: 'Like A Mighty River', url: 'http://res.cloudinary.com/dnkmsdtmu/video/upload/v1478816364/04_Like_a_Mighty_River_qiijkt.mp3'},
-{artist_id: ,title: 'Half The City', url: 'http://res.cloudinary.com/dnkmsdtmu/video/upload/v1478816401/08_Half_the_City_wqdpon.mp3'},
-{artist_id: ,title: '', url: ''},
-{artist_id: ,title: '', url: ''},
-{artist_id: ,title: '', url: ''},
-{artist_id: ,title: '', url: ''},
-{artist_id: ,title: '', url: ''},
-{artist_id: ,title: '', url: ''},
 
-#{artist_id: ,title: '', url: ''},
+
+#{artist_id: , title: '', url: ''},
