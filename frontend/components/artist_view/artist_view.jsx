@@ -9,6 +9,9 @@ class ArtistView extends React.Component {
   constructor(props) {
     super(props);
 
+
+    this.profileImgProportionFixer = this.profileImgProportionFixer.bind(this);
+    this.bannerImgProportionFixer = this.bannerImgProportionFixer.bind(this);
   }
 
   componentWillMount(){
@@ -17,14 +20,37 @@ class ArtistView extends React.Component {
     this.props.fetchArtist(artistToFetch);
   }
 
+  profileImgProportionFixer(){
+    if (this.props.artist.username !== '') {
+      const urlArray = this.props.artist.image_url.split('/');
+      const splitIdx = urlArray.indexOf('upload');
+      const left = urlArray.slice(0, splitIdx).join('/');
+      const right = urlArray.slice(splitIdx + 1).join('/');
+      return left + '/upload/h_300/w_300/' + right;
+    } else {
+      return undefined;
+    }
+  }
+
+  bannerImgProportionFixer(){
+    if (this.props.artist.username !== '') {
+      const urlArray = this.props.artist.banner_url.split('/');
+      const splitIdx = urlArray.indexOf('upload');
+      const left = urlArray.slice(0, splitIdx).join('/');
+      const right = urlArray.slice(splitIdx + 1).join('/');
+      return left + '/upload/h_180/' + right;
+    } else {
+      return undefined;
+    }
+  }
 
   render(){
     const bannerStyle = {
-      backgroundImage: 'url(' + this.props.artist.banner_url + ')'
+      backgroundImage: 'url(' + this.props.artist.banner_url + ')'
     };
 
     const profileStyle = {
-      backgroundImage: 'url(' + this.props.artist.image_url + ')'
+      backgroundImage: 'url(' + this.profileImgProportionFixer() + ')'
     };
 
     return (

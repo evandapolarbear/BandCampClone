@@ -28,6 +28,7 @@ class MediaPlayer extends React.Component {
     this.playingIcon = this.playingIcon.bind(this);
     this.volumeIcon = this.volumeIcon.bind(this);
     this.handleMute = this.handleMute.bind(this);
+    this.introHide = this.introHide.bind(this);
   }
 
   componentWillReceiveProps(newProps){
@@ -100,6 +101,14 @@ class MediaPlayer extends React.Component {
 
   handleClick(url){
     return e => hashHistory.push(url);
+  }
+
+  introHide(){
+    if (this.props.currentSong.artist === '') {
+      return 'hidden';
+    } else {
+      return 'player-controls';
+    }
   }
 
   render(){

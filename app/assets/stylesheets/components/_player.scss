@@ -13,11 +13,16 @@
   color: offwhite;
 }
 
+.hidden {
+  display: hidden;
+}
+
 .player-controls ul{
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
+
 
 .seek-bar{
   width: 50em;
