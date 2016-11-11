@@ -1,5 +1,3 @@
-require 'byebug'
-
 class Api::ArtistsController < ApplicationController
   def index
     @search = params[:artist][:username]

@@ -1,6 +1,5 @@
 .profile-name{
   font-size: 120px;
-  margin: 80px 10% 80px 0;
   color: $pink;
   font-family:serif;
   font-weight: bolder;
@@ -31,9 +30,11 @@
 #artist-banner{
   background-size: 100%;
   width: 100%;
-  max-height: 300px;
+  height: 180px;
   display:flex;
   justify-content: flex-end;
+  padding-top: 9%;
+  padding-left: 2.5%;
 }
 
 
