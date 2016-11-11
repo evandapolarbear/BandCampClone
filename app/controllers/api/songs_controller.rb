@@ -1,5 +1,3 @@
-require "byebug"
-
 class Api::SongsController < ApplicationController
   def index
     @artist_being_viewed = Artist.find_by(id: params[:song][:artist_id])
