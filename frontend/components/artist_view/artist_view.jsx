@@ -69,7 +69,7 @@ class ArtistView extends React.Component {
         <div id='artist-banner' style={bannerStyle}>
             <div className="profile-name">
               <h2>
-                {this.usernameMod()}
+                {this.props.artist.username}
               </h2>
             </div>
 

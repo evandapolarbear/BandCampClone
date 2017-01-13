@@ -2,15 +2,10 @@
   position:fixed;
   width: 100%;
   background: white;
-  opacity: .5;
   bottom: 0;
   height: 8%;
   padding-top: 15px;
-}
-
-#player:hover{
-  opacity: 1;
-  color: offwhite;
+  background-color: silver;
 }
 
 .hidden {
@@ -37,7 +32,6 @@
 .player-info:hover{
   .player-artistname{
     border-bottom: 3px solid $pink;
-    font-size: 26px;
   }
 }
 
