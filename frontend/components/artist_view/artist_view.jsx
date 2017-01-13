@@ -12,6 +12,7 @@ class ArtistView extends React.Component {
 
     this.profileImgProportionFixer = this.profileImgProportionFixer.bind(this);
     this.bannerImgProportionFixer = this.bannerImgProportionFixer.bind(this);
+    this.usernameMod = this.usernameMod.bind(this);
   }
 
   componentWillMount(){
@@ -44,6 +45,16 @@ class ArtistView extends React.Component {
     }
   }
 
+  usernameMod(){
+    let name = this.props.artist.username;
+    if(name.length > 20){
+      return name.slice(0, 20) + '...';
+    } else {
+      return name;
+    }
+  }
+
+
   render(){
     const bannerStyle = {
       backgroundImage: 'url(' + this.props.artist.banner_url + ')'
@@ -56,9 +67,11 @@ class ArtistView extends React.Component {
     return (
       <div id='artist-profile'>
         <div id='artist-banner' style={bannerStyle}>
-            <h2 className="profile-name">
-              {this.props.artist.username}
-            </h2>
+            <div className="profile-name">
+              <h2>
+                {this.usernameMod()}
+              </h2>
+            </div>
 
             <div className="update-buttons" id="banner-button">
             </div>

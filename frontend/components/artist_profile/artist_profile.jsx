@@ -18,6 +18,7 @@ class ArtistProfile extends React.Component {
     };
 
     this.selectSongToPlay = this.selectSongToPlay.bind(this);
+    this.usernameMod = this.usernameMod.bind(this);
   }
 
   selectSongToPlay(url) {
@@ -37,6 +38,15 @@ class ArtistProfile extends React.Component {
 		});
 	}
 
+  usernameMod(){
+    let name = this.props.username;
+    if(name.length > 20){
+      return name.slice(0, 20) + '...';
+    } else {
+      return name;
+    }
+  }
+
   render(){
 
     const bannerStyle = {
@@ -50,9 +60,11 @@ class ArtistProfile extends React.Component {
     return (
       <div id='artist-profile'>
         <div id='artist-banner' style={bannerStyle}>
-            <h2 className="profile-name">
-              {this.props.username}
-            </h2>
+            <div className="profile-name">
+              <h2>
+                {this.usernameMod()}
+              </h2>
+            </div>
 
             <div className="update-buttons" id="banner-button">
               <UpdateBannerUrl />

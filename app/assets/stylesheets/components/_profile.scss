@@ -4,6 +4,12 @@
   font-family:serif;
   font-weight: bolder;
   text-shadow: -4px 4px black;
+  float:right;
+  margin-right: 10%;
+  margin-top: 4%;
+  height: 100%;
+  width: 60%;
+  text-align: right;
 }
 
 .update-buttons{
@@ -33,7 +39,7 @@
   height: 180px;
   display:flex;
   justify-content: flex-end;
-  padding-top: 9%;
+  padding-bottom: 9%;
   padding-left: 2.5%;
 }
 
@@ -49,19 +55,29 @@
   background-size: cover;
 }
 
+#song-column {
+  float: left;
+  margin-left: 10%;
+  border: 2px black solid;
+  padding: 1% 1% 1% 1%;
+  width: 30%;
+}
+
+#profile-player-column {
+  float: right;
+  margin-right: 10%;
+}
+
 #song-column, #profile-player-column {
   color:black;
-  float:left;
+  width: 30%;
   display:flex;
-  margin: 16% 0 10% 10%;
+  margin-top: 15%;
+  margin-bottom: 10%;
   flex-direction: column;
   text-align: center;
 }
 
-#song-column{
-  border: 2px black solid;
-  padding: 1% 1% 1% 1%;
-}
 
 #audio-player{
   border: 2px black solid;
@@ -72,5 +88,4 @@
 #blurb{
   border: 2px black solid;
   padding: 5% 5% 5% 5%;
-  margin: 0 0 4% 0;
 }
