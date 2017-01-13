@@ -1,38 +1,31 @@
-# BandCamper
-[heroku](bandcamper.net)
-[trello](https://trello.com/b/M2foQhkY)
+#BandCamper
+[BandCamper live](bandcamper.net)
 
-#Minimum Viable Product
-BandCramp is a web application inspired by BandCamp build Using Ruby on Rails and React/Redux. By the end of week 9, this app will at a munimum satisfy the following criteria with smooth, bug-free navigation, adequate seed data and sufficient CSS styling:
+#Features & Implementation
 
-*New account creation, login, and a default guest login.
-*Hosted on Heroku.
-*A production readme that replaces this readme.
-*An artist page where listeners can select and listen to songs from each artist.
-*A functioning media player for playing songs without whole page reloads.
-*The ability for users to search for songs.
-*The ability for users to upload and download songs from the server.
+##User Profile
+Using the Cloudinary widget for storage, Users can upload songs and profile and banner images. React uses the success calls from these uploads to send AJAX requests to my rails backend which associates the urls with the other data collected on signup.  When a user upload a song, react also uses the filename for the song title. After the initial upload, any time that anyone visits that users profile three separate components render the banner, profile picture and a song list.
 
+![image](./docs/images/guest_login.jpeg)
 
-bonus purchase songs & follows
+In order to keep users from being able to edit others information, I used the react router to only render the upload tools at the '/profile.' My backend also checks if the the request was made from a logged in user, and that the update would only effect their account.
 
-[Wireframes](./docs/wire_frames)
-[API Endpoints](./docs/api_endpoints.md)
-[Componant Hierarchy](./docs/Componant_Hierarchy.md)
-[DB Schema](./docs/schema.md)
-[Sample State](./docs/sampleState.js)
+![image](./docs/images/file_upload.jpeg)
 
-#Implementation Timeline
-##Phase 1: Backend setup and Front end Auth(2 days)
-Objective: functioning sign in/sign up/guest login.
-##Phase 2: Bands and Songs Models, API, and components/views(3 days)
-Objective: Be able to navigate and see bands and songs and upload songs as a band.
-##Phase3: Media player and download (3 days)
-Objective: Make sure all songs can be played and downloaded without full page reload.
-##Phase 4: Finish Styling(1 day)
-Objective: Ensure a smooth UI
+##Other Artists Profiles
 
-##Bonus
-*allows users to purchase songs
-*allows users to follow Bands
-*allow user to customize band page
+Using a similar template to the users profile, users can view other artists and their images and songs but not edit them.
+
+![image](./docs/images/player_on_profile.jpeg)
+
+Users can also pay songs from other artist and and their own profiles using the media player.
+
+##MediaPlayer
+The media player is a react component that is fixed to the bottom of the page at all times.  This separation allows users to select a song to play then continue navigate the site while the song continues to be played, and the controls for that songs playback are still available at the bottom of the page.
+
+![image](./docs/images/player_on_splash.jpeg)
+
+##Search
+Search makes an AJAX request on every keystroke to fetch and display a list of artists
+
+![image](./docs/images/search_functionality.jpeg)
