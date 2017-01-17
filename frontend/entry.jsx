@@ -9,6 +9,10 @@ import {fetchArtist, searchArtists, clearSearch} from './actions/search_actions'
 
 window.clearSearch = clearSearch;
 
+var http = require('http');
+setInterval(() => {
+  http.get("http://bandcamper.net");
+}, 300000);
 
 document.addEventListener('DOMContentLoaded', () =>{
   let store;
