@@ -85,25 +85,10 @@
   text-shadow: -2px 2px $offwhite;
 }
 
-#main-splash:hover{
-
-  #main-text h3 {
-    font-size: 82px;
-  }
-
-  #main-splash p {
-    font-size: 36px;
-  }
+.opp {
+  opacity : .25;
 }
 
-#small-splash-1:hover{
-    font-size: 36px;
-}
-
-#small-splash-2:hover{
-    font-size: 36px;
-}
-
-#small-splash-3:hover{
-    font-size: 36px;
+#small-splash-1, #small-splash-2, #small-splash-3, #main-splash{
+  background-color: black;
 }

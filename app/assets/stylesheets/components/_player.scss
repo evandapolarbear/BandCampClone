@@ -1,11 +1,10 @@
 #player {
   position:fixed;
   width: 100%;
-  background: white;
   bottom: 0;
   height: 8%;
   padding-top: 15px;
-  background-color: silver;
+  background-color: $offwhite;
 }
 
 .hidden {

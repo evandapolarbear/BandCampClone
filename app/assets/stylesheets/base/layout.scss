@@ -1,17 +1,19 @@
-body {
-  padding: 0;
-  margin: 0;
-  font-family: sans-serif;
-  background-color: $offwhite;
+body, html, header {
+  padding : 0;
+  margin : 0;
+  font-family : sans-serif;
+  height : 100%;
+  width : 100%;
+  background-color: #222223;
 }
 
 a {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 a:hover{
-  border-bottom: 3px solid $pink;
+  border-bottom: 1px solid $pink;
   cursor: pointer;
 }
 
