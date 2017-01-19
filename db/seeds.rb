@@ -64,7 +64,9 @@ Shakey Graves became known for his one-man band set up and most of his debut alb
 
 {username: 'Vince Staples', blurb: "Vincent 'Vince' Staples (born July 2, 1993) is an American rapper from Long Beach, California. He is part of the hip hop trio Cutthroat Boyz, alongside fellow Californian rappers A$ton Matthews and Joey Fatts. Staples was once a close associate of Odd Future, in particular Mike G and Earl Sweatshirt. He is currently signed to Blacksmith Records, ARTium Recordings and Def Jam Recordings.
 
-Staples rose to prominence with appearances on albums by Odd Future members and his collaborative mixtape titled Stolen Youth with Mac Miller, who produced the project. In October 2014, he released his debut EP Hell Can Wait, which included the singles 'Hands Up' and 'Blue Suede'. His debut album, Summertime '06, was released on June 30, 2015, to critical acclaim. He was also featured as a part of the XXL 2015 Freshman Class.", email: 'evan_dev17@fakey.com', password: 'DevPass244', banner_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1484788399/vsb_qzb0vb.png', image_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1484788398/vsp_g6ixyj.jpg'}
+Staples rose to prominence with appearances on albums by Odd Future members and his collaborative mixtape titled Stolen Youth with Mac Miller, who produced the project. In October 2014, he released his debut EP Hell Can Wait, which included the singles 'Hands Up' and 'Blue Suede'. His debut album, Summertime '06, was released on June 30, 2015, to critical acclaim. He was also featured as a part of the XXL 2015 Freshman Class.", email: 'evan_dev17@fakey.com', password: 'DevPass244', banner_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1484788399/vsb_qzb0vb.png', image_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1484788398/vsp_g6ixyj.jpg'},
+
+{username: 'Iron Chic', blurb: 'Iron Chic is an American punk rock band from Long Island, New York. The band is made up of Phil Douglas, Jason Lubrano, Gordon Lafler, Mike Bruno, Jesse Litwa. They have released records on both Bridge Nine Records, Dead Broke Records and Side One Dummy. Both their full length albums have received positive reviews on websites such as Pitchfork and punknews.org. In February 2016, it was announced that the band had signed with record label SideOneDummy for a new, upcoming record.', email: 'evan_dev18@fakey.com', password: 'DevPass244', banner_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1484799626/icb_bylhby.jpg', image_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1484799631/ICp_urnsrd.jpg'}
 ])
 
 # {username: '', blurb: '', email: 'evan_dev15@fakey.com', password: 'DevPass244', banner_url: '', image_url: ''},
@@ -189,9 +191,15 @@ Songs = Song.create([
 
 {artist_id: 16, title: "Prima Donna", url: "http://res.cloudinary.com/dnkmsdtmu/video/upload/v1484788609/05_Prima_Donna_feat_A_AP_Rocky_uwk3v1.mp3"},
 {artist_id: 16, title: "Big Time", url: "http://res.cloudinary.com/dnkmsdtmu/video/upload/v1484788625/07_Big_Time_qst7js.mp3"},
-{artist_id: 16, title: "Lift Me Up", url: "http://res.cloudinary.com/dnkmsdtmu/video/upload/v1484788674/1-02_Lift_Me_Up_hm8yv2.m4a"}
+{artist_id: 16, title: "Lift Me Up", url: "http://res.cloudinary.com/dnkmsdtmu/video/upload/v1484788674/1-02_Lift_Me_Up_hm8yv2.m4a"},
 
-
+{artist_id: 17, title: "L' esprit de L' escalier", url: "http://res.cloudinary.com/dnkmsdtmu/video/upload/v1484799799/01_L_esprit_de_L_escalier_v2d4du.m4a"},
+{artist_id: 17, title: "Whatever Happened To the...", url: "http://res.cloudinary.com/dnkmsdtmu/video/upload/v1484799812/11_Whatever_Happened_To_the_Man_of_Tomorrow__pf9ovr.m4a"},
+{artist_id: 17, title: "Cutesy Monster Man", url: "http://res.cloudinary.com/dnkmsdtmu/video/upload/v1484799832/01_Cutesy_Monster_Man_cbfgel.m4a"},
+{artist_id: 17, title: "Cutesy Monster Man", url: "http://res.cloudinary.com/dnkmsdtmu/video/upload/v1484799832/01_Cutesy_Monster_Man_cbfgel.m4a"},
+{artist_id: 17, title: "Every Town Has an Elm Street", url: "http://res.cloudinary.com/dnkmsdtmu/video/upload/v1484799839/10_Every_Town_Has_an_Elm_Street_iqravh.m4a"},
+{artist_id: 17, title: "The End", url: "http://res.cloudinary.com/dnkmsdtmu/video/upload/v1484799829/01_The_End_ktusrv.m4a"},
+{artist_id: 17, title: "Wold Dix Rd.", url: "http://res.cloudinary.com/dnkmsdtmu/video/upload/v1484799851/04_Wolf_Dix_Rd._nrba8u.m4a"}
 
 ])
 
