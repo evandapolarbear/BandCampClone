@@ -6,17 +6,41 @@ class SimpleSlider extends React.Component{
     super(props);
   }
 
+  renderOptions(genreObjs){
+    const popDisc = [
+      {imgUrl: "",
+      name: "",
+      songUrl: ""}, 
+    ]
+
+    return (
+      <div className="genre-list">
+        {genreObj.forEach(obj =>{
+          const imgUrl = obj.imgUrl;
+          const name = obj.name;
+          const songUrl = obj.songUrl;
+
+          return(
+            <div classList="slider-item">
+
+
+            </div>
+          );
+        })
+        }
+      </div>
+    )
+  },
+
   makeActive(genre){
     return (e => {
       e.preventDefaults;
 
-      document.getElementById('blues').classList.remove('genre-show');
       document.getElementById('hip-hop').classList.remove('genre-show');
       document.getElementById('pop').classList.remove('genre-show');
       document.getElementById('rock').classList.remove('genre-show');
-      document.getElementById('jazz').classList.remove('genre-show');
+      document.getElementById('other').classList.remove('genre-show');
       document.getElementById('edm').classList.remove('genre-show');
-      document.getElementById('classical').classList.remove('genre-show');
 
       document.getElementById(genre).classList.add('genre-show');
     });
@@ -36,11 +60,9 @@ class SimpleSlider extends React.Component{
         <div className="genre-buttons">
           <button onClick={this.makeActive("pop")}>Pop</button>
           <button onClick={this.makeActive("rock")}>Rock</button>
-          <button onClick={this.makeActive("hip-hop")}>Hip Hop</button>
+          <button onClick={this.makeActive("hip-hop")}>Hip-Hop/R&B</button>
           <button onClick={this.makeActive("edm")}>Electronic</button>
-          <button onClick={this.makeActive("jazz")}>Jazz</button>
-          <button onClick={this.makeActive("blues")}>Blues</button>
-          <button onClick={this.makeActive("classical")}>Classical</button>
+          <button onClick={this.makeActive("other")}>Other</button>
         </div>
 
         <div className="slider-track">
@@ -64,19 +86,9 @@ class SimpleSlider extends React.Component{
               This is the edm container
             </h2>
           </div>
-          <div className='genre-container' id='jazz'>
+          <div className='genre-container' id='other'>
             <h2>
-              This is the jazz container
-            </h2>
-          </div>
-          <div className='genre-container' id='blues'>
-            <h2>
-              This is the blues container
-            </h2>
-          </div>
-          <div className='genre-container' id='classical'>
-            <h2>
-              This is the classical container
+              This is the other container
             </h2>
           </div>
         </div>

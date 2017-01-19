@@ -14,16 +14,13 @@ ActiveRecord::Base.connection.reset_pk_sequence!("songs")
 
 
 Artists = Artist.create([
-
-{username:"guest", email:'guest', password:'password'}
-
 {username: 'Sylvan Esso', banner_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1478559637/esso_banner_2_o7b0t7.jpg', image_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1478559077/esso_profile_2_qnvvwe.jpg', email: 'evan_dev@fakey.com', password: 'DevPass244', blurb: 'Sylvan Esso is an American indie pop duo from Durham, North Carolina formed in 2013. The band consists of singer Amelia Meath (Mountain Man) and producer Nick Sanborn (Megafaun, Made of Oak). They made their debut with the single "Hey Mami" and released their eponymous debut album on Partisan Records on May 12, 2014, which reached #39 on the Billboard 200. Since then they have released two further singles and toured internationally.'},
 
 {username: 'Tom Waits', blurb: 'Thomas Alan "Tom" Waits (born December 7, 1949) is an American singer-songwriter, composer, and actor.
 
 Waits has a distinctive voice, described by critic Daniel Durchholz as sounding like "it was soaked in a vat of bourbon, left hanging in the smokehouse for a few months, and then taken outside and run over with a car". With this trademark growl, his incorporation of pre-rock music styles such as blues, jazz, and vaudeville, and experimental tendencies verging on industrial music, Waits has built up a distinctive musical persona. He has worked as a composer for movies and musicals and has acted in supporting roles in films, including Paradise Alley and Bram Stoker\'s Dracula. He also starred in Jim Jarmusch\'s 1986 film Down by Law. He was nominated for an Academy Award for his soundtrack work on One from the Heart.', email: 'evan_dev1@fakey.com', password: 'DevPass244', banner_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1478561003/tom_waits_banner_2_mddxlq.jpg', image_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1478560127/tom_waits_profile_2_mugxcb.jpg'},
 
-{username: 'Beyonce', blurb: 'Beyoncé Giselle Knowles-Carter (born September 4, 1981) is an American singer, songwriter and actress. Born and raised in Houston, Texas, she performed in various singing and dancing competitions as a child and rose to fame in the late 1990s as lead singer of R&B girl-group Destiny\'s Child. Managed by her father, Mathew Knowles, the group became one of the world\'s best-selling girl groups of all time. Their hiatus saw the release of Beyoncé\'s debut album, Dangerously in Love (2003), which established her as a solo artist worldwide, earned five Grammy Awards and featured the Billboard Hot 100 number-one singles "Crazy in Love" and "Baby Boy".', email: 'evan_dev2@fakey.com', password: 'DevPass244', banner_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1478560829/Beyonce_banner_2_cxjbxf.jpg', image_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1478560551/beyonce_profile_2_i8uesk.jpg'},
+{username: 'Beyonce', blurb: 'Beyoncé Giselle Knowles-Carter (born September 4, 1981) is an American singer, songwriter and actress. Born and raised in Houston, Texas, she performed in various singing and dancing competitions as a child and rose to fame in the late 1990s as lead singer of R&B girl-group Destiny\'s Child. Managed by her father, Mathew Knowles, the group became one of the world\'s best-selling girl groups of all time. Their hiatus saw the release of Beyoncé\'s debut album, Dangerously in Love (2003), which established her as a solo artist worldwide, earned five Grammy Awards and featured the Billboard Hot 100 number-one singles "Crazy in Love" and "Baby Boy".', email: 'guest', password: 'password', banner_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1478560829/Beyonce_banner_2_cxjbxf.jpg', image_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1478560551/beyonce_profile_2_i8uesk.jpg'},
 
 {username: 'PUP', blurb: 'Pup (stylized as PUP) is a Canadian punk rock band formed in Toronto, Ontario in 2013, originally under the name Topanga. Pup\'s self-titled debut album was released on October 8, 2013 on Royal Mountain Records. In December 2013, Pup signed with SideOneDummy Records and re-released their debut album in the United States on April 8, 2014. The group was in the studio in late 2015 recording their second album The Dream Is Over which was released on May 27, 2016 through SideOneDummy.', email: 'evan_dev3@fakey.com', password: 'DevPass244', banner_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1478562247/pup_banner_a2fw4w.jpg', image_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1478561998/pup_profile_3_egcjhq.jpg'},
 
@@ -57,11 +54,20 @@ Four of the band\'s albums were included on NME\'s 2013 list of the 500 greatest
 
 His music is a cross between blues, folk and rock and roll – he performs at many large festivals and concert venues around the United States. Alejandro Rose-Garcia received his iconic stage name at Old Settler\'s Music Festival in 2007 after he and his friends jokingly gave each other Indian guide names over a campfire. After an inspired night of playing music, he decided to keep the name.
 
-Shakey Graves became known for his one-man band set up and most of his debut album Roll the Bones is Rose-Garcia playing unaccompanied by other musicians. When he began working on his sophomore album, And the War Came, Rose-Garcia added musicians to his recording process and live set. Three songs from And the War Came are duets with ex-Paper Bird member Esme Patterson. The album was produced, engineered and mixed by Chris Boosahda. Boosahda also contributes drums, vocals, percussion and music for the song Big Time Nashville Star to the ATWC album. Patrick O\'Connor, from the LA music scene, plays guitar and bass at various live shows as the project and tours have moved forward as a revolving duo and trio.', email: 'evan_dev13@fakey.com', password: 'DevPass244', banner_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1478821254/shakey_banner_eyavue.jpg', image_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1478821253/shakey_profile_m7qc1a.jpg'}
+Shakey Graves became known for his one-man band set up and most of his debut album Roll the Bones is Rose-Garcia playing unaccompanied by other musicians. When he began working on his sophomore album, And the War Came, Rose-Garcia added musicians to his recording process and live set. Three songs from And the War Came are duets with ex-Paper Bird member Esme Patterson. The album was produced, engineered and mixed by Chris Boosahda. Boosahda also contributes drums, vocals, percussion and music for the song Big Time Nashville Star to the ATWC album. Patrick O\'Connor, from the LA music scene, plays guitar and bass at various live shows as the project and tours have moved forward as a revolving duo and trio.', email: 'evan_dev13@fakey.com', password: 'DevPass244', banner_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1478821254/shakey_banner_eyavue.jpg', image_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1478821253/shakey_profile_m7qc1a.jpg'},
+
+{username: 'Matt & Kim', blurb: 'Matt and Kim (sometimes stylized Matt & Kim) are an American indie electronic duo from Brooklyn, New York. The group formed in 2004 and consists of Matt Johnson (vocals/keyboards) and Kim Schifino (drums).  The duo is known for its upbeat dance music and energetic live shows which often incorporate samples from other artists. Although they started their career playing shows in lofts and other close-quarters venues, they have since performed at numerous festivals, including Bonnaroo, Coachella, and the Firefly Music Festival.', email: 'evan_dev14@fakey.com', password: 'DevPass244', banner_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1484785701/m_kbanner_wdmijl.png', image_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1484785701/m_k_weylao.jpg'},
+
+{username: 'Brian Fallon', blurb: "Brian Fallon (born January 28, 1980) is an American singer, songwriter, and guitarist. He is best known as the lead vocalist, guitarist, and songwriter of the rock band The Gaslight Anthem, with whom he has recorded five studio albums. He is also a member of the duo The Horrible Crowes, alongside The Gaslight Anthem's guitar technician and touring guitarist Ian Perkins.", email: 'evan_dev15@fakey.com', password: 'DevPass244', banner_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1484786682/BFb_zohkhf.jpg', image_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1484786683/BFp_sjuwtc.jpg'},
+
+{username: 'Anderson Paak', blurb: "Brandon Paak Anderson (born February 8, 1986), known professionally as Anderson Paak (stylized as Anderson .Paak), is an American singer, songwriter, rapper, drummer, and record producer from Ventura, California. He released his debut album, O.B.E. Vol. 1 in 2012, under the pseudonym Breezy Lovejoy. He went on to release Venice in 2014, under his current moniker. Paak followed with Malibu, in 2016, which received a nomination for Best Urban Contemporary Album at the Grammy Awards.", email: 'evan_dev16@fakey.com', password: 'DevPass244', banner_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1484787452/apb_nxueyi.png', image_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1484787446/app_vus5gi.jpg'},
+
+{username: 'Vince Staples', blurb: "Vincent 'Vince' Staples (born July 2, 1993) is an American rapper from Long Beach, California. He is part of the hip hop trio Cutthroat Boyz, alongside fellow Californian rappers A$ton Matthews and Joey Fatts. Staples was once a close associate of Odd Future, in particular Mike G and Earl Sweatshirt. He is currently signed to Blacksmith Records, ARTium Recordings and Def Jam Recordings.
+
+Staples rose to prominence with appearances on albums by Odd Future members and his collaborative mixtape titled Stolen Youth with Mac Miller, who produced the project. In October 2014, he released his debut EP Hell Can Wait, which included the singles 'Hands Up' and 'Blue Suede'. His debut album, Summertime '06, was released on June 30, 2015, to critical acclaim. He was also featured as a part of the XXL 2015 Freshman Class.", email: 'evan_dev17@fakey.com', password: 'DevPass244', banner_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1484788399/vsb_qzb0vb.png', image_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1484788398/vsp_g6ixyj.jpg'}
 ])
 
-
-# {username: '', blurb: '', email: 'evan_dev14@fakey.com', password: 'DevPass244', banner_url: '', image_url: ''},
+# {username: '', blurb: '', email: 'evan_dev15@fakey.com', password: 'DevPass244', banner_url: '', image_url: ''},
 
 
 
@@ -84,11 +90,6 @@ Songs = Song.create([
 {artist_id: 2, title: 'Big Black Mariah', url: 'http://res.cloudinary.com/dnkmsdtmu/video/upload/v1478761581/06_Big_Black_Mariah_y3ndr5.m4a'},
 {artist_id: 2, title: 'Diamonds and Gold', url: 'http://res.cloudinary.com/dnkmsdtmu/video/upload/v1478761600/07_Diamonds_and_Gold_d48ddh.m4a'},
 {artist_id: 2, title: 'Gun Street Girl', url: 'http://res.cloudinary.com/dnkmsdtmu/video/upload/v1478761688/14_Gun_Street_Girl_ukwccr.m4a'},
-{artist_id: 2, title: '', url: ''},
-
-{artist_id: 3,title: 'beyonce 1', url: 'http://res.cloudinary.com/dnkmsdtmu/video/upload/v1478565866/01_Welcome_To_New_York_va0u9v.mp3'},
-{artist_id: 3,title: 'beyonce 2', url: 'http://res.cloudinary.com/dnkmsdtmu/video/upload/v1478565866/01_Welcome_To_New_York_va0u9v.mp3'},
-{artist_id: 3,title: 'beyonce 3', url: 'http://res.cloudinary.com/dnkmsdtmu/video/upload/v1478565866/01_Welcome_To_New_York_va0u9v.mp3'},
 
 {artist_id: 4,title: 'Dvp', url: 'http://res.cloudinary.com/dnkmsdtmu/video/upload/v1478815507/02_Dvp_qcfgdr.m4a'},
 {artist_id: 4,title: 'Can\'t Win', url: 'http://res.cloudinary.com/dnkmsdtmu/video/upload/v1478815594/08_Can_t_Win_xpnfgp.m4a'},
@@ -162,7 +163,36 @@ Songs = Song.create([
 {artist_id: 12, title: 'Family & Genus', url: 'http://res.cloudinary.com/dnkmsdtmu/video/upload/v1478821783/06_Family_and_Genus_jlpmtn.m4a'},
 {artist_id: 12, title: 'Dearly Departed', url: 'http://res.cloudinary.com/dnkmsdtmu/video/upload/v1478821783/03_Dearly_Departed_feat._Esme%CC%81_Patterson_zg3qqv.m4a'},
 {artist_id: 12, title: 'Business Lunch', url: 'http://res.cloudinary.com/dnkmsdtmu/video/upload/v1478821760/06_Business_Lunch_as83qw.m4a'},
-{artist_id: 12, title: 'Georgia Moon', url: 'http://res.cloudinary.com/dnkmsdtmu/video/upload/v1478821591/05_Georgia_Moon_paqkcf.m4a'}
+{artist_id: 12, title: 'Georgia Moon', url: 'http://res.cloudinary.com/dnkmsdtmu/video/upload/v1478821591/05_Georgia_Moon_paqkcf.m4a'},
+
+{artist_id: 3, title: 'Formation', url: 'http://res.cloudinary.com/dnkmsdtmu/video/upload/v1484784908/12._Formation_brvmec.mp3'},
+{artist_id: 3, title: 'Play You Catch Me', url: 'http://res.cloudinary.com/dnkmsdtmu/video/upload/v1484784961/01._Pray_You_Catch_Me_de8wel.mp3'},
+{artist_id: 3, title: 'Sandcastles', url: 'http://res.cloudinary.com/dnkmsdtmu/video/upload/v1484784979/08._Sandcastles_pyappu.mp3'},
+{artist_id: 3, title: "Don't Hurt Yourself", url: 'http://res.cloudinary.com/dnkmsdtmu/video/upload/v1484784986/03._Don_t_Hurt_Yourself_feat._Jack_White_q4p3jb.mp3'},
+{artist_id: 3, title: "Sorry", url: 'http://res.cloudinary.com/dnkmsdtmu/video/upload/v1484785018/04._Sorry_xnkow5.mp3'},
+{artist_id: 3, title: "Freedom", url: 'http://res.cloudinary.com/dnkmsdtmu/video/upload/v1484785010/10._Freedom_feat._Kendrick_Lamar_taqjbf.mp3'},
+
+{artist_id: 13, title: "Fall to Pieces", url: 'http://res.cloudinary.com/dnkmsdtmu/video/upload/v1484785882/01_Fall_to_Pieces_t5xgms.m4a'},
+{artist_id: 13, title: "Let's Run Away", url: 'http://res.cloudinary.com/dnkmsdtmu/video/upload/v1484785870/02_Let_s_Run_Away_rypnbl.m4a'},
+{artist_id: 13, title: "Please No More", url: 'http://res.cloudinary.com/dnkmsdtmu/video/upload/v1484785888/03_Please_No_More_cx7qko.m4a'},
+{artist_id: 13, title: "Haunting Me", url: 'http://res.cloudinary.com/dnkmsdtmu/video/upload/v1484785892/04_Haunting_Me_npctgz.m4a'},
+
+{artist_id: 14, title: "Painkillers", url: 'http://res.cloudinary.com/dnkmsdtmu/video/upload/v1484786844/1-02_Painkillers_e8ufyq.mp3'},
+{artist_id: 14, title: "Smoke", url: 'http://res.cloudinary.com/dnkmsdtmu/video/upload/v1484786841/1-04_Smoke_e34v8r.mp3'},
+{artist_id: 14, title: "Nobody Wins", url: 'http://res.cloudinary.com/dnkmsdtmu/video/upload/v1484786875/1-06_Nobody_Wins_pg2yzv.mp3'},
+{artist_id: 14, title: "Steve Mcqueen", url: 'http://res.cloudinary.com/dnkmsdtmu/video/upload/v1484786885/1-05_Steve_Mcqueen_ecnczm.mp3'},
+{artist_id: 14, title: "A Wonderful Life", url: 'http://res.cloudinary.com/dnkmsdtmu/video/upload/v1484786873/1-01_A_Wonderful_Life_dgs307.mp3'},
+
+{artist_id: 15, title: "Suede", url: 'http://res.cloudinary.com/dnkmsdtmu/video/upload/v1484787745/13._Suede_sphzmo.mp3'},
+{artist_id: 15, title: "Parking Lot", url: 'http://res.cloudinary.com/dnkmsdtmu/video/upload/v1484787956/08._Parking_Lot_n09l8q.mp3'},
+{artist_id: 15, title: "The Dreamer", url: 'http://res.cloudinary.com/dnkmsdtmu/video/upload/v1484788018/16._The_Dreamer_feat._Talib_Kweli_Timan_Family_Choir_uw3jwa.mp3'},
+
+{artist_id: 16, title: "Prima Donna", url: "http://res.cloudinary.com/dnkmsdtmu/video/upload/v1484788609/05_Prima_Donna_feat_A_AP_Rocky_uwk3v1.mp3"},
+{artist_id: 16, title: "Big Time", url: "http://res.cloudinary.com/dnkmsdtmu/video/upload/v1484788625/07_Big_Time_qst7js.mp3"},
+{artist_id: 16, title: "Lift Me Up", url: "http://res.cloudinary.com/dnkmsdtmu/video/upload/v1484788674/1-02_Lift_Me_Up_hm8yv2.m4a"}
+
+
+
 ])
 
 
