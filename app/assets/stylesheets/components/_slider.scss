@@ -19,7 +19,6 @@
 
 .slider-item {
   width:200px;
-
 }
 
 .splash-heading{
@@ -48,7 +47,6 @@
 }
 
 .genre-container{
-  display: none;
   color: white;
   height: 300px;
   width: 80%;
@@ -56,6 +54,7 @@
   border-radius: 4px;
   margin-left: 10%;
   margin-right: 10%;
+  display: none;
 }
 
 .genre-show {

@@ -14,7 +14,7 @@ export const guestLogin = (success, error) => {
 	$.ajax({
 		method:'POST',
 		url: 'api/session',
-		data: {artist: {username:"guest", password:"password"}},
+		data: {artist: {username:"Beyonce", password:"password"}},
 		success,
 		error
 	});

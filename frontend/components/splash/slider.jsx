@@ -12,7 +12,14 @@ class SimpleSlider extends React.Component{
           songUrl: "http://res.cloudinary.com/dnkmsdtmu/video/upload/v1478757281/06_Shake_It_Off_mla0vv.mp3"},
         {name: "Beyonce",
           imgUrl: "http://res.cloudinary.com/dnkmsdtmu/image/upload/h_125/w_125/v1478560551/beyonce_profile_2_i8uesk.jpg",
-          songUrl: "http://res.cloudinary.com/dnkmsdtmu/video/upload/v1484784961/01._Pray_You_Catch_Me_de8wel.mp3"}
+          songUrl: "http://res.cloudinary.com/dnkmsdtmu/video/upload/v1484784961/01._Pray_You_Catch_Me_de8wel.mp3"},
+        {name: "Justin Beiber",
+          imgUrl: "http://res.cloudinary.com/dnkmsdtmu/image/upload/h_125/w_125/v1484850202/jbp_quasqu.jpg",
+          songUrl: "http://res.cloudinary.com/dnkmsdtmu/video/upload/v1484851655/04_Sorry_pjn2tn.mp3"},
+        {name: "Adele",
+          imgUrl: "http://res.cloudinary.com/dnkmsdtmu/image/upload/h_125/w_125/v1484852945/ap_ghh9ck.jpg",
+          songUrl: "http://res.cloudinary.com/dnkmsdtmu/video/upload/v1484852385/01_Hello_jvwqmb.m4a"},
+
       ],
       rock: [
         {name: "Brian Fallon",
@@ -43,6 +50,9 @@ class SimpleSlider extends React.Component{
         {name: "Matt & Kim",
           imgUrl: "http://res.cloudinary.com/dnkmsdtmu/image/upload/h_125/w_125/v1484785701/m_k_weylao.jpg",
           songUrl: "http://res.cloudinary.com/dnkmsdtmu/video/upload/v1484785882/01_Fall_to_Pieces_t5xgms.m4a"},
+        {name: "Odesza",
+          imgUrl: "http://res.cloudinary.com/dnkmsdtmu/image/upload/h_125/w_125/v1484850206/odp_rf89mr.jpg",
+          songUrl: "http://res.cloudinary.com/dnkmsdtmu/video/upload/v1484850769/02_How_Did_I_Get_Here_wukyye.mp3"},
       ]
     };
   }
@@ -64,7 +74,6 @@ class SimpleSlider extends React.Component{
       document.getElementById('b-rock').classList.remove('active-genre-button');
       document.getElementById('b-other').classList.remove('active-genre-button');
       document.getElementById('b-edm').classList.remove('active-genre-button');
-
 
       document.getElementById(genre).classList.add('genre-show');
       document.getElementById(buttonId).classList.add('active-genre-button');
@@ -92,7 +101,7 @@ class SimpleSlider extends React.Component{
                 const songUrl = obj.songUrl;
 
                 return(
-                  <div className="slider-item">
+                  <div onClick={this.props.playSong({song: songUrl, artist: name})} className="slider-item">
                     <div className="slider-item-img"
                       style={imgUrl}></div>
                     <span>{name}</span>
@@ -109,7 +118,7 @@ class SimpleSlider extends React.Component{
                 const songUrl = obj.songUrl;
 
                 return(
-                  <div className="slider-item">
+                  <div onClick={this.props.playSong({song: songUrl, artist: name})} className="slider-item">
                     <div className="slider-item-img"
                       style={imgUrl}></div>
                     <span>{name}</span>
@@ -126,7 +135,7 @@ class SimpleSlider extends React.Component{
                 const songUrl = obj.songUrl;
 
                 return(
-                  <div className="slider-item">
+                  <div onClick={this.props.playSong({song: songUrl, artist: name})} className="slider-item">
                     <div className="slider-item-img"
                       style={imgUrl}></div>
                     <span>{name}</span>
@@ -143,7 +152,7 @@ class SimpleSlider extends React.Component{
                 const songUrl = obj.songUrl;
 
                 return(
-                  <div className="slider-item">
+                  <div onClick={this.props.playSong({song: songUrl, artist: name})} className="slider-item">
                     <div className="slider-item-img"
                       style={imgUrl}></div>
                     <span>{name}</span>
@@ -164,18 +173,3 @@ class SimpleSlider extends React.Component{
 }
 
 export default SimpleSlider;
-
-// {genreObjs.forEach(obj =>{
-//   const imgUrl = {backgroundImage: 'url(' + obj.imgUrl + ')'};
-//   const name = obj.name;
-//   const songUrl = obj.songUrl;
-//
-//   return(
-//     <div classList="slider-item">
-//       <div className="slider-item-img"
-//         style={imgUrl}></div>
-//       <span>{name}</span>
-//     </div>
-//   );
-// })
-// }

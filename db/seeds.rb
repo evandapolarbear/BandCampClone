@@ -66,7 +66,19 @@ Shakey Graves became known for his one-man band set up and most of his debut alb
 
 Staples rose to prominence with appearances on albums by Odd Future members and his collaborative mixtape titled Stolen Youth with Mac Miller, who produced the project. In October 2014, he released his debut EP Hell Can Wait, which included the singles 'Hands Up' and 'Blue Suede'. His debut album, Summertime '06, was released on June 30, 2015, to critical acclaim. He was also featured as a part of the XXL 2015 Freshman Class.", email: 'evan_dev17@fakey.com', password: 'DevPass244', banner_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1484788399/vsb_qzb0vb.png', image_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1484788398/vsp_g6ixyj.jpg'},
 
-{username: 'Iron Chic', blurb: 'Iron Chic is an American punk rock band from Long Island, New York. The band is made up of Phil Douglas, Jason Lubrano, Gordon Lafler, Mike Bruno, Jesse Litwa. They have released records on both Bridge Nine Records, Dead Broke Records and Side One Dummy. Both their full length albums have received positive reviews on websites such as Pitchfork and punknews.org. In February 2016, it was announced that the band had signed with record label SideOneDummy for a new, upcoming record.', email: 'evan_dev18@fakey.com', password: 'DevPass244', banner_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1484799626/icb_bylhby.jpg', image_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1484799631/ICp_urnsrd.jpg'}
+{username: 'Iron Chic', blurb: 'Iron Chic is an American punk rock band from Long Island, New York. The band is made up of Phil Douglas, Jason Lubrano, Gordon Lafler, Mike Bruno, Jesse Litwa. They have released records on both Bridge Nine Records, Dead Broke Records and Side One Dummy. Both their full length albums have received positive reviews on websites such as Pitchfork and punknews.org. In February 2016, it was announced that the band had signed with record label SideOneDummy for a new, upcoming record.', email: 'evan_dev18@fakey.com', password: 'DevPass244', banner_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1484799626/icb_bylhby.jpg', image_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1484799631/ICp_urnsrd.jpg'},
+
+{username: 'Odesza', blurb: "Odesza (stylized as ODESZA) are an American electronic music duo from Seattle consisting of Harrison Mills and Clayton Knight. The group was formed in 2012 shortly before Mills and Knight graduated from Western Washington University.
+
+Their debut album, Summer's Gone, was released in 2012 to much acclaim in the underground electronic music community. Odesza followed Summer's Gone with their first EP, My Friends Never Die, in 2013 and their second studio album, In Return, in 2014. The duo released In Return (Deluxe Edition) on September 18, 2015 via Counter Records, an extended version of the original album plus three live recordings all featuring a horn section, instrumentals, and a new track “Light (featuring Little Dragon)”. On December 7th, 2015, ODESZA’s “Say My Name (RAC mix)” was nominated for Best Remixed Recording, Non-Classical at the 58th Annual Grammy Awards.", email: 'evan_dev19@fakey.com', password: 'DevPass244', banner_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1484850213/odb_jm4s6i.jpg', image_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1484850206/odp_rf89mr.jpg'},
+
+{username: 'Justin Beiber', blurb: 'Justin Drew Bieber is a Canadian singer and songwriter. After a talent manager discovered him through his YouTube videos covering songs in 2008 and signed to RBMG, Bieber released his debut EP, My World, in late 2009. It was certified Platinum in the U.S. He became the first artist to have seven songs from a debut record chart on the Billboard Hot 100. Bieber released his first full-length studio album, My World 2.0, in 2010. It debuted at or near number one in several countries and was certified triple Platinum in the U.S. It was preceded by his most successful single to date, "Baby".
+
+Following his debut album, he had his first headlining tour, the My World Tour, released the remix albums My Worlds Acoustic and Never Say Never – The Remixes—and the 3D biopic-concert film Justin Bieber: Never Say Never. He released his second studio album, Under the Mistletoe, in November 2011, when it debuted at number one on the Billboard 200. Bieber released his third studio album, Believe, in 2012. His fourth studio album Purpose was released in November 2015. His U.S. album and singles sales total 44.7 million. He has sold an estimated 100 million records, making him one of the world’s best-selling music artists.', email: 'evan_dev20@fakey.com', password: 'DevPass244', banner_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1484850215/jbb_adqkfw.png', image_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1484850202/jbp_quasqu.jpg'},
+
+{username: 'Adele', blurb: "Adele is an English singer-songwriter. Graduating from the BRIT School for Performing Arts and Technology in 2006, Adele was given a recording contract by XL Recordings after a friend posted her demo on Myspace the same year. In 2007, she received the Brit Awards 'Critics' Choice' award and won the BBC Sound of 2008 poll. Her debut album, 19, was released in 2008 to commercial and critical success. It is certified seven times platinum in the UK, and three times platinum in the US. An appearance she made on Saturday Night Live in late 2008 boosted her career in the US. At the 51st Grammy Awards in 2009, Adele received the awards for Best New Artist and Best Female Pop Vocal Performance.
+
+Adele released her second studio album, 21, in early 2011. The album was well received critically and surpassed the success of her debut, earning the singer numerous awards in 2012, among them a record-tying six Grammy Awards, including Album of the Year; two Brit Awards, including British Album of the Year, and three American Music Awards. The album has been certified 16 times platinum in the UK, and is the fourth best-selling album in the UK of all time.[5] In the US it has held the top position longer than any album since 1985, and is certified Diamond. The album has sold 31 million copies worldwide.", email: 'evan_dev21@fakey.com', password: 'DevPass244', banner_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1484852942/ab_myjuo6.jpg', image_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1484852945/ap_ghh9ck.jpg'}
 ])
 
 # {username: '', blurb: '', email: 'evan_dev15@fakey.com', password: 'DevPass244', banner_url: '', image_url: ''},
@@ -199,7 +211,25 @@ Songs = Song.create([
 {artist_id: 17, title: "Cutesy Monster Man", url: "http://res.cloudinary.com/dnkmsdtmu/video/upload/v1484799832/01_Cutesy_Monster_Man_cbfgel.m4a"},
 {artist_id: 17, title: "Every Town Has an Elm Street", url: "http://res.cloudinary.com/dnkmsdtmu/video/upload/v1484799839/10_Every_Town_Has_an_Elm_Street_iqravh.m4a"},
 {artist_id: 17, title: "The End", url: "http://res.cloudinary.com/dnkmsdtmu/video/upload/v1484799829/01_The_End_ktusrv.m4a"},
-{artist_id: 17, title: "Wold Dix Rd.", url: "http://res.cloudinary.com/dnkmsdtmu/video/upload/v1484799851/04_Wolf_Dix_Rd._nrba8u.m4a"}
+{artist_id: 17, title: "Wold Dix Rd.", url: "http://res.cloudinary.com/dnkmsdtmu/video/upload/v1484799851/04_Wolf_Dix_Rd._nrba8u.m4a"},
+
+{artist_id: 18, title: "How did I get Here", url: "http://res.cloudinary.com/dnkmsdtmu/video/upload/v1484850769/02_How_Did_I_Get_Here_wukyye.mp3"},
+{artist_id: 18, title: "Rely", url: "http://res.cloudinary.com/dnkmsdtmu/video/upload/v1484851081/08_Rely_mubcsd.mp3"},
+{artist_id: 18, title: "We Were Young", url: "http://res.cloudinary.com/dnkmsdtmu/video/upload/v1484851134/05_We_Were_Young_mxn62n.mp3"},
+{artist_id: 18, title: "Don't Stop", url: "http://res.cloudinary.com/dnkmsdtmu/video/upload/v1484851128/11_Don_t_Stop_jvohhr.mp3"},
+{artist_id: 18, title: "Hey Now", url: "http://res.cloudinary.com/dnkmsdtmu/video/upload/v1484851117/09_Hey_Now_ak9fto.mp3"},
+{artist_id: 18, title: "Today", url: "http://res.cloudinary.com/dnkmsdtmu/video/upload/v1484851163/06_Today_lwrmcc.mp3"},
+
+{artist_id: 19, title: "Sorry", url: "http://res.cloudinary.com/dnkmsdtmu/video/upload/v1484851655/04_Sorry_pjn2tn.mp3"},
+{artist_id: 19, title: "Company", url: "http://res.cloudinary.com/dnkmsdtmu/video/upload/v1484851688/06_Company_rmqoxy.mp3"},
+{artist_id: 19, title: "Love Yourself", url: "http://res.cloudinary.com/dnkmsdtmu/video/upload/v1484851694/05_Love_Yourself_ykh8fk.mp3"},
+{artist_id: 19, title: "Children", url: "http://res.cloudinary.com/dnkmsdtmu/video/upload/v1484851698/12_Children_pbzl1r.mp3"},
+
+{artist_id: 20, title: "Hello", url: "http://res.cloudinary.com/dnkmsdtmu/video/upload/v1484852385/01_Hello_jvwqmb.m4a"},
+{artist_id: 20, title: "Love in the Dark", url: "http://res.cloudinary.com/dnkmsdtmu/video/upload/v1484852462/08_Love_in_the_Dark_kpa7ja.m4a"},
+{artist_id: 20, title: "Rolling In the Deep", url: "http://res.cloudinary.com/dnkmsdtmu/video/upload/v1484852442/01_Rolling_In_The_Deep_r9yfvj.m4a"},
+{artist_id: 20, title: "Rumor Has It", url: "http://res.cloudinary.com/dnkmsdtmu/video/upload/v1484852443/02_Rumour_Has_It_ahf8ir.m4a"},
+{artist_id: 20, title: "Daydreams", url: "http://res.cloudinary.com/dnkmsdtmu/video/upload/v1484852382/01_Daydreams_g98z16.mp3"}
 
 ])
 
