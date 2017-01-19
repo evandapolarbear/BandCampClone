@@ -1,0 +1,43 @@
+.slider {
+  margin-bottom: 20%;
+}
+
+.splash-heading{
+  color: $offwhite;
+  font-size: 42px;
+  margin-top: 4%;
+  margin-bottom: 2%;
+}
+
+.genre-buttons {
+  display: flex;
+  margin-left: 10%;
+  max-width: 70%;
+  justify-content: space-between;
+}
+
+.genre-buttons button {
+  margin-bottom: 2%;
+  border: 2px $pink solid;
+  border-radius: 4px;
+  height: 44px;
+  width: 100px;
+  background-color: $black;
+  color: whitesmoke;
+  font-size: 18px;
+}
+
+.genre-container{
+  display: none;
+  color: white;
+  height: 300px;
+  width: 80%;
+  border: 2px $pink solid;
+  border-radius: 4px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.genre-show {
+  display: block;
+}

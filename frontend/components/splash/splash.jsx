@@ -1,4 +1,5 @@
 import React from 'react';
+import SimpleSlider from './slider';
 import { hashHistory } from 'react-router';
 
 class Splash extends React.Component{
@@ -25,6 +26,7 @@ class Splash extends React.Component{
   render(){
     return (
       <div id='splash'>
+        <h2 className="splash-heading">Featured</h2>
         <div className='col-70 splash-box' id='main-splash' onClick={this.clickMainSplash}>
           <div id='main-text'>
             <h3>
@@ -55,6 +57,9 @@ class Splash extends React.Component{
               </h4>
             </div>
           </div>
+        </div>
+        <div className="slider-container">
+          <SimpleSlider />
         </div>
       </div>
     );
