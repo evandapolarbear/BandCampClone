@@ -6,19 +6,30 @@
   width: 100%;
   height: 100%;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
 }
 
 .slider-item-img {
-  height : 125px;
-  width : 125px;
+  height : 75px;
+  width : 75px;
   margin-left : auto;
   margin-right : auto;
 }
 
 .slider-item {
-  width:200px;
+  width: 200px;
+  height: 175px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  box-sizing: border-box;
+}
+
+.slider-item:hover{
+  border: 2px $pink solid;
+  border-radius: 4px;
 }
 
 .splash-heading{
@@ -48,7 +59,9 @@
 
 .genre-container{
   color: white;
-  height: 300px;
+  height: 60%;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
   width: 80%;
   border: 2px $pink solid;
   border-radius: 4px;
