@@ -28,11 +28,15 @@ class SimpleSlider extends React.Component{
           title: "Hello"
         },
         {name: "Bruno Mars",
-          imgUrl: "https://a2-images.myspacecdn.com/images03/32/fb7ab76d4e294eb78e108bb7aec444f2/300x300.jpg",
+          imgUrl: "http://res.cloudinary.com/dnkmsdtmu/image/upload/h_75/w_75/v1485237184/bmp_o5cyus.jpg",
           songUrl: "https://www.youtube.com/watch?v=UqyT8IEBkvY",
-          title: "Hello"
+          title: "24k Magic"
         },
-
+        {name: "Drake",
+          imgUrl: "http://res.cloudinary.com/dnkmsdtmu/image/upload/h_75/w_75/v1485237321/dp_busnvw.jpg",
+          songUrl: "https://www.youtube.com/watch?v=uxpDa-c-4Mc",
+          title: "Hotline Bling"
+        }
       ],
       rock: [
         {name: "Brian Fallon",
@@ -97,10 +101,25 @@ class SimpleSlider extends React.Component{
           songUrl: "http://res.cloudinary.com/dnkmsdtmu/video/upload/v1478815500/01_So_What_aanmc5.mp3",
           title: "So What"
         },
+        {name: "Drake",
+          imgUrl: "http://res.cloudinary.com/dnkmsdtmu/image/upload/h_75/w_75/v1485237321/dp_busnvw.jpg",
+          songUrl: "https://www.youtube.com/watch?v=RubBzkZzpUA",
+          title: "Started from the bottom"
+        },
+        {name: "Amy Winehouse",
+          imgUrl: "http://res.cloudinary.com/dnkmsdtmu/image/upload/h_75/w_75/v1485279160/awp_vkor1r.jpg",
+          songUrl: "https://www.youtube.com/watch?v=d_EADBnXjXc",
+          title: "Valery"
+        },
         {name: "Sam Cooke",
           imgUrl: "http://res.cloudinary.com/dnkmsdtmu/image/upload/h_75/w_75/v1478813768/sam_cooke_profile_rzglyy.jpg",
           songUrl: "http://res.cloudinary.com/dnkmsdtmu/video/upload/v1478814173/11_That_s_It_I_Quit_I_m_Movin_On_hriv4u.mp3",
           title: "Thats It I quit"
+        },
+        {name: "Mos Def",
+          imgUrl: "http://res.cloudinary.com/dnkmsdtmu/image/upload/h_75/w_75/v1485293864/mdp_wj2wdb.jpg",
+          songUrl: "https://www.youtube.com/watch?v=m5vw4ajnWGA",
+          title: "Mathmatics"
         }
       ],
       edm: [
@@ -119,16 +138,31 @@ class SimpleSlider extends React.Component{
           songUrl: "http://res.cloudinary.com/dnkmsdtmu/video/upload/v1478759561/07_Coffee_exqhjv.m4a",
           title: "Coffee"
         },
+        {name: "Ratatat",
+          imgUrl: "http://res.cloudinary.com/dnkmsdtmu/image/upload/h_75/w_75/v1485295304/rtp_p2junx.jpg",
+          songUrl: "https://www.youtube.com/watch?v=8WQiEqy8Pa4",
+          title: "Breaking Away"
+        },
         {name: "Son Lux",
           imgUrl: "http://res.cloudinary.com/dnkmsdtmu/image/upload/h_75/w_75/v1485239937/slp_zgvbl1.jpg",
           songUrl: "http://res.cloudinary.com/dnkmsdtmu/video/upload/v1485239354/02_Lost_It_To_Trying_etepu7.m4a",
           title: "Lost It Trying"
         },
         {name: "Flume",
-          imgUrl: "http://res.cloudinary.com/dnkmsdtmu/image/upload/h_75/w_75/v1485239937/slp_zgvbl1.jpg",
+          imgUrl: "http://res.cloudinary.com/dnkmsdtmu/image/upload/h_75/w_75/v1485239613/fp_topfhe.jpg",
           songUrl: "http://res.cloudinary.com/dnkmsdtmu/video/upload/v1485239099/15_-_Free_j5auis.mp3",
           title: "Free"
-        }
+        },
+        {name: "Tokimonsta",
+          imgUrl: "http://res.cloudinary.com/dnkmsdtmu/image/upload/h_75/w_75/v1485277067/tmp_nqopqs.jpg",
+          songUrl: "https://www.youtube.com/watch?v=1nwbuMqH2bQ",
+          title: "Steal My Attention"
+        },
+        {name: "Jai Paul",
+          imgUrl: "http://res.cloudinary.com/dnkmsdtmu/image/upload/h_75/w_75/v1485278288/jpb_rb3dib.png",
+          songUrl: "https://www.youtube.com/watch?v=oeCsdUdWOPY",
+          title: "BTSTU"
+        },
       ]
     };
   }

@@ -80,7 +80,7 @@ Following his debut album, he had his first headlining tour, the My World Tour, 
 
 Adele released her second studio album, 21, in early 2011. The album was well received critically and surpassed the success of her debut, earning the singer numerous awards in 2012, among them a record-tying six Grammy Awards, including Album of the Year; two Brit Awards, including British Album of the Year, and three American Music Awards. The album has been certified 16 times platinum in the UK, and is the fourth best-selling album in the UK of all time.[5] In the US it has held the top position longer than any album since 1985, and is certified Diamond. The album has sold 31 million copies worldwide.", email: 'evan_dev21@fakey.com', password: 'DevPass244', banner_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1484852942/ab_myjuo6.jpg', image_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1484852945/ap_ghh9ck.jpg'},
 
-{username: 'Bruno Mars', blurb: 'Peter Gene Hernandez (born October 8, 1985), known professionally as Bruno Mars, is an American singer-songwriter, multi-instrumentalist, record producer, and choreographer. Born and raised in Honolulu, Hawaii, by a family of musicians, Mars began making music at a young age and performed in various musical venues in his hometown throughout his childhood. He graduated from high school and moved to Los Angeles to pursue a musical career. After being dropped by Motown Records, Mars signed a recording contract with Atlantic Records in 2009.', email: 'evan_dev22@fakey.com', password: 'DevPass244', banner_url: 'http://www.f-covers.com/cover/bruno-mars-piano-facebook-cover-timeline-banner-for-fb.jpg', image_url: 'https://a2-images.myspacecdn.com/images03/32/fb7ab76d4e294eb78e108bb7aec444f2/300x300.jpg'},
+{username: 'Bruno Mars', blurb: 'Peter Gene Hernandez (born October 8, 1985), known professionally as Bruno Mars, is an American singer-songwriter, multi-instrumentalist, record producer, and choreographer. Born and raised in Honolulu, Hawaii, by a family of musicians, Mars began making music at a young age and performed in various musical venues in his hometown throughout his childhood. He graduated from high school and moved to Los Angeles to pursue a musical career. After being dropped by Motown Records, Mars signed a recording contract with Atlantic Records in 2009.', email: 'evan_dev22@fakey.com', password: 'DevPass244', banner_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1485237185/bmb_dgno4y.jpg', image_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1485237184/bmp_o5cyus.jpg'},
 
 {username: 'Drake', blurb: "Aubrey Drake Graham (born October 24, 1986), known simply as Drake, is a Canadian rapper, singer, songwriter, record producer, and actor. Drake initially gained recognition as an actor on the teen drama television series Degrassi: The Next Generation in the early 2000s. Intent on pursuing a career as a rapper, he departed the series in 2007 following the release of his debut mixtape, Room for Improvement. He released two further independent projects, Comeback Season and So Far Gone, before signing to Lil Wayne's Young Money Entertainment in June 2009.", email: 'evan_dev23@fakey.com', password: 'DevPass244', banner_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1485237321/db_wuux6l.jpg', image_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1485237321/dp_busnvw.jpg'},
 
@@ -88,8 +88,24 @@ Adele released her second studio album, 21, in early 2011. The album was well re
 
 Flume has remixed songs by artists such as Lorde, Sam Smith, Arcade Fire and Disclosure. His second studio album, Skin, was released on 27 May 2016, to positive reviews and also topped the ARIA Albums Chart. The album is also nominated for 2 2017 Grammy Awards.", email: 'evan_dev24@fakey.com', password: 'DevPass244', banner_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1485239615/fb_bynpb3.jpg', image_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1485239613/fp_topfhe.jpg'},
 
-{username: 'Son Lux', blurb: "Son Lux was founded in 2007 by Ryan Lott; in 2014 Rafiq Bhatia and Ian Chang joined the band. Son Lux has released four LP's At War with Walls & Mazes (2008), We Are Rising (2011), Lanterns (2013), and Bones (2015). Son Lux has collaborated with a number of musicians, including Lorde, Beyoncé producer Boots, Woodkid, Sufjan Stevens, Matthew Dear, Busdriver, the Royal Concertgebouw Orchestra, Vijay Iyer, Nico Muhly and Pulitzer Prize winner Caroline Shaw.", email: 'evan_dev25@fakey.com', password: 'DevPass244', banner_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1485239939/slb_bthkbm.jpg', image_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1485239937/slp_zgvbl1.jpg'}
+{username: 'Son Lux', blurb: "Son Lux was founded in 2007 by Ryan Lott; in 2014 Rafiq Bhatia and Ian Chang joined the band. Son Lux has released four LP's At War with Walls & Mazes (2008), We Are Rising (2011), Lanterns (2013), and Bones (2015). Son Lux has collaborated with a number of musicians, including Lorde, Beyoncé producer Boots, Woodkid, Sufjan Stevens, Matthew Dear, Busdriver, the Royal Concertgebouw Orchestra, Vijay Iyer, Nico Muhly and Pulitzer Prize winner Caroline Shaw.", email: 'evan_dev25@fakey.com', password: 'DevPass244', banner_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1485239939/slb_bthkbm.jpg', image_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1485239937/slp_zgvbl1.jpg'},
 
+{username: 'Tokimonsta', blurb: "Jennifer Lee, better known by her stage name Tokimonsta (often styled as TOKiMONSTA), is an American record producer and DJ from Los Angeles, California. She has collaborated with Thirsty Fish, Kool Keith, MNDR. & Anderson Paak. She has also remixed tracks by Andreya Triana, Daedelus, Jodeci, and Justin Timberlake.", email: 'evan_dev26@fakey.com', password: 'DevPass244', banner_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1485239939/slb_bthkbm.jpg', image_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1485277077/tmb_wrshsf.jpg'},
+
+{username: 'Jai Paul', blurb: "Jai Paul (born 30 June 1988) is an English singer, songwriter, producer, and recording artist from Rayners Lane, United Kingdom. He is signed to XL Recordings.", email: 'evan_dev27@fakey.com', password: 'DevPass244', banner_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1485278287/jpp_vvpwzu.jpg', image_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1485278288/jpb_rb3dib.png'},
+
+{username: 'Amy Winehouse', blurb: "Amy Jade Winehouse was an English singer and songwriter. She was known for her deep expressive contralto vocals and her eclectic mix of musical genres, including soul (sometimes labelled as blue-eyed soul and neo soul), rhythm and blues, and jazz. Winehouse's debut album, Frank (2003), was a critical success in the UK and was nominated for the Mercury Prize. Her follow-up album, Back to Black (2006), led to five 2008 Grammy Awards, tying the then record for the most wins by a female artist in a single night, and made her the first British woman to win five Grammys, including three of the General Field 'Big Four' Grammy Awards: Best New Artist, Record of the Year and Song of the Year.
+
+Winehouse died of alcohol poisoning on 23 July 2011, aged 27. Her album Back to Black posthumously became, for a time, the UK's best-selling album of the 21st century. In 2012, Winehouse was ranked 26th on VH1's 100 Greatest Women in Music. The BBC has called her 'the pre-eminent vocal talent of her generation.'", password: 'DevPass244', banner_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1485279158/awb_tf3e4f.jpg', image_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1485279160/awp_vkor1r.jpg',
+email:"evan_dev28@fakey.com"},
+
+{username: 'Mos Def', blurb: "Yasiin Bey (/jæˈsiːn ˈbeɪ/) (born Dante Terrell Smith; December 11, 1973), best known by his stage name Mos Def (/ˈmoʊs ˈdɛf/), is an American hip hop recording artist, actor and activist from Brooklyn, New York City, New York. Best known for his music, Mos Def embarked on his hip hop career in 1994, alongside his siblings in the short-lived rap group Urban Thermo Dynamics (UTD), after which he appeared on albums by Da Bush Babees and De La Soul. He subsequently formed the duo Black Star, alongside fellow Brooklyn-based rapper Talib Kweli, and released their eponymous debut album in 1998. He was featured on the roster of Rawkus Records and in 1999 released his solo debut, Black on Both Sides. His debut was followed by The New Danger (2004), True Magic (2006) and The Ecstatic (2009). The editors at About.com listed him as the 14th greatest emcee of all time on their '50 greatest MCs of our time' list.
+
+Prior to his career in music, Mos Def first entered public life as a child actor, having played roles in television movies, sitcoms, and theater. Since the early 2000s, Mos Def has been well known for his roles in films such as Something the Lord Made, Next Day Air, The Hitchhiker's Guide to the Galaxy, 16 Blocks, Be Kind Rewind, The Italian Job, Bamboozled and Brown Sugar, as well as for his portrayal of Brother Sam in the Showtime drama series Dexter. He is also known as the host of Def Poetry Jam, which aired on HBO between 2002 and 2007.", email: 'evan_dev29@fakey.com', password: 'DevPass244', banner_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1485293869/mdb_wqoovm.png', image_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1485293864/mdp_wj2wdb.jpg'},
+
+{username: 'Ratatat', blurb: 'Ratatat (pronounced rat-ə-tat) is a Brooklyn-based electronic rock duo consisting of Mike Stroud (guitar, melodica, synthesizers, percussion) and producer Evan Mast (bass, synthesizers, percussion).', email: 'evan_dev30@fakey.com', password: 'DevPass244', banner_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1485295304/rtb_gjan8a.jpg', image_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1485295304/rtp_p2junx.jpg'},
+
+{username: 'Justin Timberlake', blurb: 'Justin Randall Timberlake (born January 31, 1981) is an American singer, songwriter, actor and record producer. Born in Memphis, Tennessee, he appeared on the television shows Star Search and The All-New Mickey Mouse Club as a child. In the late 1990s, Timberlake rose to prominence as one of the two lead vocalists and youngest member of NSYNC, which eventually became one of the best-selling boy bands of all time. During their hiatus, Timberlake released his debut solo album, the R&B-focused Justified (2002), which yielded the successful singles "Cry Me a River" and "Rock Your Body", and earned his first two Grammy Awards.', email: 'evan_dev31@fakey.com', password: 'DevPass244', banner_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1485295304/rtb_gjan8a.jpg', image_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1485295304/rtp_p2junx.jpg'},
 ])
 
 
@@ -243,9 +259,12 @@ Songs = Song.create([
 {artist_id: 20, title: "Rumor Has It", url: "http://res.cloudinary.com/dnkmsdtmu/video/upload/v1484852443/02_Rumour_Has_It_ahf8ir.m4a"},
 {artist_id: 20, title: "Daydreams", url: "http://res.cloudinary.com/dnkmsdtmu/video/upload/v1484852382/01_Daydreams_g98z16.mp3"},
 
-{artist_id: 21, title: "24K Magic", url: ""},
+{artist_id: 21, title: "24K Magic", url: "https://www.youtube.com/watch?v=UqyT8IEBkvY"},
+{artist_id: 21, title: "When I was your Man", url: "https://www.youtube.com/watch?v=ekzHIouo8Q4"},
 
-{artist_id: 22, title: "Drake song", url: "http://res.cloudinary.com/dnkmsdtmu/video/upload/v1484852382/01_Daydreams_g98z16.mp3"},
+{artist_id: 22, title: "Hotline Bling", url: "https://www.youtube.com/watch?v=uxpDa-c-4Mc"},
+{artist_id: 22, title: "Started From the Bottom...", url: "https://www.youtube.com/watch?v=RubBzkZzpUA"},
+{artist_id: 22, title: "Energy", url: "https://www.youtube.com/watch?v=7LnBvuzjpr4"},
 
 {artist_id: 23, title: "3", url: "http://res.cloudinary.com/dnkmsdtmu/video/upload/v1485239084/09_-_3_vzbf8l.mp3"},
 {artist_id: 23, title: "Helix", url: "http://res.cloudinary.com/dnkmsdtmu/video/upload/v1485239112/01_-_Helix_zgnmqm.mp3"},
@@ -254,6 +273,27 @@ Songs = Song.create([
 {artist_id: 24, title: "Easy", url: "http://res.cloudinary.com/dnkmsdtmu/video/upload/v1485239321/04_Easy_ypjoqp.m4a"},
 {artist_id: 24, title: "Lost It Trying", url: "http://res.cloudinary.com/dnkmsdtmu/video/upload/v1485239354/02_Lost_It_To_Trying_etepu7.m4a"},
 {artist_id: 24, title: "No Crimes", url: "http://res.cloudinary.com/dnkmsdtmu/video/upload/v1485239383/05_No_Crimes_a6ssrq.m4a"},
+
+{artist_id: 25, title: "Steal My Attention", url: "https://www.youtube.com/watch?v=1nwbuMqH2bQ"},
+{artist_id: 25, title: "Go With It", url: "https://www.youtube.com/watch?v=D3kQHZmQmVI"},
+{artist_id: 25, title: "Darkest Dim", url: "https://www.youtube.com/watch?v=sPW-F3Eebkc"},
+
+{artist_id: 26, title: "Jasmine", url: "https://www.youtube.com/watch?v=RWQMg56ZVZY"},
+{artist_id: 26, title: "BTSTU", url: "https://www.youtube.com/watch?v=oeCsdUdWOPY"},
+{artist_id: 26, title: "Mumbi", url: "https://www.youtube.com/watch?v=c6bj1xLggAM"},
+
+{artist_id: 27, title: "Rehab", url: "https://www.youtube.com/watch?v=KUmZp8pR1uc"},
+{artist_id: 27, title: "Valery", url: "https://www.youtube.com/watch?v=d_EADBnXjXc"},
+{artist_id: 27, title: "Back to Black", url: "https://www.youtube.com/watch?v=4IOXgamaOLI"},
+{artist_id: 27, title: "Just Friends", url: "https://www.youtube.com/watch?v=IvRnrIv3mpM"},
+
+{artist_id: 28, title: "Mathmatics", url: "https://www.youtube.com/watch?v=m5vw4ajnWGA"},
+{artist_id: 28, title: "Im Leaving", url: "https://www.youtube.com/watch?v=lMTZa82UVqE"},
+{artist_id: 28, title: "Auditorium", url: "https://www.youtube.com/watch?v=vwjwKPXy4sg"},
+
+{artist_id: 29, title: "Loud Pipes", url: "https://www.youtube.com/watch?v=64liF2VuLxI"},
+{artist_id: 29, title: "Breaking Away", url: "https://www.youtube.com/watch?v=8WQiEqy8Pa4"},
+
 
 ])
 
