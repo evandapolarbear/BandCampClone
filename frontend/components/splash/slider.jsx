@@ -118,6 +118,16 @@ class SimpleSlider extends React.Component{
           imgUrl: "http://res.cloudinary.com/dnkmsdtmu/image/upload/h_75/w_75/v1478559077/esso_profile_2_qnvvwe.jpg",
           songUrl: "http://res.cloudinary.com/dnkmsdtmu/video/upload/v1478759561/07_Coffee_exqhjv.m4a",
           title: "Coffee"
+        },
+        {name: "Son Lux",
+          imgUrl: "http://res.cloudinary.com/dnkmsdtmu/image/upload/h_75/w_75/v1485239937/slp_zgvbl1.jpg",
+          songUrl: "http://res.cloudinary.com/dnkmsdtmu/video/upload/v1485239354/02_Lost_It_To_Trying_etepu7.m4a",
+          title: "Lost It Trying"
+        },
+        {name: "Flume",
+          imgUrl: "http://res.cloudinary.com/dnkmsdtmu/image/upload/h_75/w_75/v1485239937/slp_zgvbl1.jpg",
+          songUrl: "http://res.cloudinary.com/dnkmsdtmu/video/upload/v1485239099/15_-_Free_j5auis.mp3",
+          title: "Free"
         }
       ]
     };

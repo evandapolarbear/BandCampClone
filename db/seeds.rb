@@ -80,8 +80,16 @@ Following his debut album, he had his first headlining tour, the My World Tour, 
 
 Adele released her second studio album, 21, in early 2011. The album was well received critically and surpassed the success of her debut, earning the singer numerous awards in 2012, among them a record-tying six Grammy Awards, including Album of the Year; two Brit Awards, including British Album of the Year, and three American Music Awards. The album has been certified 16 times platinum in the UK, and is the fourth best-selling album in the UK of all time.[5] In the US it has held the top position longer than any album since 1985, and is certified Diamond. The album has sold 31 million copies worldwide.", email: 'evan_dev21@fakey.com', password: 'DevPass244', banner_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1484852942/ab_myjuo6.jpg', image_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1484852945/ap_ghh9ck.jpg'},
 
+{username: 'Bruno Mars', blurb: 'Peter Gene Hernandez (born October 8, 1985), known professionally as Bruno Mars, is an American singer-songwriter, multi-instrumentalist, record producer, and choreographer. Born and raised in Honolulu, Hawaii, by a family of musicians, Mars began making music at a young age and performed in various musical venues in his hometown throughout his childhood. He graduated from high school and moved to Los Angeles to pursue a musical career. After being dropped by Motown Records, Mars signed a recording contract with Atlantic Records in 2009.', email: 'evan_dev22@fakey.com', password: 'DevPass244', banner_url: 'http://www.f-covers.com/cover/bruno-mars-piano-facebook-cover-timeline-banner-for-fb.jpg', image_url: 'https://a2-images.myspacecdn.com/images03/32/fb7ab76d4e294eb78e108bb7aec444f2/300x300.jpg'},
 
-{username: 'Bruno Mars', blurb: '', email: 'evan_dev22@fakey.com', password: 'DevPass244', banner_url: 'http://www.f-covers.com/cover/bruno-mars-piano-facebook-cover-timeline-banner-for-fb.jpg', image_url: 'https://a2-images.myspacecdn.com/images03/32/fb7ab76d4e294eb78e108bb7aec444f2/300x300.jpg'},
+{username: 'Drake', blurb: "Aubrey Drake Graham (born October 24, 1986), known simply as Drake, is a Canadian rapper, singer, songwriter, record producer, and actor. Drake initially gained recognition as an actor on the teen drama television series Degrassi: The Next Generation in the early 2000s. Intent on pursuing a career as a rapper, he departed the series in 2007 following the release of his debut mixtape, Room for Improvement. He released two further independent projects, Comeback Season and So Far Gone, before signing to Lil Wayne's Young Money Entertainment in June 2009.", email: 'evan_dev23@fakey.com', password: 'DevPass244', banner_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1485237321/db_wuux6l.jpg', image_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1485237321/dp_busnvw.jpg'},
+
+{username: 'Flume', blurb: "Harley Edward Streten, known professionally as Flume, is an Australian record producer, musician and DJ. His self-titled debut studio album, Flume, was released on 9 November 2012 to positive reviews, topping the ARIA Albums Chart and reaching double-platinum accreditation in Australia.
+
+Flume has remixed songs by artists such as Lorde, Sam Smith, Arcade Fire and Disclosure. His second studio album, Skin, was released on 27 May 2016, to positive reviews and also topped the ARIA Albums Chart. The album is also nominated for 2 2017 Grammy Awards.", email: 'evan_dev24@fakey.com', password: 'DevPass244', banner_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1485239615/fb_bynpb3.jpg', image_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1485239613/fp_topfhe.jpg'},
+
+{username: 'Son Lux', blurb: "Son Lux was founded in 2007 by Ryan Lott; in 2014 Rafiq Bhatia and Ian Chang joined the band. Son Lux has released four LP's At War with Walls & Mazes (2008), We Are Rising (2011), Lanterns (2013), and Bones (2015). Son Lux has collaborated with a number of musicians, including Lorde, Beyoncé producer Boots, Woodkid, Sufjan Stevens, Matthew Dear, Busdriver, the Royal Concertgebouw Orchestra, Vijay Iyer, Nico Muhly and Pulitzer Prize winner Caroline Shaw.", email: 'evan_dev25@fakey.com', password: 'DevPass244', banner_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1485239939/slb_bthkbm.jpg', image_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1485239937/slp_zgvbl1.jpg'}
+
 ])
 
 
@@ -235,7 +243,17 @@ Songs = Song.create([
 {artist_id: 20, title: "Rumor Has It", url: "http://res.cloudinary.com/dnkmsdtmu/video/upload/v1484852443/02_Rumour_Has_It_ahf8ir.m4a"},
 {artist_id: 20, title: "Daydreams", url: "http://res.cloudinary.com/dnkmsdtmu/video/upload/v1484852382/01_Daydreams_g98z16.mp3"},
 
-{artist_id: 21, title: "24K Magic", url: "http://res.cloudinary.com/dnkmsdtmu/video/upload/v1484852382/01_Daydreams_g98z16.mp3"}
+{artist_id: 21, title: "24K Magic", url: ""},
+
+{artist_id: 22, title: "Drake song", url: "http://res.cloudinary.com/dnkmsdtmu/video/upload/v1484852382/01_Daydreams_g98z16.mp3"},
+
+{artist_id: 23, title: "3", url: "http://res.cloudinary.com/dnkmsdtmu/video/upload/v1485239084/09_-_3_vzbf8l.mp3"},
+{artist_id: 23, title: "Helix", url: "http://res.cloudinary.com/dnkmsdtmu/video/upload/v1485239112/01_-_Helix_zgnmqm.mp3"},
+{artist_id: 23, title: "Free", url: "http://res.cloudinary.com/dnkmsdtmu/video/upload/v1485239099/15_-_Free_j5auis.mp3"},
+
+{artist_id: 24, title: "Easy", url: "http://res.cloudinary.com/dnkmsdtmu/video/upload/v1485239321/04_Easy_ypjoqp.m4a"},
+{artist_id: 24, title: "Lost It Trying", url: "http://res.cloudinary.com/dnkmsdtmu/video/upload/v1485239354/02_Lost_It_To_Trying_etepu7.m4a"},
+{artist_id: 24, title: "No Crimes", url: "http://res.cloudinary.com/dnkmsdtmu/video/upload/v1485239383/05_No_Crimes_a6ssrq.m4a"},
 
 ])
 
