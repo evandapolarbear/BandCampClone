@@ -12,6 +12,11 @@ class SimpleSlider extends React.Component{
           songUrl: "http://res.cloudinary.com/dnkmsdtmu/video/upload/v1478757281/06_Shake_It_Off_mla0vv.mp3",
           title: "Shake it off"
         },
+        {name: "Justin Timberlake",
+          imgUrl: "http://res.cloudinary.com/dnkmsdtmu/image/upload/h_75/w_75/v1485295813/jtp_oihj5m.jpg",
+          songUrl: "https://www.youtube.com/watch?v=3gOHvDP_vCs",
+          title: "SexyBack"
+        },
         {name: "Beyonce",
           imgUrl: "http://res.cloudinary.com/dnkmsdtmu/image/upload/h_75/w_75/v1478560551/beyonce_profile_2_i8uesk.jpg",
           songUrl: "http://res.cloudinary.com/dnkmsdtmu/video/upload/v1484784961/01._Pray_You_Catch_Me_de8wel.mp3",
@@ -21,6 +26,11 @@ class SimpleSlider extends React.Component{
           imgUrl: "http://res.cloudinary.com/dnkmsdtmu/image/upload/h_75/w_75/v1484850202/jbp_quasqu.jpg",
           songUrl: "http://res.cloudinary.com/dnkmsdtmu/video/upload/v1484851655/04_Sorry_pjn2tn.mp3",
           title: "Sorry"
+        },
+        {name: "Katy Perry",
+          imgUrl: "http://res.cloudinary.com/dnkmsdtmu/image/upload/h_75/w_75/v1485296408/kpp_e1tlhj.jpg",
+          songUrl: "https://www.youtube.com/watch?v=QGJuMBdaqIw",
+          title: "Fireworks"
         },
         {name: "Adele",
           imgUrl: "http://res.cloudinary.com/dnkmsdtmu/image/upload/h_75/w_75/v1484852945/ap_ghh9ck.jpg",

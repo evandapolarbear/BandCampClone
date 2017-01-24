@@ -105,7 +105,9 @@ Prior to his career in music, Mos Def first entered public life as a child actor
 
 {username: 'Ratatat', blurb: 'Ratatat (pronounced rat-ə-tat) is a Brooklyn-based electronic rock duo consisting of Mike Stroud (guitar, melodica, synthesizers, percussion) and producer Evan Mast (bass, synthesizers, percussion).', email: 'evan_dev30@fakey.com', password: 'DevPass244', banner_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1485295304/rtb_gjan8a.jpg', image_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1485295304/rtp_p2junx.jpg'},
 
-{username: 'Justin Timberlake', blurb: 'Justin Randall Timberlake (born January 31, 1981) is an American singer, songwriter, actor and record producer. Born in Memphis, Tennessee, he appeared on the television shows Star Search and The All-New Mickey Mouse Club as a child. In the late 1990s, Timberlake rose to prominence as one of the two lead vocalists and youngest member of NSYNC, which eventually became one of the best-selling boy bands of all time. During their hiatus, Timberlake released his debut solo album, the R&B-focused Justified (2002), which yielded the successful singles "Cry Me a River" and "Rock Your Body", and earned his first two Grammy Awards.', email: 'evan_dev31@fakey.com', password: 'DevPass244', banner_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1485295304/rtb_gjan8a.jpg', image_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1485295304/rtp_p2junx.jpg'},
+{username: 'Justin Timberlake', blurb: 'Justin Randall Timberlake (born January 31, 1981) is an American singer, songwriter, actor and record producer. Born in Memphis, Tennessee, he appeared on the television shows Star Search and The All-New Mickey Mouse Club as a child. In the late 1990s, Timberlake rose to prominence as one of the two lead vocalists and youngest member of NSYNC, which eventually became one of the best-selling boy bands of all time. During their hiatus, Timberlake released his debut solo album, the R&B-focused Justified (2002), which yielded the successful singles "Cry Me a River" and "Rock Your Body", and earned his first two Grammy Awards.', email: 'evan_dev31@fakey.com', password: 'DevPass244', banner_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1485295304/rtb_gjan8a.jpg', image_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1485295813/jtp_oihj5m.jpg'},
+
+{username: 'Katy Perry', blurb: "Katheryn Elizabeth Hudson (born October 25, 1984), known professionally as Katy Perry, is an American singer and songwriter. After singing in church during her childhood, she pursued a career in gospel music as a teenager. Perry signed with Red Hill Records and released her debut studio album Katy Hudson under her birth name in 2001, which was commercially unsuccessful. She moved to Los Angeles the following year to venture into secular music after Red Hill ceased operations and she subsequently began working with producers Glen Ballard, Dr. Luke, and Max Martin. After adopting the stage name Katy Perry and being dropped by The Island Def Jam Music Group and Columbia Records, she signed a recording contract with Capitol Records in April 2007.", email: 'evan_dev32@fakey.com', password: 'DevPass244', banner_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1485296394/kpb_j4e2ku.jpg', image_url: "http://res.cloudinary.com/dnkmsdtmu/image/upload/v1485296408/kpp_e1tlhj.jpg"},
 ])
 
 
@@ -293,6 +295,13 @@ Songs = Song.create([
 
 {artist_id: 29, title: "Loud Pipes", url: "https://www.youtube.com/watch?v=64liF2VuLxI"},
 {artist_id: 29, title: "Breaking Away", url: "https://www.youtube.com/watch?v=8WQiEqy8Pa4"},
+
+{artist_id: 30, title: "Mirrors", url: "https://www.youtube.com/watch?v=uuZE_IRwLNI"},
+{artist_id: 30, title: "SexyBack", url: "https://www.youtube.com/watch?v=3gOHvDP_vCs"},
+{artist_id: 30, title: "Cry Me a River", url: "https://www.youtube.com/watch?v=DksSPZTZES0"},
+
+{artist_id: 31, title: "Fireworks", url: "https://www.youtube.com/watch?v=QGJuMBdaqIw"},
+{artist_id: 31, title: "Roar", url: "https://www.youtube.com/watch?v=CevxZvSJLk8"},
 
 
 ])
