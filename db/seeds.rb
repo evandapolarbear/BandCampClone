@@ -78,8 +78,12 @@ Following his debut album, he had his first headlining tour, the My World Tour, 
 
 {username: 'Adele', blurb: "Adele is an English singer-songwriter. Graduating from the BRIT School for Performing Arts and Technology in 2006, Adele was given a recording contract by XL Recordings after a friend posted her demo on Myspace the same year. In 2007, she received the Brit Awards 'Critics' Choice' award and won the BBC Sound of 2008 poll. Her debut album, 19, was released in 2008 to commercial and critical success. It is certified seven times platinum in the UK, and three times platinum in the US. An appearance she made on Saturday Night Live in late 2008 boosted her career in the US. At the 51st Grammy Awards in 2009, Adele received the awards for Best New Artist and Best Female Pop Vocal Performance.
 
-Adele released her second studio album, 21, in early 2011. The album was well received critically and surpassed the success of her debut, earning the singer numerous awards in 2012, among them a record-tying six Grammy Awards, including Album of the Year; two Brit Awards, including British Album of the Year, and three American Music Awards. The album has been certified 16 times platinum in the UK, and is the fourth best-selling album in the UK of all time.[5] In the US it has held the top position longer than any album since 1985, and is certified Diamond. The album has sold 31 million copies worldwide.", email: 'evan_dev21@fakey.com', password: 'DevPass244', banner_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1484852942/ab_myjuo6.jpg', image_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1484852945/ap_ghh9ck.jpg'}
+Adele released her second studio album, 21, in early 2011. The album was well received critically and surpassed the success of her debut, earning the singer numerous awards in 2012, among them a record-tying six Grammy Awards, including Album of the Year; two Brit Awards, including British Album of the Year, and three American Music Awards. The album has been certified 16 times platinum in the UK, and is the fourth best-selling album in the UK of all time.[5] In the US it has held the top position longer than any album since 1985, and is certified Diamond. The album has sold 31 million copies worldwide.", email: 'evan_dev21@fakey.com', password: 'DevPass244', banner_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1484852942/ab_myjuo6.jpg', image_url: 'http://res.cloudinary.com/dnkmsdtmu/image/upload/v1484852945/ap_ghh9ck.jpg'},
+
+
+{username: 'Bruno Mars', blurb: '', email: 'evan_dev22@fakey.com', password: 'DevPass244', banner_url: 'http://www.f-covers.com/cover/bruno-mars-piano-facebook-cover-timeline-banner-for-fb.jpg', image_url: 'https://a2-images.myspacecdn.com/images03/32/fb7ab76d4e294eb78e108bb7aec444f2/300x300.jpg'},
 ])
+
 
 # {username: '', blurb: '', email: 'evan_dev15@fakey.com', password: 'DevPass244', banner_url: '', image_url: ''},
 
@@ -229,7 +233,9 @@ Songs = Song.create([
 {artist_id: 20, title: "Love in the Dark", url: "http://res.cloudinary.com/dnkmsdtmu/video/upload/v1484852462/08_Love_in_the_Dark_kpa7ja.m4a"},
 {artist_id: 20, title: "Rolling In the Deep", url: "http://res.cloudinary.com/dnkmsdtmu/video/upload/v1484852442/01_Rolling_In_The_Deep_r9yfvj.m4a"},
 {artist_id: 20, title: "Rumor Has It", url: "http://res.cloudinary.com/dnkmsdtmu/video/upload/v1484852443/02_Rumour_Has_It_ahf8ir.m4a"},
-{artist_id: 20, title: "Daydreams", url: "http://res.cloudinary.com/dnkmsdtmu/video/upload/v1484852382/01_Daydreams_g98z16.mp3"}
+{artist_id: 20, title: "Daydreams", url: "http://res.cloudinary.com/dnkmsdtmu/video/upload/v1484852382/01_Daydreams_g98z16.mp3"},
+
+{artist_id: 21, title: "24K Magic", url: "http://res.cloudinary.com/dnkmsdtmu/video/upload/v1484852382/01_Daydreams_g98z16.mp3"}
 
 ])
 

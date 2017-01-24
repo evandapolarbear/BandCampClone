@@ -27,6 +27,11 @@ class SimpleSlider extends React.Component{
           songUrl: "http://res.cloudinary.com/dnkmsdtmu/video/upload/v1484852385/01_Hello_jvwqmb.m4a",
           title: "Hello"
         },
+        {name: "Bruno Mars",
+          imgUrl: "https://a2-images.myspacecdn.com/images03/32/fb7ab76d4e294eb78e108bb7aec444f2/300x300.jpg",
+          songUrl: "https://www.youtube.com/watch?v=UqyT8IEBkvY",
+          title: "Hello"
+        },
 
       ],
       rock: [
