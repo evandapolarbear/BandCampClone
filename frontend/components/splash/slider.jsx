@@ -1,6 +1,7 @@
 import React from 'react';
 import Slider from 'react-slick';
 import SliderData from './slider_obj';
+import {withRouter, Link} from 'react-router';
 
 class SimpleSlider extends React.Component{
   constructor(props){
@@ -30,6 +31,11 @@ class SimpleSlider extends React.Component{
     });
   }
 
+  nav(profile){
+    console.log(profile);
+    hashHistory.push(profile);
+  }
+
   render(){
     return (
       <div className="slider">
@@ -49,6 +55,7 @@ class SimpleSlider extends React.Component{
                 const name = obj.name;
                 const songUrl = obj.songUrl;
                 const songTitle = obj.title;
+                const id = obj.id;
 
                 const playObj = {
                   artist: {username: name},
@@ -56,10 +63,16 @@ class SimpleSlider extends React.Component{
                 };
 
                 return(
-                  <div onClick={() => this.props.playSong(playObj)} className="slider-item">
+                  <div className="slider-item"onClick={() => this.props.playSong(playObj)}>
                     <div className="slider-item-img"
                       style={imgUrl}></div>
-                    <span>{name}</span>
+                      <ul className="slider-details">
+                        <li>
+                          <span className="slider-artist-name">{name}</span>
+                        </li>
+                        <li><span className="slider-song-name">{songTitle}</span></li>
+                        <li><Link to={`/${id}`}>profile</Link></li>
+                      </ul>
                   </div>
                 );
               })}
@@ -72,6 +85,7 @@ class SimpleSlider extends React.Component{
                 const name = obj.name;
                 const songUrl = obj.songUrl;
                 const songTitle = obj.title;
+                const id = obj.id;
 
                 const playObj = {
                   artist: {username: name},
@@ -82,7 +96,13 @@ class SimpleSlider extends React.Component{
                   <div onClick={() => this.props.playSong(playObj)} className="slider-item">
                     <div className="slider-item-img"
                       style={imgUrl}></div>
-                    <span>{name}</span>
+                    <ul className="slider-details">
+                      <li>
+                        <span className="slider-artist-name">{name}</span>
+                      </li>
+                      <li><span className="slider-song-name">{songTitle}</span></li>
+                      <li><Link to={`/${id}`}>profile</Link></li>
+                    </ul>
                   </div>
                 );
               })}
@@ -95,6 +115,7 @@ class SimpleSlider extends React.Component{
                 const name = obj.name;
                 const songUrl = obj.songUrl;
                 const songTitle = obj.title;
+                const id = obj.id;
 
                 const playObj = {
                   artist: {username: name},
@@ -105,7 +126,13 @@ class SimpleSlider extends React.Component{
                   <div onClick={() => this.props.playSong(playObj)} className="slider-item">
                     <div className="slider-item-img"
                       style={imgUrl}></div>
-                    <span>{name}</span>
+                      <ul className="slider-details">
+                        <li>
+                          <span className="slider-artist-name">{name}</span>
+                        </li>
+                        <li><span className="slider-song-name">{songTitle}</span></li>
+                        <li><Link to={`/${id}`}>profile</Link></li>
+                      </ul>
                   </div>
                 );
               })}
@@ -118,6 +145,7 @@ class SimpleSlider extends React.Component{
                 const name = obj.name;
                 const songUrl = obj.songUrl;
                 const songTitle = obj.title;
+                const id = obj.id;
 
                 const playObj = {
                   artist: {username: name},
@@ -128,7 +156,13 @@ class SimpleSlider extends React.Component{
                   <div onClick={() => this.props.playSong(playObj)} className="slider-item">
                     <div className="slider-item-img"
                       style={imgUrl}></div>
-                    <span>{name}</span>
+                      <ul className="slider-details">
+                        <li>
+                          <span className="slider-artist-name">{name}</span>
+                        </li>
+                        <li><span className="slider-song-name">{songTitle}</span></li>
+                        <li><Link to={`/${id}`}>profile</Link></li>
+                      </ul>
                   </div>
                 );
               })}
@@ -140,4 +174,4 @@ class SimpleSlider extends React.Component{
   }
 }
 
-export default SimpleSlider;
+export default withRouter(SimpleSlider);
