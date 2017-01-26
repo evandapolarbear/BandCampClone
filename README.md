@@ -1,5 +1,5 @@
 #BandCamper
-[BandCamper live](bandcamper.net)
+[BandCamper live](http://bandcamper.net)
 
 #Features & Implementation
 
