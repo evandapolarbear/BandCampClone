@@ -50,7 +50,7 @@ class UploadProfile extends React.Component {
   render() {
     return (
       <div>
-        <button onClick={this.toggleForm}>Update Profile Picture</button>
+        <button className="update-button" onClick={this.toggleForm}>Update Profile Picture</button>
 
         {this.updateForm()}
       </div>

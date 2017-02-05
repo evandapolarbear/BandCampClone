@@ -49,7 +49,7 @@ class UploadBanner extends React.Component{
   render() {
     return (
       <div>
-        <button onClick={this.toggleForm}>Update Banner</button>
+        <button className="update-button" onClick={this.toggleForm}>Update Banner</button>
 
         {this.updateForm()}
       </div>

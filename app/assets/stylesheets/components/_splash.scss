@@ -52,7 +52,7 @@
 }
 
 #small-splash-3{
-  background: image-url("splash/pup.jpg");
+  background-image: url("http://www.winniecooper.net/scott/march%202014/PUP.jpg");
   background-size: 100% 100%;
   background-size: fit;
   height: 33%;
@@ -92,4 +92,16 @@
 
 #small-splash-1, #small-splash-2, #small-splash-3, #main-splash{
   background-color: black;
+}
+
+.update-button {
+  background-color: $offwhite;
+  border: $pink solid 4px;
+  border-radius: 2px;
+  font-weight: bolder;
+  opacity: .5;
+}
+
+.update-button:hover {
+  opacity:1;
 }
