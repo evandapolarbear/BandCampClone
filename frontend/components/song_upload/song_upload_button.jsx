@@ -30,7 +30,7 @@ class SongUploadButton extends React.Component {
   render () {
     return (
       <div className="upload-form">
-        <button onClick={this.uploadToCloudinary}>Upload A Song</button>
+        <button className="update-button" onClick={this.uploadToCloudinary}>Upload A Song</button>
       </div>
     );
   }

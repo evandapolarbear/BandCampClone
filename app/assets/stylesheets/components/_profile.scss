@@ -30,7 +30,7 @@
 }
 
 #profile-button{
-  margin: 230px 0 0 5px;
+  margin: 50px 0 0 5px;
 }
 
 .update-buttons:hover{
@@ -51,12 +51,13 @@
 
 #profile-picture {
   background-size: 100%;
+  background-size: fit;
   height: 45%;
   width: 25%;
   border: 2px $pink solid;
   position: absolute;
-  top: 37%;
-  left: 10%;
+  top: 220px;
+  left: 50px;
   background-size: cover;
 }
 
