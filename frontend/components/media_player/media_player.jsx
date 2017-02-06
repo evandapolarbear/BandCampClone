@@ -143,7 +143,8 @@ class MediaPlayer extends React.Component {
             </li>
             <li>
               {this.playingIcon()}
-              <input className='seek-bar'
+              <input className="seek-bar"
+                id="seek-bar"
                 type='range' min={0} max={1} step='any'
                 value={this.state.played}
                 onMouseDown={this.onSeekMouseDown}

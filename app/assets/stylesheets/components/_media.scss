@@ -2,6 +2,13 @@
   #profile-picture{
     max-height: 200px;
   }
+  .volume-bar {
+    width: 80px;
+  }
+
+  #seek-bar {
+    width: 400px;
+  }
 }
 
 @media screen and (max-width: 700px) {
@@ -13,11 +20,27 @@
     margin-left: 10%;
     width: 55%;
   }
+
+  .volume-bar {
+    width: 60px;
+  }
+
+  #seek-bar {
+    width: 300px;
+  }
 }
 
 @media screen and (max-width: 550px) {
   #profile-picture{
     max-height: 150px;
+  }
+
+  .volume-bar {
+    width: 50px;
+  }
+
+  #seek-bar {
+    width: 200px;
   }
 }
 
@@ -25,5 +48,13 @@
   #profile-picture{
     margin-top: 10%;
     max-width: 200px;
+  }
+
+  .volume-bar {
+    width: 40px;
+  }
+
+  #seek-bar {
+    width: 100px;
   }
 }
