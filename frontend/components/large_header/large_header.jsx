@@ -64,12 +64,11 @@ class LargeHeader extends React.Component {
       <div className="large-header">
         <Link to="/" className="header-logo"><h1>BandCamper</h1></Link>
 
-        <div id="nav-right" className="col-30">
-
-          <div id='search-bar'>
+          <div id='search-bar' className="col-25">
             <SearchBarContainer />
           </div>
 
+        <div id="nav-right" className="col-20">
           <nav className="head-nav">
             <Link className="header-button"
               onClick={this.__handleClick.bind(this, 'login')}>Log In</Link>

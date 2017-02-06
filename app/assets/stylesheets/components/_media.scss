@@ -4,8 +4,26 @@
   }
 }
 
+@media screen and (max-width: 700px) {
+  .header-logo {
+    display:none;
+  }
+
+  #search-bar {
+    margin-left: 10%;
+    width: 55%;
+  }
+}
+
 @media screen and (max-width: 550px) {
   #profile-picture{
     max-height: 150px;
+  }
+}
+
+@media screen and (max-height: 300px) {
+  #profile-picture{
+    margin-top: 10%;
+    max-width: 200px;
   }
 }
