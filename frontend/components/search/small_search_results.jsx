@@ -9,10 +9,13 @@ class SmallSearchResults extends React.Component {
     this.handleClick = this.handleClick.bind(this);
   }
 
-  // clearSearch(){
-  //   this.props.clearSearch();
-  // }
+  componentWillMount(){
+    document.body.addEventListener("click", this.props.clearSearch);
+  }
 
+  componentWillUnmount(){
+      document.body.removeEventListener("click", this.props.clearSearch);
+  }
 
   handleClick(id) {
     return e => {

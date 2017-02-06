@@ -20,8 +20,9 @@ class SearchBar extends React.Component {
   }
 
   clearSearch(){
-    // this.props.clearSearch();
+    this.props.clearSearch();
     this.setState({searchString: ''});
+    this.props.search('');
   }
 
   render(){
@@ -34,7 +35,8 @@ class SearchBar extends React.Component {
               value={this.state.searchString}
               onChange={this.update('searchString')}></input>
         </form>
-        <SmallSearchResults results={this.props.searchResults} string={this.state.searchString} clearSearch={this.clearSearch}/>
+        <SmallSearchResults results={this.props.searchResults} string={this.state.searchString} clearSearch={this.clearSearch}
+        search={this.props.search}/>
       </div>
     );
   }
