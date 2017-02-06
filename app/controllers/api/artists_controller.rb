@@ -4,7 +4,7 @@ class Api::ArtistsController < ApplicationController
     @artists = []
 
     if @search.length > 0
-      @artists = Artist.where("username ILIKE :search", search: "%#{params[:artist][:username]}%")
+      @artists = Artist.where("username ILIKE :search", search: "%#{params[:artist][:username]}%").limit(10)
     end
 
 
