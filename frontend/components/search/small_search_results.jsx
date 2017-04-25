@@ -1,7 +1,6 @@
 import React from 'react';
 import {hashHistory} from 'react-router';
 
-
 class SmallSearchResults extends React.Component {
   constructor(props) {
     super(props);

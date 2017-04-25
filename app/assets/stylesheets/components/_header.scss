@@ -1,18 +1,15 @@
 .large-header {
-  width: 100%;
+  width: 84%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   height:110px;
+  margin-left: 8%;
+  margin-right: 8%;
 }
 
 #nav-right{
   font-weight: bolder;
-  margin-right: 10%;
-}
-
-#id {
-
 }
 
 #search-bar i{
@@ -42,5 +39,9 @@
   margin: 0 0 0 2%;
   font-size: 36px;
   font-weight:bolder;
-  margin-left: 10%;
+}
+
+.nav-right {
+  display: flex;
+  justify-content: space-around;
 }

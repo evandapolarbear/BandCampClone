@@ -63,16 +63,16 @@ class SimpleSlider extends React.Component{
                 };
 
                 return(
-                  <div className="slider-item"onClick={() => this.props.playSong(playObj)}>
+                  <div onClick={() => this.props.playSong(playObj)} className="slider-item">
                     <div className="slider-item-img"
                       style={imgUrl}></div>
-                      <ul className="slider-details">
-                        <li>
-                          <span className="slider-artist-name">{name}</span>
-                        </li>
-                        <li><span className="slider-song-name">{songTitle}</span></li>
-                        <li><Link to={`/${id}`}>profile</Link></li>
-                      </ul>
+                    <ul className="slider-details">
+                      <li>
+                        <span className="slider-artist-name">{name}</span>
+                      </li>
+                      <li><span className="slider-song-name">{songTitle}</span></li>
+                      <li><Link to={`/${id}`}>profile</Link></li>
+                    </ul>
                   </div>
                 );
               })}
